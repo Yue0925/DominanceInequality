@@ -1,0 +1,271 @@
+
+
+
+log for valid -V ./ieqOutput/kp1.ieq 
+
+input file ./ieqOutput/kp1.ieq o.k.
+dimension              :    5 
+number of equations    :    0 
+number of inequalities :    1 
+
+computing all valid integral points .
+
+number of valid integral points : 10
+
+integral points written to file ./ieqOutput/kp1.poi
+
+
+
+log for valid -V ./ieqOutput/kp10.ieq 
+
+input file ./ieqOutput/kp10.ieq o.k.
+dimension              :    4 
+number of equations    :    0 
+number of inequalities :    1 
+
+computing all valid integral points .
+
+number of valid integral points : 6
+
+integral points written to file ./ieqOutput/kp10.poi
+
+
+
+log for valid -V ./ieqOutput/kp11.ieq 
+
+input file ./ieqOutput/kp11.ieq o.k.
+dimension              :    6 
+number of equations    :    0 
+number of inequalities :    1 
+
+computing all valid integral points .
+
+number of valid integral points : 20
+
+integral points written to file ./ieqOutput/kp11.poi
+
+
+
+log for valid -V ./ieqOutput/kp12.ieq 
+
+input file ./ieqOutput/kp12.ieq o.k.
+dimension              :    6 
+number of equations    :    0 
+number of inequalities :    1 
+
+computing all valid integral points .
+
+number of valid integral points : 33
+
+integral points written to file ./ieqOutput/kp12.poi
+
+
+
+log for valid -V ./ieqOutput/kp13.ieq 
+
+input file ./ieqOutput/kp13.ieq o.k.
+dimension              :    7 
+number of equations    :    0 
+number of inequalities :    1 
+
+computing all valid integral points .
+
+number of valid integral points : 120
+
+integral points written to file ./ieqOutput/kp13.poi
+
+
+
+log for valid -V ./ieqOutput/kp14.ieq 
+
+input file ./ieqOutput/kp14.ieq o.k.
+dimension              :    7 
+number of equations    :    0 
+number of inequalities :    1 
+
+computing all valid integral points .
+
+number of valid integral points : 71
+
+integral points written to file ./ieqOutput/kp14.poi
+
+
+
+log for valid -V ./ieqOutput/kp15.ieq 
+
+input file ./ieqOutput/kp15.ieq o.k.
+dimension              :    6 
+number of equations    :    0 
+number of inequalities :    1 
+
+computing all valid integral points .
+
+number of valid integral points : 40
+
+integral points written to file ./ieqOutput/kp15.poi
+
+
+
+log for valid -V ./ieqOutput/kp16.ieq 
+
+input file ./ieqOutput/kp16.ieq o.k.
+dimension              :    7 
+number of equations    :    0 
+number of inequalities :    1 
+
+computing all valid integral points .
+
+number of valid integral points : 27
+
+integral points written to file ./ieqOutput/kp16.poi
+
+
+
+log for valid -V ./ieqOutput/kp17.ieq 
+
+input file ./ieqOutput/kp17.ieq o.k.
+dimension              :    8 
+number of equations    :    0 
+number of inequalities :    1 
+
+computing all valid integral points .
+
+number of valid integral points : 94
+
+integral points written to file ./ieqOutput/kp17.poi
+
+
+
+log for valid -V ./ieqOutput/kp1.ieq 
+
+input file ./ieqOutput/kp1.ieq o.k.
+dimension              :    5 
+number of equations    :    0 
+number of inequalities :    1 
+
+computing all valid integral points ./ieqOutput/kp1.poi moved into ./ieqOutput/kp1.poi%
+.
+
+number of valid integral points : 10
+
+integral points written to file ./ieqOutput/kp1.poi
+
+
+
+log for valid -V ./ieqOutput/kp2.ieq 
+
+input file ./ieqOutput/kp2.ieq o.k.
+dimension              :    4 
+number of equations    :    0 
+number of inequalities :    1 
+
+computing all valid integral points .
+
+number of valid integral points : 11
+
+integral points written to file ./ieqOutput/kp2.poi
+
+
+
+log for valid -V ./ieqOutput/kp3.ieq 
+
+input file ./ieqOutput/kp3.ieq o.k.
+dimension              :    4 
+number of equations    :    0 
+number of inequalities :    1 
+
+computing all valid integral points .
+
+number of valid integral points : 8
+
+integral points written to file ./ieqOutput/kp3.poi
+
+
+
+log for valid -V ./ieqOutput/kp4.ieq 
+
+input file ./ieqOutput/kp4.ieq o.k.
+dimension              :    4 
+number of equations    :    0 
+number of inequalities :    1 
+
+computing all valid integral points .
+
+number of valid integral points : 9
+
+integral points written to file ./ieqOutput/kp4.poi
+
+
+
+log for valid -V ./ieqOutput/kp5.ieq 
+
+input file ./ieqOutput/kp5.ieq o.k.
+dimension              :    5 
+number of equations    :    0 
+number of inequalities :    1 
+
+computing all valid integral points .
+
+number of valid integral points : 18
+
+integral points written to file ./ieqOutput/kp5.poi
+
+
+
+log for valid -V ./ieqOutput/kp6.ieq 
+
+input file ./ieqOutput/kp6.ieq o.k.
+dimension              :    4 
+number of equations    :    0 
+number of inequalities :    1 
+
+computing all valid integral points .
+
+number of valid integral points : 15
+
+integral points written to file ./ieqOutput/kp6.poi
+
+
+
+log for valid -V ./ieqOutput/kp7.ieq 
+
+input file ./ieqOutput/kp7.ieq o.k.
+dimension              :    5 
+number of equations    :    0 
+number of inequalities :    1 
+
+computing all valid integral points .
+
+number of valid integral points : 17
+
+integral points written to file ./ieqOutput/kp7.poi
+
+
+
+log for valid -V ./ieqOutput/kp8.ieq 
+
+input file ./ieqOutput/kp8.ieq o.k.
+dimension              :    4 
+number of equations    :    0 
+number of inequalities :    1 
+
+computing all valid integral points .
+
+number of valid integral points : 11
+
+integral points written to file ./ieqOutput/kp8.poi
+
+
+
+log for valid -V ./ieqOutput/kp9.ieq 
+
+input file ./ieqOutput/kp9.ieq o.k.
+dimension              :    5 
+number of equations    :    0 
+number of inequalities :    1 
+
+computing all valid integral points .
+
+number of valid integral points : 16
+
+integral points written to file ./ieqOutput/kp9.poi

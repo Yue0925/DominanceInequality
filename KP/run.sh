@@ -1,7 +1,13 @@
 #!/bin/bash
 
 
-for file in ./instances/*; do
+# for file in ./instances/*; do
+#     echo "$file ... "
+#     julia parser.jl "$file"
+# done
+
+
+for file in ./ieqOutput/*.ieq; do
     echo "$file ... "
-    julia parser.jl "$file"
+    vint "$file"
 done

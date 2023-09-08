@@ -62,4 +62,4 @@ function writeIeqFile(kp::Knapsack)
 end
 
 
-writeIeqFile(readInstance(ARGS[1]))
+# writeIeqFile(readInstance(ARGS[1]))
