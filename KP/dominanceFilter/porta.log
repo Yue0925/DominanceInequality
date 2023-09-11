@@ -1,0 +1,775 @@
+
+
+
+log for xporta -T kp1.poi 
+
+input file kp1.poi o.k.
+dimension              :    5 
+number of cone-points  :    0 
+number of conv-points  :    3 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+ variable 1 eliminated - finite equation found
+|     6 |          6 |        1 |    1 |   n |   0.28 |      42 |      0.00 |      0.00 |
+|     5 |          5 |        2 |    1 |   n |   0.29 |      42 |      0.00 |      0.00 |
+ variable 3 eliminated - finite equation found
+|     4 |          4 |        3 |    1 |   n |   0.38 |      42 |      0.00 |      0.00 |
+ variable 4 eliminated - finite equation found
+|     3 |          3 |        4 |    1 |   n |   0.53 |      42 |      0.00 |      0.00 |
+|     2 |          2 |        5 |    1 |   n |   0.50 |      42 |      0.00 |      0.00 |
+|     1 |          1 |        6 |    1 |   n |   0.56 |      42 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+
+sum of inequalities over all iterations :      0
+maximal number of inequalities          :      0
+
+transformation to integer values 
+sorting system 
+transformation to integer values 
+sorting system 
+
+number of equations    :    3 
+number of inequalities :    3 
+
+output written to file kp1.poi.ieq
+
+
+
+
+log for xporta -T kp10.poi kp11.poi kp12.poi kp13.poi kp14.poi kp15.poi kp16.poi kp17.poi kp1.poi 
+
+input file kp10.poi o.k.
+dimension              :    4 
+number of cone-points  :    0 
+number of conv-points  :    3 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     5 |          5 |        1 |    1 |   n |   0.29 |      41 |      0.00 |      0.00 |
+ variable 2 eliminated - finite equation found
+|     4 |          4 |        2 |    1 |   n |   0.38 |      42 |      0.00 |      0.00 |
+|     3 |          3 |        3 |    1 |   n |   0.40 |      42 |      0.00 |      0.00 |
+ variable 1 eliminated - finite equation found
+|     2 |          2 |        4 |    1 |   n |   0.50 |      42 |      0.00 |      0.00 |
+|     1 |          1 |        5 |    1 |   n |   0.56 |      42 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+
+sum of inequalities over all iterations :      0
+maximal number of inequalities          :      0
+
+transformation to integer values 
+sorting system 
+transformation to integer values 
+sorting system 
+
+number of equations    :    2 
+number of inequalities :    3 
+
+output written to file kp10.poi.ieq
+
+
+
+
+log for xporta -T kp2.poi 
+
+input file kp2.poi o.k.
+dimension              :    4 
+number of cone-points  :    0 
+number of conv-points  :    4 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     5 |          5 |        1 |    1 |   n |   0.38 |      42 |      0.00 |      0.00 |
+|     4 |          4 |        2 |    1 |   n |   0.43 |      42 |      0.00 |      0.00 |
+|     3 |          3 |        3 |    1 |   n |   0.40 |      42 |      0.00 |      0.00 |
+ variable 3 eliminated - finite equation found
+|     2 |          2 |        4 |    1 |   n |   0.50 |      42 |      0.00 |      0.00 |
+|     1 |          1 |        5 |    1 |   n |   0.56 |      42 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+
+sum of inequalities over all iterations :      0
+maximal number of inequalities          :      0
+
+transformation to integer values 
+sorting system 
+transformation to integer values 
+sorting system 
+
+number of equations    :    1 
+number of inequalities :    4 
+
+output written to file kp2.poi.ieq
+
+
+
+
+log for xporta -T kp3.poi 
+
+input file kp3.poi o.k.
+dimension              :    4 
+number of cone-points  :    0 
+number of conv-points  :    3 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+ variable 1 eliminated - finite equation found
+|     5 |          5 |        1 |    1 |   n |   0.36 |      42 |      0.00 |      0.00 |
+|     4 |          4 |        2 |    1 |   n |   0.38 |      42 |      0.00 |      0.00 |
+ variable 3 eliminated - finite equation found
+|     3 |          3 |        3 |    1 |   n |   0.53 |      42 |      0.00 |      0.00 |
+|     2 |          2 |        4 |    1 |   n |   0.50 |      42 |      0.00 |      0.00 |
+|     1 |          1 |        5 |    1 |   n |   0.56 |      42 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+
+sum of inequalities over all iterations :      0
+maximal number of inequalities          :      0
+
+transformation to integer values 
+sorting system 
+transformation to integer values 
+sorting system 
+
+number of equations    :    2 
+number of inequalities :    3 
+
+output written to file kp3.poi.ieq
+
+
+
+
+log for xporta -T kp4.poi 
+
+input file kp4.poi o.k.
+dimension              :    4 
+number of cone-points  :    0 
+number of conv-points  :    4 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     5 |          5 |        1 |    1 |   n |   0.32 |      42 |      0.00 |      0.00 |
+|     4 |          4 |        2 |    1 |   n |   0.34 |      42 |      0.00 |      0.00 |
+ variable 2 eliminated - finite equation found
+|     3 |          3 |        3 |    1 |   n |   0.42 |      42 |      0.00 |      0.00 |
+|     2 |          2 |        4 |    1 |   n |   0.40 |      42 |      0.00 |      0.00 |
+|     1 |          1 |        5 |    1 |   n |   0.44 |      42 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+
+sum of inequalities over all iterations :      0
+maximal number of inequalities          :      0
+
+transformation to integer values 
+sorting system 
+transformation to integer values 
+sorting system 
+
+number of equations    :    1 
+number of inequalities :    4 
+
+output written to file kp4.poi.ieq
+
+
+
+
+log for xporta -T kp5.poi 
+
+input file kp5.poi o.k.
+dimension              :    5 
+number of cone-points  :    0 
+number of conv-points  :    7 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     6 |          6 |        1 |    1 |   n |   0.29 |      43 |      0.00 |      0.00 |
+|     5 |          5 |        2 |    1 |   n |   0.27 |      43 |      0.00 |      0.00 |
+|     4 |          4 |        3 |    1 |   n |   0.30 |      43 |      0.00 |      0.00 |
+|     3 |          3 |        4 |    1 |   n |   0.33 |      43 |      0.00 |      0.00 |
+ variable 1 eliminated - finite equation found
+|     2 |          2 |        5 |    1 |   n |   0.40 |      43 |      0.00 |      0.00 |
+|     1 |          1 |        6 |    1 |   n |   0.43 |      43 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     2 |          6 |        6 |    1 |   n |   0.22 |     842 |      0.00 |      0.00 |
+|     1 |          7 |        6 |    1 |   n |   0.25 |     842 |      0.00 |      0.00 |
+
+sum of inequalities over all iterations :     12
+maximal number of inequalities          :      6
+
+transformation to integer values 
+sorting system 
+transformation to integer values 
+sorting system 
+
+number of equations    :    1 
+number of inequalities :    6 
+
+output written to file kp5.poi.ieq
+
+
+
+
+log for xporta -T kp6.poi 
+
+input file kp6.poi o.k.
+dimension              :    4 
+number of cone-points  :    0 
+number of conv-points  :    4 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     5 |          5 |        1 |    1 |   n |   0.30 |      42 |      0.00 |      0.00 |
+|     4 |          4 |        2 |    1 |   n |   0.31 |      42 |      0.00 |      0.00 |
+ variable 3 eliminated - finite equation found
+|     3 |          3 |        3 |    1 |   n |   0.42 |      42 |      0.00 |      0.00 |
+|     2 |          2 |        4 |    1 |   n |   0.40 |      42 |      0.00 |      0.00 |
+|     1 |          1 |        5 |    1 |   n |   0.44 |      42 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+
+sum of inequalities over all iterations :      0
+maximal number of inequalities          :      0
+
+transformation to integer values 
+sorting system 
+transformation to integer values 
+sorting system 
+
+number of equations    :    1 
+number of inequalities :    4 
+
+output written to file kp6.poi.ieq
+
+
+
+
+log for xporta -T kp7.poi 
+
+input file kp7.poi o.k.
+dimension              :    5 
+number of cone-points  :    0 
+number of conv-points  :    5 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     6 |          6 |        1 |    1 |   n |   0.27 |      43 |      0.00 |      0.00 |
+|     5 |          5 |        2 |    1 |   n |   0.28 |      43 |      0.00 |      0.00 |
+|     4 |          4 |        3 |    1 |   n |   0.29 |      43 |      0.00 |      0.00 |
+|     3 |          3 |        4 |    1 |   n |   0.29 |      43 |      0.00 |      0.00 |
+ variable 1 eliminated - finite equation found
+|     2 |          2 |        5 |    1 |   n |   0.33 |      43 |      0.00 |      0.00 |
+|     1 |          1 |        6 |    1 |   n |   0.36 |      43 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+
+sum of inequalities over all iterations :      0
+maximal number of inequalities          :      0
+
+transformation to integer values 
+sorting system 
+transformation to integer values 
+sorting system 
+
+number of equations    :    1 
+number of inequalities :    5 
+
+output written to file kp7.poi.ieq
+
+
+
+
+log for xporta -T kp8.poi 
+
+input file kp8.poi o.k.
+dimension              :    4 
+number of cone-points  :    0 
+number of conv-points  :    4 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     5 |          5 |        1 |    1 |   n |   0.38 |      42 |      0.00 |      0.00 |
+|     4 |          4 |        2 |    1 |   n |   0.43 |      42 |      0.00 |      0.00 |
+|     3 |          3 |        3 |    1 |   n |   0.40 |      42 |      0.00 |      0.00 |
+ variable 3 eliminated - finite equation found
+|     2 |          2 |        4 |    1 |   n |   0.50 |      42 |      0.00 |      0.00 |
+|     1 |          1 |        5 |    1 |   n |   0.56 |      42 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+
+sum of inequalities over all iterations :      0
+maximal number of inequalities          :      0
+
+transformation to integer values 
+sorting system 
+transformation to integer values 
+sorting system 
+
+number of equations    :    1 
+number of inequalities :    4 
+
+output written to file kp8.poi.ieq
+
+
+
+
+log for xporta -T kp9.poi 
+
+input file kp9.poi o.k.
+dimension              :    5 
+number of cone-points  :    0 
+number of conv-points  :    4 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     6 |          6 |        1 |    1 |   n |   0.24 |      42 |      0.00 |      0.00 |
+|     5 |          5 |        2 |    1 |   n |   0.25 |      42 |      0.00 |      0.00 |
+|     4 |          4 |        3 |    1 |   n |   0.26 |      42 |      0.00 |      0.00 |
+ variable 4 eliminated - finite equation found
+|     3 |          3 |        4 |    1 |   n |   0.33 |      42 |      0.00 |      0.00 |
+ variable 1 eliminated - finite equation found
+|     2 |          2 |        5 |    1 |   n |   0.40 |      43 |      0.00 |      0.00 |
+|     1 |          1 |        6 |    1 |   n |   0.44 |      43 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+
+sum of inequalities over all iterations :      0
+maximal number of inequalities          :      0
+
+transformation to integer values 
+sorting system 
+transformation to integer values 
+sorting system 
+
+number of equations    :    2 
+number of inequalities :    4 
+
+output written to file kp9.poi.ieq
+
+
+
+
+log for xporta -T kp10.poi 
+
+input file kp10.poi o.k.
+dimension              :    4 
+number of cone-points  :    0 
+number of conv-points  :    3 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     5 |          5 |        1 |    1 |   n |   0.29 |      41 |      0.00 |      0.00 |
+ variable 2 eliminated - finite equation found
+|     4 |          4 |        2 |    1 |   n |   0.38 |      42 |      0.00 |      0.00 |
+|     3 |          3 |        3 |    1 |   n |   0.40 |      42 |      0.00 |      0.00 |
+ variable 1 eliminated - finite equation found
+|     2 |          2 |        4 |    1 |   n |   0.50 |      42 |      0.00 |      0.00 |
+|     1 |          1 |        5 |    1 |   n |   0.56 |      42 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+
+sum of inequalities over all iterations :      0
+maximal number of inequalities          :      0
+
+transformation to integer values 
+sorting system 
+transformation to integer values 
+sorting system 
+
+number of equations    :    2 
+number of inequalities :    3 
+
+kp10.poi.ieq moved into kp10.poi.ieq%
+output written to file kp10.poi.ieq
+
+
+
+
+log for xporta -T kp11.poi 
+
+input file kp11.poi o.k.
+dimension              :    6 
+number of cone-points  :    0 
+number of conv-points  :    5 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     7 |          7 |        1 |    1 |   n |   0.22 |      43 |      0.00 |      0.00 |
+|     6 |          6 |        2 |    1 |   n |   0.26 |      43 |      0.00 |      0.00 |
+|     5 |          5 |        3 |    1 |   n |   0.24 |      43 |      0.00 |      0.00 |
+ variable 4 eliminated - finite equation found
+|     4 |          4 |        4 |    1 |   n |   0.29 |      43 |      0.00 |      0.00 |
+ variable 5 eliminated - finite equation found
+|     3 |          3 |        5 |    1 |   n |   0.37 |      44 |      0.00 |      0.00 |
+ variable 1 eliminated - finite equation found
+|     2 |          2 |        6 |    1 |   n |   0.46 |      44 |      0.00 |      0.00 |
+|     1 |          1 |        7 |    1 |   n |   0.50 |      44 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     1 |          5 |        5 |    1 |   n |   0.28 |     842 |      0.00 |      0.00 |
+
+sum of inequalities over all iterations :      5
+maximal number of inequalities          :      5
+
+transformation to integer values 
+sorting system 
+transformation to integer values 
+sorting system 
+
+number of equations    :    3 
+number of inequalities :    5 
+
+output written to file kp11.poi.ieq
+
+
+
+
+log for xporta -T kp12.poi 
+
+input file kp12.poi o.k.
+dimension              :    6 
+number of cone-points  :    0 
+number of conv-points  :    5 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     7 |          7 |        1 |    1 |   n |   0.25 |      43 |      0.00 |      0.00 |
+|     6 |          6 |        2 |    1 |   n |   0.24 |      43 |      0.00 |      0.00 |
+|     5 |          5 |        3 |    1 |   n |   0.25 |      43 |      0.00 |      0.00 |
+|     4 |          4 |        4 |    1 |   n |   0.27 |      43 |      0.00 |      0.00 |
+ variable 3 eliminated - finite equation found
+|     3 |          3 |        5 |    1 |   n |   0.31 |      43 |      0.00 |      0.00 |
+ variable 6 eliminated - finite equation found
+|     2 |          2 |        6 |    1 |   n |   0.40 |      44 |      0.00 |      0.00 |
+|     1 |          1 |        7 |    1 |   n |   0.44 |      44 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+
+sum of inequalities over all iterations :      0
+maximal number of inequalities          :      0
+
+transformation to integer values 
+sorting system 
+transformation to integer values 
+sorting system 
+
+number of equations    :    2 
+number of inequalities :    5 
+
+output written to file kp12.poi.ieq
+
+
+
+
+log for xporta -T kp13.poi 
+
+input file kp13.poi o.k.
+dimension              :    7 
+number of cone-points  :    0 
+number of conv-points  :    7 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     8 |          8 |        1 |    1 |   n |   0.26 |      45 |      0.00 |      0.00 |
+|     7 |          7 |        2 |    1 |   n |   0.33 |      45 |      0.00 |      0.00 |
+|     6 |          6 |        3 |    1 |   n |   0.38 |      45 |      0.00 |      0.00 |
+|     5 |          5 |        4 |    1 |   n |   0.33 |      45 |      0.00 |      0.00 |
+|     4 |          4 |        5 |    1 |   n |   0.25 |      45 |      0.00 |      0.00 |
+|     3 |          3 |        6 |    1 |   n |   0.25 |      45 |      0.00 |      0.00 |
+ variable 5 eliminated - finite equation found
+|     2 |          2 |        7 |    1 |   n |   0.29 |      45 |      0.00 |      0.00 |
+|     1 |          1 |        8 |    1 |   n |   0.31 |      45 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+
+sum of inequalities over all iterations :      0
+maximal number of inequalities          :      0
+
+transformation to integer values 
+sorting system 
+transformation to integer values 
+sorting system 
+
+number of equations    :    1 
+number of inequalities :    7 
+
+output written to file kp13.poi.ieq
+
+
+
+
+log for xporta -T kp14.poi 
+
+input file kp14.poi o.k.
+dimension              :    7 
+number of cone-points  :    0 
+number of conv-points  :    8 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     8 |          8 |        1 |    1 |   n |   0.29 |      45 |      0.00 |      0.00 |
+|     7 |          7 |        2 |    1 |   n |   0.32 |      45 |      0.00 |      0.00 |
+|     6 |          6 |        3 |    1 |   n |   0.32 |      45 |      0.00 |      0.00 |
+|     5 |          5 |        4 |    2 |   n |   0.32 |      45 |      0.00 |      0.00 |
+|     4 |          4 |        5 |    2 |   n |   0.33 |      45 |      0.00 |      0.00 |
+|     3 |          3 |        6 |    2 |   n |   0.44 |      45 |      0.00 |      0.00 |
+|     2 |          2 |        7 |    2 |   n |   0.46 |      45 |      0.00 |      0.00 |
+|     1 |          1 |        8 |    2 |   n |   0.50 |      45 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+
+sum of inequalities over all iterations :      0
+maximal number of inequalities          :      0
+
+transformation to integer values 
+sorting system 
+
+number of equations    :    0 
+number of inequalities :    8 
+
+output written to file kp14.poi.ieq
+
+
+
+
+log for xporta -T kp15.poi 
+
+input file kp15.poi o.k.
+dimension              :    6 
+number of cone-points  :    0 
+number of conv-points  :    6 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     7 |          7 |        1 |    1 |   n |   0.24 |      44 |      0.00 |      0.00 |
+|     6 |          6 |        2 |    1 |   n |   0.22 |      44 |      0.00 |      0.00 |
+|     5 |          5 |        3 |    1 |   n |   0.21 |      44 |      0.00 |      0.00 |
+|     4 |          4 |        4 |    1 |   n |   0.22 |      44 |      0.00 |      0.00 |
+ variable 5 eliminated - finite equation found
+|     3 |          3 |        5 |    1 |   n |   0.27 |      44 |      0.00 |      0.00 |
+|     2 |          2 |        6 |    1 |   n |   0.29 |      44 |      0.00 |      0.00 |
+|     1 |          1 |        7 |    1 |   n |   0.31 |      44 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+
+sum of inequalities over all iterations :      0
+maximal number of inequalities          :      0
+
+transformation to integer values 
+sorting system 
+transformation to integer values 
+sorting system 
+
+number of equations    :    1 
+number of inequalities :    6 
+
+output written to file kp15.poi.ieq
+
+
+
+
+log for xporta -T kp16.poi 
+
+input file kp16.poi o.k.
+dimension              :    7 
+number of cone-points  :    0 
+number of conv-points  :    6 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     8 |          8 |        1 |    1 |   n |   0.22 |      45 |      0.00 |      0.00 |
+|     7 |          7 |        2 |    1 |   n |   0.25 |      45 |      0.00 |      0.00 |
+|     6 |          6 |        3 |    1 |   n |   0.25 |      45 |      0.00 |      0.00 |
+|     5 |          5 |        4 |    1 |   n |   0.24 |      45 |      0.00 |      0.00 |
+ variable 5 eliminated - finite equation found
+|     4 |          4 |        5 |    1 |   n |   0.29 |      45 |      0.00 |      0.00 |
+|     3 |          3 |        6 |    1 |   n |   0.38 |      45 |      0.00 |      0.00 |
+ variable 1 eliminated - finite equation found
+|     2 |          2 |        7 |    1 |   n |   0.38 |      45 |      0.00 |      0.00 |
+|     1 |          1 |        8 |    1 |   n |   0.42 |      45 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+
+sum of inequalities over all iterations :      0
+maximal number of inequalities          :      0
+
+transformation to integer values 
+sorting system 
+transformation to integer values 
+sorting system 
+
+number of equations    :    2 
+number of inequalities :    6 
+
+output written to file kp16.poi.ieq
+
+
+
+
+log for xporta -T kp17.poi 
+
+input file kp17.poi o.k.
+dimension              :    8 
+number of cone-points  :    0 
+number of conv-points  :    7 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     9 |          9 |        1 |    1 |   n |   0.21 |      46 |      0.00 |      0.00 |
+|     8 |          8 |        2 |    1 |   n |   0.20 |      46 |      0.00 |      0.00 |
+|     7 |          7 |        3 |    1 |   n |   0.23 |      46 |      0.00 |      0.00 |
+|     6 |          6 |        4 |    1 |   n |   0.24 |      46 |      0.00 |      0.00 |
+|     5 |          5 |        5 |    1 |   n |   0.25 |      46 |      0.00 |      0.00 |
+ variable 5 eliminated - finite equation found
+|     4 |          4 |        6 |    1 |   n |   0.29 |      46 |      0.00 |      0.00 |
+ variable 6 eliminated - finite equation found
+|     3 |          3 |        7 |    1 |   n |   0.33 |      46 |      0.00 |      0.00 |
+ variable 7 eliminated - finite equation found
+|     2 |          2 |        8 |    1 |   n |   0.40 |      46 |      0.00 |      0.00 |
+|     1 |          1 |        9 |    1 |   n |   0.43 |      46 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     1 |          7 |        7 |    1 |   n |   0.18 |     843 |      0.00 |      0.00 |
+
+sum of inequalities over all iterations :      7
+maximal number of inequalities          :      7
+
+transformation to integer values 
+sorting system 
+transformation to integer values 
+sorting system 
+
+number of equations    :    3 
+number of inequalities :    7 
+
+output written to file kp17.poi.ieq
+
