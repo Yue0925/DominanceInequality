@@ -7,9 +7,14 @@
 # done
 
 
-# for file in ./ieqOutput/*.ieq; do
+# for file in ./PolyKP/*.ieq; do
 #     echo "$file ... "
 #     vint "$file"
+# done
+
+# for file in ./PolyKP/*.poi; do
+#     echo "$file ... "
+#     dim "$file"
 # done
 
 
@@ -19,7 +24,7 @@
 # done
 
 
-for file in ./dominanceFilter/*.poi; do
-    echo "$file ... "
-    traf "$file"
-done
+# for file in ./allSwapDominance/*.poi; do
+#     echo "$file ... "
+#     traf "$file"
+# done

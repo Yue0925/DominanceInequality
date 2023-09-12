@@ -22,7 +22,7 @@ end
 
 
 function writeIeqFile(kp::Knapsack)
-    fname = "./ieqOutput/" * kp.name * ".ieq"
+    fname = "./PolyKP/" * kp.name * ".ieq"
 
     fout = open(fname, "w")
 

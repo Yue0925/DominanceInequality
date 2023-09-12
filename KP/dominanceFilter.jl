@@ -3,9 +3,27 @@ include("parser.jl")
 function dominanceFilterage(fname::String)
     kp = readInstance(fname)
 
+    # -------------------------------------------------
+    # write all pair swap inequality 
+    # -------------------------------------------------
+    inequalityFile = "./PolyKP/" * kp.name * ".txt"
+    f = open(inequalityFile, "w") ; println(f, "# all swap dominance inequalities \n")
+
+    for u in 1:kp.N 
+        for v in 1:kp.N
+            if u==v continue end 
+            println(f, "-$(kp.P[u])x$u + $(kp.P[v])(1 - x$v) <= $(kp.P[v])(1 - x$u + x$v +π$u$v)")
+        end
+    end
+
+    close(f)
+
+    # -------------------------------------------------
     # etape 1 : read all integer point 
+    # -------------------------------------------------
     feasiblePts = Vector{Vector{Int64}}()
-    filename = "./ieqOutput/" * kp.name * ".poi"
+    filename = "./PolyKP/" * kp.name * ".poi"
+
 
     f = open(filename)
     lines = readlines(f)
@@ -20,8 +38,9 @@ function dominanceFilterage(fname::String)
         push!(feasiblePts, l)
     end
 
-
+    # -------------------------------------------------
     # etape 2 : for each point, find neighbouring point + compare + filter dominated one 
+    # -------------------------------------------------
     dominated = Set{Int64}() ; idx = 0
     for pt in feasiblePts
         idx += 1
@@ -48,9 +67,10 @@ function dominanceFilterage(fname::String)
     println("where dominated ones => $(length(dominated)) ")
 
 
+    # -------------------------------------------------
     # etape 3 : write all filtered point into .poi file (ready compute convex hull with traf)
-
-    newfile = "./dominanceFilter/" * kp.name * ".poi"
+    # -------------------------------------------------
+    newfile = "./allSwapDominance/" * kp.name * ".poi"
     f = open(newfile, "w")
     println(f, "DIM = ", kp.N) ; println(f)
     println(f, "CONV_SECTION")
@@ -74,6 +94,8 @@ function dominanceFilterage(fname::String)
     println(f)
     println(f, "END")
     close(f)
+
+
 
 end
 
