@@ -1,0 +1,1087 @@
+
+
+
+log for xporta -T kp1.poi 
+
+input file kp1.poi o.k.
+dimension              :    5 
+number of cone-points  :    0 
+number of conv-points  :   10 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     6 |          6 |        1 |    1 |   n |   0.29 |      44 |      0.00 |      0.00 |
+|     5 |          5 |        2 |    1 |   n |   0.29 |      44 |      0.00 |      0.00 |
+|     4 |          4 |        3 |    1 |   n |   0.29 |      44 |      0.00 |      0.00 |
+|     3 |          3 |        4 |    1 |   n |   0.33 |      44 |      0.00 |      0.00 |
+|     2 |          2 |        5 |    1 |   n |   0.36 |      44 |      0.00 |      0.00 |
+|     1 |          1 |        6 |    1 |   n |   0.38 |      44 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     4 |          7 |        7 |    1 |   n |   0.18 |     843 |      0.00 |      0.00 |
+|     3 |          8 |        7 |    1 |   n |   0.20 |     843 |      0.00 |      0.00 |
+|     2 |          8 |        8 |    1 |   n |   0.25 |     843 |      0.00 |      0.00 |
+|     1 |         10 |        9 |    2 |   n |   0.32 |     843 |      0.00 |      0.00 |
+
+sum of inequalities over all iterations :     31
+maximal number of inequalities          :      9
+
+transformation to integer values 
+sorting system 
+
+number of equations    :    0 
+number of inequalities :    9 
+
+output written to file kp1.poi.ieq
+
+
+
+
+log for xporta -T kp2.poi 
+
+input file kp2.poi o.k.
+dimension              :    4 
+number of cone-points  :    0 
+number of conv-points  :   11 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     5 |          5 |        1 |    1 |   n |   0.37 |      43 |      0.00 |      0.00 |
+|     4 |          4 |        2 |    1 |   n |   0.39 |      43 |      0.00 |      0.00 |
+|     3 |          3 |        3 |    1 |   n |   0.43 |      43 |      0.00 |      0.00 |
+|     2 |          2 |        4 |    2 |   n |   0.48 |      43 |      0.00 |      0.00 |
+|     1 |          1 |        5 |    2 |   n |   0.51 |      43 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     6 |          6 |        6 |    1 |   n |   0.22 |     842 |      0.00 |      0.00 |
+|     5 |          7 |        6 |    1 |   n |   0.25 |     842 |      0.00 |      0.00 |
+|     4 |          7 |        7 |    1 |   n |   0.31 |     842 |      0.00 |      0.00 |
+|     3 |          9 |        8 |    2 |   n |   0.40 |     842 |      0.00 |      0.00 |
+|     2 |         10 |        7 |    1 |   n |   0.33 |     842 |      0.00 |      0.00 |
+|     1 |          9 |        8 |    2 |   n |   0.42 |     842 |      0.00 |      0.00 |
+
+sum of inequalities over all iterations :     42
+maximal number of inequalities          :      8
+
+transformation to integer values 
+sorting system 
+
+number of equations    :    0 
+number of inequalities :    8 
+
+output written to file kp2.poi.ieq
+
+
+
+
+log for xporta -T kp3.poi 
+
+input file kp3.poi o.k.
+dimension              :    4 
+number of cone-points  :    0 
+number of conv-points  :    8 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     5 |          5 |        1 |    1 |   n |   0.35 |      43 |      0.00 |      0.00 |
+|     4 |          4 |        2 |    1 |   n |   0.35 |      43 |      0.00 |      0.00 |
+|     3 |          3 |        3 |    1 |   n |   0.38 |      43 |      0.00 |      0.00 |
+|     2 |          2 |        4 |    1 |   n |   0.42 |      43 |      0.00 |      0.00 |
+|     1 |          1 |        5 |    1 |   n |   0.45 |      43 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     3 |          6 |        6 |    1 |   n |   0.22 |     842 |      0.00 |      0.00 |
+|     2 |          7 |        6 |    1 |   n |   0.25 |     842 |      0.00 |      0.00 |
+|     1 |          7 |        6 |    1 |   n |   0.28 |     842 |      0.00 |      0.00 |
+
+sum of inequalities over all iterations :     18
+maximal number of inequalities          :      6
+
+transformation to integer values 
+sorting system 
+
+number of equations    :    0 
+number of inequalities :    6 
+
+output written to file kp3.poi.ieq
+
+
+
+
+log for xporta -T kp4.poi 
+
+input file kp4.poi o.k.
+dimension              :    4 
+number of cone-points  :    0 
+number of conv-points  :    9 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     5 |          5 |        1 |    1 |   n |   0.34 |      43 |      0.00 |      0.00 |
+|     4 |          4 |        2 |    1 |   n |   0.35 |      43 |      0.00 |      0.00 |
+|     3 |          3 |        3 |    1 |   n |   0.40 |      43 |      0.00 |      0.00 |
+|     2 |          2 |        4 |    1 |   n |   0.44 |      43 |      0.00 |      0.00 |
+|     1 |          1 |        5 |    1 |   n |   0.47 |      43 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     4 |          6 |        6 |    1 |   n |   0.22 |     842 |      0.00 |      0.00 |
+|     3 |          8 |        8 |    1 |   n |   0.33 |     842 |      0.00 |      0.00 |
+|     2 |         10 |        7 |    1 |   n |   0.31 |     842 |      0.00 |      0.00 |
+|     1 |          9 |        8 |    2 |   n |   0.40 |     842 |      0.00 |      0.00 |
+
+sum of inequalities over all iterations :     29
+maximal number of inequalities          :      8
+
+transformation to integer values 
+sorting system 
+
+number of equations    :    0 
+number of inequalities :    8 
+
+output written to file kp4.poi.ieq
+
+
+
+
+log for xporta -T kp5.poi 
+
+input file kp5.poi o.k.
+dimension              :    5 
+number of cone-points  :    0 
+number of conv-points  :   18 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     6 |          6 |        1 |    1 |   n |   0.36 |      46 |      0.00 |      0.00 |
+|     5 |          5 |        2 |    1 |   n |   0.36 |      46 |      0.00 |      0.00 |
+|     4 |          4 |        3 |    1 |   n |   0.37 |      46 |      0.00 |      0.00 |
+|     3 |          3 |        4 |    2 |   n |   0.42 |      46 |      0.00 |      0.00 |
+|     2 |          2 |        5 |    2 |   n |   0.46 |      46 |      0.00 |      0.00 |
+|     1 |          1 |        6 |    2 |   n |   0.47 |      46 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|    12 |          7 |        7 |    1 |   n |   0.18 |     844 |      0.00 |      0.00 |
+|    11 |          8 |        7 |    1 |   n |   0.20 |     844 |      0.00 |      0.00 |
+|    10 |          9 |        9 |    2 |   n |   0.29 |     844 |      0.00 |      0.00 |
+|     9 |         11 |        8 |    1 |   n |   0.25 |     844 |      0.00 |      0.00 |
+|     8 |          9 |        8 |    1 |   n |   0.27 |     844 |      0.00 |      0.00 |
+|     7 |         10 |        9 |    2 |   n |   0.33 |     844 |      0.00 |      0.00 |
+|     6 |         10 |       10 |    2 |   n |   0.37 |     844 |      0.00 |      0.00 |
+|     5 |         14 |       12 |    2 |   n |   0.48 |     844 |      0.00 |      0.00 |
+|     4 |         16 |       10 |    2 |   n |   0.40 |     844 |      0.00 |      0.00 |
+|     3 |         13 |       11 |    2 |   n |   0.45 |     844 |      0.00 |      0.00 |
+|     2 |         14 |       10 |    2 |   n |   0.41 |     844 |      0.00 |      0.00 |
+|     1 |         13 |       11 |    2 |   n |   0.45 |     844 |      0.00 |      0.00 |
+
+sum of inequalities over all iterations :    112
+maximal number of inequalities          :     12
+
+transformation to integer values 
+sorting system 
+
+number of equations    :    0 
+number of inequalities :   11 
+
+output written to file kp5.poi.ieq
+
+
+
+
+log for xporta -T kp6.poi 
+
+input file kp6.poi o.k.
+dimension              :    4 
+number of cone-points  :    0 
+number of conv-points  :   15 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     5 |          5 |        1 |    1 |   n |   0.43 |      44 |      0.00 |      0.00 |
+|     4 |          4 |        2 |    1 |   n |   0.44 |      44 |      0.00 |      0.00 |
+|     3 |          3 |        3 |    2 |   n |   0.49 |      44 |      0.00 |      0.00 |
+|     2 |          2 |        4 |    2 |   n |   0.55 |      44 |      0.00 |      0.00 |
+|     1 |          1 |        5 |    2 |   n |   0.57 |      44 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|    10 |          6 |        6 |    1 |   n |   0.22 |     843 |      0.00 |      0.00 |
+|     9 |          7 |        6 |    1 |   n |   0.25 |     843 |      0.00 |      0.00 |
+|     8 |          8 |        8 |    2 |   n |   0.35 |     843 |      0.00 |      0.00 |
+|     7 |         10 |        7 |    1 |   n |   0.31 |     843 |      0.00 |      0.00 |
+|     6 |          8 |        7 |    1 |   n |   0.33 |     843 |      0.00 |      0.00 |
+|     5 |          9 |        8 |    2 |   n |   0.42 |     843 |      0.00 |      0.00 |
+|     4 |         10 |        7 |    1 |   n |   0.36 |     843 |      0.00 |      0.00 |
+|     3 |         10 |       10 |    2 |   n |   0.50 |     843 |      0.00 |      0.00 |
+|     2 |         13 |        9 |    2 |   n |   0.46 |     843 |      0.00 |      0.00 |
+|     1 |         12 |        9 |    2 |   n |   0.46 |     843 |      0.00 |      0.00 |
+
+sum of inequalities over all iterations :     77
+maximal number of inequalities          :     10
+
+transformation to integer values 
+sorting system 
+
+number of equations    :    0 
+number of inequalities :    9 
+
+output written to file kp6.poi.ieq
+
+
+
+
+log for xporta -T kp7.poi 
+
+input file kp7.poi o.k.
+dimension              :    5 
+number of cone-points  :    0 
+number of conv-points  :   17 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     6 |          6 |        1 |    1 |   n |   0.36 |      46 |      0.00 |      0.00 |
+|     5 |          5 |        2 |    1 |   n |   0.36 |      46 |      0.00 |      0.00 |
+|     4 |          4 |        3 |    2 |   n |   0.39 |      46 |      0.00 |      0.00 |
+|     3 |          3 |        4 |    2 |   n |   0.41 |      46 |      0.00 |      0.00 |
+|     2 |          2 |        5 |    2 |   n |   0.45 |      46 |      0.00 |      0.00 |
+|     1 |          1 |        6 |    2 |   n |   0.47 |      46 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|    11 |          7 |        7 |    1 |   n |   0.18 |     844 |      0.00 |      0.00 |
+|    10 |          8 |        7 |    1 |   n |   0.20 |     844 |      0.00 |      0.00 |
+|     9 |          8 |        8 |    1 |   n |   0.25 |     844 |      0.00 |      0.00 |
+|     8 |         10 |        9 |    2 |   n |   0.32 |     844 |      0.00 |      0.00 |
+|     7 |         11 |        8 |    1 |   n |   0.27 |     844 |      0.00 |      0.00 |
+|     6 |          9 |        8 |    1 |   n |   0.29 |     844 |      0.00 |      0.00 |
+|     5 |         10 |       10 |    2 |   n |   0.37 |     844 |      0.00 |      0.00 |
+|     4 |         12 |        9 |    1 |   n |   0.33 |     844 |      0.00 |      0.00 |
+|     3 |         12 |       11 |    2 |   n |   0.44 |     844 |      0.00 |      0.00 |
+|     2 |         14 |       10 |    2 |   n |   0.40 |     844 |      0.00 |      0.00 |
+|     1 |         13 |       10 |    2 |   n |   0.40 |     844 |      0.00 |      0.00 |
+
+sum of inequalities over all iterations :     97
+maximal number of inequalities          :     11
+
+transformation to integer values 
+sorting system 
+
+number of equations    :    0 
+number of inequalities :   10 
+
+output written to file kp7.poi.ieq
+
+
+
+
+log for xporta -T kp8.poi 
+
+input file kp8.poi o.k.
+dimension              :    4 
+number of cone-points  :    0 
+number of conv-points  :   11 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     5 |          5 |        1 |    1 |   n |   0.37 |      43 |      0.00 |      0.00 |
+|     4 |          4 |        2 |    1 |   n |   0.39 |      43 |      0.00 |      0.00 |
+|     3 |          3 |        3 |    1 |   n |   0.43 |      43 |      0.00 |      0.00 |
+|     2 |          2 |        4 |    2 |   n |   0.48 |      43 |      0.00 |      0.00 |
+|     1 |          1 |        5 |    2 |   n |   0.51 |      43 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     6 |          6 |        6 |    1 |   n |   0.22 |     842 |      0.00 |      0.00 |
+|     5 |          7 |        6 |    1 |   n |   0.25 |     842 |      0.00 |      0.00 |
+|     4 |          7 |        7 |    1 |   n |   0.31 |     842 |      0.00 |      0.00 |
+|     3 |          9 |        8 |    2 |   n |   0.40 |     842 |      0.00 |      0.00 |
+|     2 |         10 |        7 |    1 |   n |   0.33 |     842 |      0.00 |      0.00 |
+|     1 |          9 |        8 |    2 |   n |   0.42 |     842 |      0.00 |      0.00 |
+
+sum of inequalities over all iterations :     42
+maximal number of inequalities          :      8
+
+transformation to integer values 
+sorting system 
+
+number of equations    :    0 
+number of inequalities :    8 
+
+output written to file kp8.poi.ieq
+
+
+
+
+log for xporta -T kp9.poi 
+
+input file kp9.poi o.k.
+dimension              :    5 
+number of cone-points  :    0 
+number of conv-points  :   16 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     6 |          6 |        1 |    1 |   n |   0.35 |      46 |      0.00 |      0.00 |
+|     5 |          5 |        2 |    1 |   n |   0.36 |      46 |      0.00 |      0.00 |
+|     4 |          4 |        3 |    1 |   n |   0.37 |      46 |      0.00 |      0.00 |
+|     3 |          3 |        4 |    2 |   n |   0.41 |      46 |      0.00 |      0.00 |
+|     2 |          2 |        5 |    2 |   n |   0.45 |      46 |      0.00 |      0.00 |
+|     1 |          1 |        6 |    2 |   n |   0.47 |      46 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|    10 |          7 |        7 |    1 |   n |   0.18 |     844 |      0.00 |      0.00 |
+|     9 |          8 |        7 |    1 |   n |   0.20 |     844 |      0.00 |      0.00 |
+|     8 |          9 |        9 |    2 |   n |   0.29 |     844 |      0.00 |      0.00 |
+|     7 |         11 |        8 |    1 |   n |   0.25 |     844 |      0.00 |      0.00 |
+|     6 |          9 |        8 |    1 |   n |   0.27 |     844 |      0.00 |      0.00 |
+|     5 |         10 |        9 |    2 |   n |   0.33 |     844 |      0.00 |      0.00 |
+|     4 |         11 |        8 |    1 |   n |   0.29 |     844 |      0.00 |      0.00 |
+|     3 |         11 |       11 |    2 |   n |   0.40 |     844 |      0.00 |      0.00 |
+|     2 |         14 |       10 |    2 |   n |   0.37 |     844 |      0.00 |      0.00 |
+|     1 |         13 |       10 |    2 |   n |   0.37 |     844 |      0.00 |      0.00 |
+
+sum of inequalities over all iterations :     87
+maximal number of inequalities          :     11
+
+transformation to integer values 
+sorting system 
+
+number of equations    :    0 
+number of inequalities :   10 
+
+output written to file kp9.poi.ieq
+
+
+
+
+log for xporta -T kp10.poi 
+
+input file kp10.poi o.k.
+dimension              :    4 
+number of cone-points  :    0 
+number of conv-points  :    6 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     5 |          5 |        1 |    1 |   n |   0.30 |      42 |      0.00 |      0.00 |
+|     4 |          4 |        2 |    1 |   n |   0.31 |      42 |      0.00 |      0.00 |
+|     3 |          3 |        3 |    1 |   n |   0.32 |      42 |      0.00 |      0.00 |
+|     2 |          2 |        4 |    1 |   n |   0.37 |      42 |      0.00 |      0.00 |
+|     1 |          1 |        5 |    1 |   n |   0.40 |      42 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     1 |          6 |        6 |    1 |   n |   0.22 |     841 |      0.00 |      0.00 |
+
+sum of inequalities over all iterations :      6
+maximal number of inequalities          :      6
+
+transformation to integer values 
+sorting system 
+
+number of equations    :    0 
+number of inequalities :    6 
+
+output written to file kp10.poi.ieq
+
+
+
+
+log for xporta -T kp11.poi 
+
+input file kp11.poi o.k.
+dimension              :    6 
+number of cone-points  :    0 
+number of conv-points  :   20 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     7 |          7 |        1 |    1 |   n |   0.31 |      48 |      0.00 |      0.00 |
+|     6 |          6 |        2 |    1 |   n |   0.31 |      48 |      0.00 |      0.00 |
+|     5 |          5 |        3 |    1 |   n |   0.32 |      48 |      0.00 |      0.00 |
+|     4 |          4 |        4 |    2 |   n |   0.34 |      48 |      0.00 |      0.00 |
+|     3 |          3 |        5 |    2 |   n |   0.36 |      48 |      0.00 |      0.00 |
+|     2 |          2 |        6 |    2 |   n |   0.39 |      48 |      0.00 |      0.00 |
+|     1 |          1 |        7 |    2 |   n |   0.40 |      48 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|    13 |          8 |        8 |    1 |   n |   0.16 |     846 |      0.00 |      0.00 |
+|    12 |          9 |        8 |    1 |   n |   0.17 |     846 |      0.00 |      0.00 |
+|    11 |          9 |        8 |    1 |   n |   0.19 |     846 |      0.00 |      0.00 |
+|    10 |          9 |        9 |    1 |   n |   0.22 |     846 |      0.00 |      0.00 |
+|     9 |         11 |       10 |    2 |   n |   0.29 |     846 |      0.00 |      0.00 |
+|     8 |         12 |        9 |    1 |   n |   0.24 |     846 |      0.00 |      0.00 |
+|     7 |         11 |       10 |    2 |   n |   0.30 |     846 |      0.00 |      0.00 |
+|     6 |         11 |       11 |    2 |   n |   0.33 |     846 |      0.00 |      0.00 |
+|     5 |         15 |       13 |    2 |   n |   0.43 |     846 |      0.00 |      0.00 |
+|     4 |         17 |       11 |    2 |   n |   0.35 |     846 |      0.00 |      0.00 |
+|     3 |         14 |       12 |    2 |   n |   0.40 |     846 |      0.00 |      0.00 |
+|     2 |         15 |       11 |    2 |   n |   0.36 |     846 |      0.00 |      0.00 |
+|     1 |         14 |       12 |    2 |   n |   0.41 |     846 |      0.00 |      0.00 |
+
+sum of inequalities over all iterations :    132
+maximal number of inequalities          :     13
+
+transformation to integer values 
+sorting system 
+
+number of equations    :    0 
+number of inequalities :   12 
+
+output written to file kp11.poi.ieq
+
+
+
+
+log for xporta -T kp12.poi 
+
+input file kp12.poi o.k.
+dimension              :    6 
+number of cone-points  :    0 
+number of conv-points  :   33 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     7 |          7 |        1 |    1 |   n |   0.35 |      53 |      0.00 |      0.00 |
+|     6 |          6 |        2 |    1 |   n |   0.36 |      53 |      0.00 |      0.00 |
+|     5 |          5 |        3 |    2 |   n |   0.38 |      53 |      0.00 |      0.00 |
+|     4 |          4 |        4 |    2 |   n |   0.40 |      53 |      0.00 |      0.00 |
+|     3 |          3 |        5 |    2 |   n |   0.42 |      53 |      0.00 |      0.00 |
+|     2 |          2 |        6 |    2 |   n |   0.45 |      53 |      0.00 |      0.00 |
+|     1 |          1 |        7 |    2 |   n |   0.45 |      53 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|    26 |          8 |        8 |    1 |   n |   0.16 |     849 |      0.00 |      0.00 |
+|    25 |          9 |        8 |    1 |   n |   0.17 |     849 |      0.00 |      0.00 |
+|    24 |          9 |        8 |    1 |   n |   0.19 |     849 |      0.00 |      0.00 |
+|    23 |         10 |       10 |    2 |   n |   0.26 |     849 |      0.00 |      0.00 |
+|    22 |         12 |       10 |    2 |   n |   0.28 |     849 |      0.00 |      0.00 |
+|    21 |         12 |       10 |    2 |   n |   0.30 |     849 |      0.00 |      0.00 |
+|    20 |         12 |       11 |    2 |   n |   0.33 |     849 |      0.00 |      0.00 |
+|    19 |         13 |       10 |    2 |   n |   0.31 |     849 |      0.00 |      0.00 |
+|    18 |         13 |       11 |    2 |   n |   0.35 |     849 |      0.00 |      0.00 |
+|    17 |         14 |       14 |    2 |   n |   0.44 |     849 |      0.00 |      0.00 |
+|    16 |         20 |       14 |    2 |   n |   0.44 |     849 |      0.00 |      0.00 |
+|    15 |         18 |       14 |    2 |   n |   0.47 |     849 |      0.00 |      0.00 |
+|    14 |         16 |       15 |    2 |   n |   0.49 |     849 |      0.00 |      0.00 |
+|    13 |         21 |       18 |    2 |   n |   0.56 |     849 |      0.00 |      0.00 |
+|    12 |         30 |       16 |    2 |   n |   0.54 |     849 |      0.00 |      0.00 |
+|    11 |         23 |       19 |    3 |   n |   0.60 |     849 |      0.00 |      0.00 |
+|    10 |         31 |       16 |    2 |   n |   0.55 |     849 |      0.00 |      0.00 |
+|     9 |         21 |       15 |    2 |   n |   0.52 |     849 |      0.00 |      0.00 |
+|     8 |         23 |       16 |    3 |   n |   0.55 |     849 |      0.00 |      0.00 |
+|     7 |         25 |       23 |    3 |   n |   0.65 |     849 |      0.00 |      0.00 |
+|     6 |         51 |       23 |    3 |   n |   0.65 |     849 |      0.00 |      0.00 |
+|     5 |         32 |       23 |    3 |   n |   0.65 |     849 |      0.00 |      0.00 |
+|     4 |         43 |       20 |    3 |   n |   0.61 |     849 |      0.00 |      0.00 |
+|     3 |         30 |       19 |    3 |   n |   0.60 |     849 |      0.00 |      0.00 |
+|     2 |         31 |       19 |    4 |   n |   0.60 |     849 |      0.00 |      0.00 |
+|     1 |         34 |       17 |    3 |   n |   0.57 |     849 |      0.00 |      0.00 |
+
+sum of inequalities over all iterations :    387
+maximal number of inequalities          :     23
+
+transformation to integer values 
+sorting system 
+
+number of equations    :    0 
+number of inequalities :   17 
+
+output written to file kp12.poi.ieq
+
+
+
+
+log for xporta -T kp13.poi 
+
+input file kp13.poi o.k.
+dimension              :    7 
+number of cone-points  :    0 
+number of conv-points  :  120 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     8 |          8 |        1 |    1 |   n |   0.46 |      89 |      0.00 |      0.00 |
+|     7 |          7 |        2 |    1 |   n |   0.46 |      89 |      0.00 |      0.00 |
+|     6 |          6 |        3 |    2 |   n |   0.48 |      89 |      0.00 |      0.00 |
+|     5 |          5 |        4 |    2 |   n |   0.50 |      89 |      0.00 |      0.00 |
+|     4 |          4 |        5 |    2 |   n |   0.52 |      89 |      0.00 |      0.00 |
+|     3 |          3 |        6 |    3 |   n |   0.53 |      89 |      0.00 |      0.00 |
+|     2 |          2 |        7 |    3 |   n |   0.54 |      89 |      0.00 |      0.00 |
+|     1 |          1 |        8 |    3 |   n |   0.54 |      89 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|   112 |          9 |        9 |    1 |   n |   0.14 |     873 |      0.00 |      0.00 |
+|   111 |         10 |        9 |    1 |   n |   0.15 |     873 |      0.00 |      0.00 |
+|   110 |         11 |       11 |    2 |   n |   0.20 |     873 |      0.00 |      0.00 |
+|   109 |         13 |       10 |    1 |   n |   0.18 |     873 |      0.00 |      0.00 |
+|   108 |         11 |       10 |    1 |   n |   0.19 |     873 |      0.00 |      0.00 |
+|   107 |         12 |       11 |    2 |   n |   0.23 |     873 |      0.00 |      0.00 |
+|   106 |         13 |       10 |    1 |   n |   0.20 |     873 |      0.00 |      0.00 |
+|   105 |         13 |       13 |    2 |   n |   0.28 |     873 |      0.00 |      0.00 |
+|   104 |         16 |       12 |    2 |   n |   0.26 |     873 |      0.00 |      0.00 |
+|   103 |         15 |       12 |    2 |   n |   0.26 |     873 |      0.00 |      0.00 |
+|   102 |         15 |       11 |    1 |   n |   0.23 |     873 |      0.00 |      0.00 |
+|   101 |         12 |       11 |    1 |   n |   0.24 |     873 |      0.00 |      0.00 |
+|   100 |         13 |       12 |    2 |   n |   0.29 |     873 |      0.00 |      0.00 |
+|    99 |         14 |       11 |    1 |   n |   0.25 |     873 |      0.00 |      0.00 |
+|    98 |         14 |       13 |    2 |   n |   0.32 |     873 |      0.00 |      0.01 |
+|    97 |         16 |       12 |    2 |   n |   0.30 |     873 |      0.00 |      0.01 |
+|    96 |         15 |       12 |    2 |   n |   0.30 |     873 |      0.00 |      0.01 |
+|    95 |         15 |       11 |    1 |   n |   0.26 |     873 |      0.00 |      0.01 |
+|    94 |         15 |       15 |    2 |   n |   0.37 |     873 |      0.00 |      0.01 |
+|    93 |         19 |       14 |    2 |   n |   0.35 |     873 |      0.00 |      0.01 |
+|    92 |         18 |       14 |    2 |   n |   0.35 |     873 |      0.00 |      0.01 |
+|    91 |         18 |       13 |    2 |   n |   0.32 |     873 |      0.00 |      0.01 |
+|    90 |         17 |       14 |    2 |   n |   0.35 |     873 |      0.00 |      0.01 |
+|    89 |         18 |       13 |    2 |   n |   0.32 |     873 |      0.00 |      0.01 |
+|    88 |         17 |       13 |    3 |   n |   0.32 |     873 |      0.00 |      0.01 |
+|    87 |         17 |       12 |    1 |   n |   0.30 |     873 |      0.00 |      0.01 |
+|    86 |         13 |       12 |    1 |   n |   0.31 |     873 |      0.00 |      0.01 |
+|    85 |         14 |       13 |    2 |   n |   0.35 |     873 |      0.00 |      0.01 |
+|    84 |         15 |       12 |    1 |   n |   0.31 |     873 |      0.00 |      0.01 |
+|    83 |         15 |       14 |    2 |   n |   0.39 |     873 |      0.00 |      0.01 |
+|    82 |         17 |       13 |    2 |   n |   0.36 |     873 |      0.00 |      0.01 |
+|    81 |         16 |       13 |    2 |   n |   0.36 |     873 |      0.00 |      0.01 |
+|    80 |         16 |       12 |    1 |   n |   0.32 |     873 |      0.00 |      0.01 |
+|    79 |         16 |       15 |    2 |   n |   0.42 |     873 |      0.00 |      0.01 |
+|    78 |         19 |       14 |    2 |   n |   0.40 |     873 |      0.00 |      0.01 |
+|    77 |         18 |       14 |    2 |   n |   0.40 |     873 |      0.00 |      0.01 |
+|    76 |         18 |       13 |    2 |   n |   0.37 |     873 |      0.00 |      0.01 |
+|    75 |         17 |       14 |    2 |   n |   0.40 |     873 |      0.00 |      0.01 |
+|    74 |         18 |       13 |    2 |   n |   0.37 |     873 |      0.00 |      0.01 |
+|    73 |         17 |       13 |    3 |   n |   0.37 |     873 |      0.00 |      0.01 |
+|    72 |         17 |       12 |    1 |   n |   0.33 |     873 |      0.00 |      0.01 |
+|    71 |         17 |       17 |    2 |   n |   0.46 |     873 |      0.00 |      0.01 |
+|    70 |         22 |       16 |    2 |   n |   0.44 |     873 |      0.00 |      0.01 |
+|    69 |         21 |       16 |    2 |   n |   0.44 |     873 |      0.00 |      0.01 |
+|    68 |         21 |       15 |    2 |   n |   0.42 |     873 |      0.00 |      0.01 |
+|    67 |         20 |       16 |    2 |   n |   0.44 |     873 |      0.00 |      0.01 |
+|    66 |         21 |       15 |    2 |   n |   0.42 |     873 |      0.00 |      0.01 |
+|    65 |         20 |       15 |    3 |   n |   0.42 |     873 |      0.00 |      0.01 |
+|    64 |         20 |       14 |    2 |   n |   0.40 |     873 |      0.00 |      0.02 |
+|    63 |         19 |       16 |    2 |   n |   0.44 |     873 |      0.00 |      0.02 |
+|    62 |         21 |       15 |    2 |   n |   0.42 |     873 |      0.00 |      0.02 |
+|    61 |         20 |       15 |    3 |   n |   0.42 |     873 |      0.00 |      0.02 |
+|    60 |         20 |       14 |    2 |   n |   0.40 |     873 |      0.00 |      0.02 |
+|    59 |         19 |       15 |    3 |   n |   0.42 |     873 |      0.00 |      0.02 |
+|    58 |         20 |       14 |    3 |   n |   0.40 |     873 |      0.00 |      0.02 |
+|    57 |         19 |       14 |    3 |   n |   0.40 |     873 |      0.00 |      0.02 |
+|    56 |         16 |       14 |    3 |   n |   0.41 |     873 |      0.00 |      0.02 |
+|    55 |         16 |       15 |    3 |   n |   0.45 |     873 |      0.00 |      0.02 |
+|    54 |         19 |       14 |    3 |   n |   0.42 |     873 |      0.00 |      0.02 |
+|    53 |         18 |       17 |    3 |   n |   0.51 |     873 |      0.00 |      0.02 |
+|    52 |         23 |       15 |    3 |   n |   0.46 |     873 |      0.00 |      0.02 |
+|    51 |         18 |       15 |    3 |   n |   0.46 |     873 |      0.00 |      0.02 |
+|    50 |         21 |       14 |    3 |   n |   0.43 |     873 |      0.00 |      0.02 |
+|    49 |         19 |       18 |    3 |   n |   0.54 |     873 |      0.00 |      0.02 |
+|    48 |         28 |       17 |    3 |   n |   0.52 |     873 |      0.00 |      0.02 |
+|    47 |         22 |       17 |    3 |   n |   0.52 |     873 |      0.00 |      0.02 |
+|    46 |         25 |       15 |    3 |   n |   0.47 |     873 |      0.00 |      0.02 |
+|    45 |         20 |       17 |    3 |   n |   0.52 |     873 |      0.00 |      0.02 |
+|    44 |         25 |       15 |    3 |   n |   0.47 |     873 |      0.00 |      0.02 |
+|    43 |         19 |       15 |    3 |   n |   0.47 |     873 |      0.00 |      0.02 |
+|    42 |         23 |       14 |    3 |   n |   0.44 |     873 |      0.00 |      0.02 |
+|    41 |         20 |       19 |    4 |   n |   0.56 |     873 |      0.00 |      0.02 |
+|    40 |         31 |       18 |    3 |   n |   0.54 |     873 |      0.00 |      0.02 |
+|    39 |         24 |       18 |    3 |   n |   0.54 |     873 |      0.00 |      0.02 |
+|    38 |         30 |       17 |    3 |   n |   0.52 |     873 |      0.00 |      0.02 |
+|    37 |         24 |       19 |    4 |   n |   0.56 |     873 |      0.00 |      0.02 |
+|    36 |         31 |       17 |    3 |   n |   0.52 |     873 |      0.00 |      0.02 |
+|    35 |         23 |       17 |    3 |   n |   0.52 |     873 |      0.00 |      0.02 |
+|    34 |         27 |       15 |    3 |   n |   0.47 |     873 |      0.00 |      0.02 |
+|    33 |         21 |       18 |    4 |   n |   0.54 |     873 |      0.00 |      0.02 |
+|    32 |         30 |       17 |    3 |   n |   0.52 |     873 |      0.00 |      0.03 |
+|    31 |         23 |       17 |    3 |   n |   0.52 |     873 |      0.00 |      0.03 |
+|    30 |         27 |       15 |    3 |   n |   0.47 |     873 |      0.00 |      0.03 |
+|    29 |         21 |       17 |    4 |   n |   0.52 |     873 |      0.00 |      0.03 |
+|    28 |         27 |       15 |    3 |   n |   0.47 |     873 |      0.00 |      0.03 |
+|    27 |         20 |       14 |    3 |   n |   0.44 |     873 |      0.00 |      0.03 |
+|    26 |         21 |       21 |    4 |   n |   0.59 |     873 |      0.00 |      0.03 |
+|    25 |         35 |       20 |    3 |   n |   0.58 |     873 |      0.00 |      0.03 |
+|    24 |         27 |       20 |    3 |   n |   0.58 |     873 |      0.00 |      0.03 |
+|    23 |         34 |       19 |    3 |   n |   0.56 |     873 |      0.00 |      0.03 |
+|    22 |         27 |       21 |    4 |   n |   0.59 |     873 |      0.00 |      0.03 |
+|    21 |         35 |       19 |    3 |   n |   0.56 |     873 |      0.00 |      0.03 |
+|    20 |         26 |       19 |    3 |   n |   0.56 |     873 |      0.00 |      0.03 |
+|    19 |         31 |       17 |    3 |   n |   0.52 |     873 |      0.00 |      0.03 |
+|    18 |         24 |       20 |    4 |   n |   0.58 |     873 |      0.00 |      0.03 |
+|    17 |         34 |       19 |    3 |   n |   0.56 |     873 |      0.00 |      0.03 |
+|    16 |         26 |       19 |    3 |   n |   0.56 |     873 |      0.00 |      0.03 |
+|    15 |         31 |       17 |    3 |   n |   0.52 |     873 |      0.00 |      0.03 |
+|    14 |         24 |       19 |    4 |   n |   0.56 |     873 |      0.00 |      0.03 |
+|    13 |         31 |       17 |    3 |   n |   0.52 |     873 |      0.00 |      0.03 |
+|    12 |         23 |       16 |    3 |   n |   0.50 |     873 |      0.00 |      0.03 |
+|    11 |         22 |       18 |    3 |   n |   0.54 |     873 |      0.00 |      0.03 |
+|    10 |         27 |       22 |    4 |   n |   0.61 |     873 |      0.00 |      0.03 |
+|     9 |         40 |       21 |    4 |   n |   0.59 |     873 |      0.00 |      0.03 |
+|     8 |         30 |       21 |    4 |   n |   0.59 |     873 |      0.00 |      0.03 |
+|     7 |         37 |       19 |    3 |   n |   0.56 |     873 |      0.00 |      0.03 |
+|     6 |         28 |       21 |    4 |   n |   0.59 |     873 |      0.00 |      0.03 |
+|     5 |         37 |       19 |    3 |   n |   0.56 |     873 |      0.00 |      0.03 |
+|     4 |         27 |       19 |    3 |   n |   0.56 |     873 |      0.00 |      0.03 |
+|     3 |         29 |       22 |    4 |   n |   0.61 |     873 |      0.00 |      0.03 |
+|     2 |         40 |       20 |    3 |   n |   0.58 |     873 |      0.00 |      0.03 |
+|     1 |         29 |       20 |    3 |   n |   0.58 |     873 |      0.00 |      0.03 |
+
+sum of inequalities over all iterations :   1722
+maximal number of inequalities          :     22
+
+transformation to integer values 
+sorting system 
+
+number of equations    :    0 
+number of inequalities :   20 
+
+output written to file kp13.poi.ieq
+
+
+
+
+log for xporta -T kp14.poi 
+
+input file kp14.poi o.k.
+dimension              :    7 
+number of cone-points  :    0 
+number of conv-points  :   71 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     8 |          8 |        1 |    1 |   n |   0.39 |      70 |      0.00 |      0.00 |
+|     7 |          7 |        2 |    1 |   n |   0.39 |      70 |      0.00 |      0.00 |
+|     6 |          6 |        3 |    2 |   n |   0.40 |      70 |      0.00 |      0.00 |
+|     5 |          5 |        4 |    2 |   n |   0.42 |      70 |      0.00 |      0.00 |
+|     4 |          4 |        5 |    2 |   n |   0.43 |      70 |      0.00 |      0.00 |
+|     3 |          3 |        6 |    3 |   n |   0.45 |      70 |      0.00 |      0.00 |
+|     2 |          2 |        7 |    3 |   n |   0.46 |      70 |      0.00 |      0.00 |
+|     1 |          1 |        8 |    3 |   n |   0.47 |      70 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|    63 |          9 |        9 |    1 |   n |   0.14 |     860 |      0.00 |      0.00 |
+|    62 |         10 |        9 |    1 |   n |   0.15 |     860 |      0.00 |      0.00 |
+|    61 |         10 |       10 |    1 |   n |   0.18 |     860 |      0.00 |      0.00 |
+|    60 |         12 |       11 |    2 |   n |   0.22 |     860 |      0.00 |      0.00 |
+|    59 |         13 |       10 |    1 |   n |   0.19 |     860 |      0.00 |      0.00 |
+|    58 |         12 |       11 |    2 |   n |   0.23 |     860 |      0.00 |      0.00 |
+|    57 |         13 |       10 |    1 |   n |   0.20 |     860 |      0.00 |      0.00 |
+|    56 |         11 |       11 |    1 |   n |   0.23 |     860 |      0.00 |      0.00 |
+|    55 |         13 |       12 |    2 |   n |   0.28 |     860 |      0.00 |      0.00 |
+|    54 |         14 |       11 |    1 |   n |   0.24 |     860 |      0.00 |      0.00 |
+|    53 |         13 |       11 |    2 |   n |   0.26 |     860 |      0.00 |      0.00 |
+|    52 |         15 |       15 |    2 |   n |   0.37 |     860 |      0.00 |      0.00 |
+|    51 |         19 |       15 |    2 |   n |   0.37 |     860 |      0.00 |      0.01 |
+|    50 |         21 |       15 |    3 |   n |   0.37 |     860 |      0.00 |      0.01 |
+|    49 |         18 |       16 |    3 |   n |   0.40 |     860 |      0.00 |      0.01 |
+|    48 |         20 |       18 |    3 |   n |   0.46 |     860 |      0.00 |      0.01 |
+|    47 |         26 |       16 |    3 |   n |   0.42 |     860 |      0.00 |      0.01 |
+|    46 |         22 |       15 |    3 |   n |   0.41 |     860 |      0.00 |      0.01 |
+|    45 |         19 |       15 |    3 |   n |   0.41 |     860 |      0.00 |      0.01 |
+|    44 |         21 |       18 |    3 |   n |   0.48 |     860 |      0.00 |      0.01 |
+|    43 |         28 |       16 |    3 |   n |   0.44 |     860 |      0.00 |      0.01 |
+|    42 |         21 |       15 |    3 |   n |   0.42 |     860 |      0.00 |      0.01 |
+|    41 |         19 |       15 |    3 |   n |   0.42 |     860 |      0.00 |      0.01 |
+|    40 |         20 |       16 |    3 |   n |   0.44 |     860 |      0.00 |      0.01 |
+|    39 |         22 |       15 |    3 |   n |   0.42 |     860 |      0.00 |      0.01 |
+|    38 |         23 |       23 |    3 |   n |   0.55 |     860 |      0.00 |      0.01 |
+|    37 |         47 |       23 |    3 |   n |   0.55 |     860 |      0.00 |      0.01 |
+|    36 |         37 |       23 |    3 |   n |   0.55 |     860 |      0.00 |      0.01 |
+|    35 |         43 |       19 |    3 |   n |   0.50 |     860 |      0.00 |      0.01 |
+|    34 |         33 |       23 |    3 |   n |   0.55 |     860 |      0.00 |      0.01 |
+|    33 |         39 |       19 |    3 |   n |   0.50 |     860 |      0.00 |      0.01 |
+|    32 |         24 |       20 |    3 |   n |   0.53 |     860 |      0.00 |      0.01 |
+|    31 |         28 |       22 |    3 |   n |   0.58 |     860 |      0.00 |      0.01 |
+|    30 |         30 |       20 |    3 |   n |   0.54 |     860 |      0.00 |      0.01 |
+|    29 |         32 |       19 |    3 |   n |   0.55 |     860 |      0.00 |      0.01 |
+|    28 |         23 |       19 |    3 |   n |   0.55 |     860 |      0.00 |      0.01 |
+|    27 |         27 |       22 |    3 |   n |   0.60 |     860 |      0.00 |      0.01 |
+|    26 |         40 |       20 |    3 |   n |   0.57 |     860 |      0.00 |      0.01 |
+|    25 |         28 |       19 |    3 |   n |   0.56 |     860 |      0.00 |      0.01 |
+|    24 |         24 |       19 |    3 |   n |   0.56 |     860 |      0.00 |      0.01 |
+|    23 |         29 |       20 |    3 |   n |   0.57 |     860 |      0.00 |      0.01 |
+|    22 |         31 |       29 |    3 |   n |   0.67 |     861 |      0.00 |      0.01 |
+|    21 |         61 |       26 |    3 |   n |   0.65 |     861 |      0.00 |      0.01 |
+|    20 |         58 |       23 |    3 |   n |   0.62 |     861 |      0.00 |      0.01 |
+|    19 |         33 |       25 |    3 |   n |   0.64 |     861 |      0.00 |      0.02 |
+|    18 |         39 |       23 |    3 |   n |   0.62 |     861 |      0.00 |      0.02 |
+|    17 |         39 |       24 |    3 |   n |   0.63 |     861 |      0.00 |      0.02 |
+|    16 |         40 |       31 |    3 |   n |   0.69 |     861 |      0.00 |      0.02 |
+|    15 |         76 |       29 |    3 |   n |   0.67 |     861 |      0.00 |      0.02 |
+|    14 |         61 |       30 |    3 |   n |   0.68 |     861 |      0.00 |      0.02 |
+|    13 |         75 |       28 |    3 |   n |   0.67 |     861 |      0.00 |      0.02 |
+|    12 |         42 |       34 |    3 |   n |   0.71 |     861 |      0.00 |      0.02 |
+|    11 |         84 |       29 |    3 |   n |   0.67 |     861 |      0.00 |      0.02 |
+|    10 |         47 |       30 |    3 |   n |   0.68 |     861 |      0.00 |      0.02 |
+|     9 |         47 |       36 |    4 |   n |   0.72 |     861 |      0.00 |      0.02 |
+|     8 |         80 |       35 |    4 |   n |   0.71 |     861 |      0.00 |      0.02 |
+|     7 |        100 |       30 |    3 |   n |   0.68 |     861 |      0.00 |      0.02 |
+|     6 |         46 |       37 |    4 |   n |   0.72 |     861 |      0.00 |      0.02 |
+|     5 |         83 |       43 |    4 |   n |   0.74 |     861 |      0.00 |      0.02 |
+|     4 |        133 |       41 |    4 |   n |   0.74 |     861 |      0.00 |      0.02 |
+|     3 |        125 |       38 |    4 |   n |   0.73 |     861 |      0.00 |      0.02 |
+|     2 |         94 |       34 |    4 |   n |   0.71 |     861 |      0.00 |      0.02 |
+|     1 |         59 |       34 |    4 |   n |   0.71 |     861 |      0.00 |      0.02 |
+
+sum of inequalities over all iterations :   1354
+maximal number of inequalities          :     43
+
+transformation to integer values 
+sorting system 
+
+number of equations    :    0 
+number of inequalities :   34 
+
+output written to file kp14.poi.ieq
+
+
+
+
+log for xporta -T kp15.poi 
+
+input file kp15.poi o.k.
+dimension              :    6 
+number of cone-points  :    0 
+number of conv-points  :   40 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     7 |          7 |        1 |    1 |   n |   0.38 |      55 |      0.00 |      0.00 |
+|     6 |          6 |        2 |    1 |   n |   0.38 |      55 |      0.00 |      0.00 |
+|     5 |          5 |        3 |    2 |   n |   0.39 |      55 |      0.00 |      0.00 |
+|     4 |          4 |        4 |    2 |   n |   0.41 |      55 |      0.00 |      0.00 |
+|     3 |          3 |        5 |    2 |   n |   0.44 |      55 |      0.00 |      0.00 |
+|     2 |          2 |        6 |    2 |   n |   0.47 |      55 |      0.00 |      0.00 |
+|     1 |          1 |        7 |    2 |   n |   0.47 |      55 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|    33 |          8 |        8 |    1 |   n |   0.16 |     850 |      0.00 |      0.00 |
+|    32 |          9 |        8 |    1 |   n |   0.17 |     850 |      0.00 |      0.00 |
+|    31 |         10 |       10 |    2 |   n |   0.24 |     850 |      0.00 |      0.00 |
+|    30 |         12 |        9 |    1 |   n |   0.21 |     850 |      0.00 |      0.00 |
+|    29 |         10 |        9 |    1 |   n |   0.22 |     850 |      0.00 |      0.00 |
+|    28 |         11 |       10 |    2 |   n |   0.28 |     850 |      0.00 |      0.00 |
+|    27 |         12 |        9 |    1 |   n |   0.24 |     850 |      0.00 |      0.00 |
+|    26 |         12 |       12 |    2 |   n |   0.33 |     850 |      0.00 |      0.00 |
+|    25 |         15 |       11 |    2 |   n |   0.31 |     850 |      0.00 |      0.00 |
+|    24 |         14 |       11 |    2 |   n |   0.31 |     850 |      0.00 |      0.00 |
+|    23 |         13 |       11 |    2 |   n |   0.33 |     850 |      0.00 |      0.00 |
+|    22 |         13 |       12 |    2 |   n |   0.38 |     850 |      0.00 |      0.00 |
+|    21 |         16 |       11 |    2 |   n |   0.34 |     850 |      0.00 |      0.00 |
+|    20 |         15 |       14 |    3 |   n |   0.44 |     850 |      0.00 |      0.00 |
+|    19 |         22 |       22 |    3 |   n |   0.55 |     851 |      0.00 |      0.00 |
+|    18 |         42 |       18 |    3 |   n |   0.51 |     851 |      0.00 |      0.00 |
+|    17 |         28 |       16 |    3 |   n |   0.48 |     851 |      0.00 |      0.00 |
+|    16 |         20 |       16 |    3 |   n |   0.51 |     851 |      0.00 |      0.00 |
+|    15 |         22 |       17 |    3 |   n |   0.54 |     851 |      0.00 |      0.00 |
+|    14 |         23 |       16 |    3 |   n |   0.52 |     851 |      0.00 |      0.00 |
+|    13 |         24 |       16 |    3 |   n |   0.54 |     851 |      0.00 |      0.00 |
+|    12 |         22 |       16 |    3 |   n |   0.54 |     851 |      0.00 |      0.00 |
+|    11 |         20 |       16 |    3 |   n |   0.54 |     851 |      0.00 |      0.00 |
+|    10 |         24 |       19 |    3 |   n |   0.60 |     851 |      0.00 |      0.00 |
+|     9 |         33 |       17 |    3 |   n |   0.57 |     851 |      0.00 |      0.00 |
+|     8 |         24 |       16 |    3 |   n |   0.55 |     851 |      0.00 |      0.00 |
+|     7 |         22 |       17 |    3 |   n |   0.57 |     851 |      0.00 |      0.00 |
+|     6 |         25 |       19 |    3 |   n |   0.60 |     851 |      0.00 |      0.00 |
+|     5 |         29 |       22 |    3 |   n |   0.64 |     851 |      0.00 |      0.00 |
+|     4 |         38 |       38 |    3 |   n |   0.74 |     851 |      0.00 |      0.00 |
+|     3 |        142 |       34 |    3 |   n |   0.72 |     851 |      0.00 |      0.00 |
+|     2 |         86 |       31 |    3 |   n |   0.71 |     851 |      0.00 |      0.00 |
+|     1 |         61 |       26 |    3 |   n |   0.67 |     851 |      0.00 |      0.00 |
+
+sum of inequalities over all iterations :    537
+maximal number of inequalities          :     38
+
+transformation to integer values 
+sorting system 
+
+number of equations    :    0 
+number of inequalities :   26 
+
+output written to file kp15.poi.ieq
+
+
+
+
+log for xporta -T kp16.poi 
+
+input file kp16.poi o.k.
+dimension              :    7 
+number of cone-points  :    0 
+number of conv-points  :   27 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     8 |          8 |        1 |    1 |   n |   0.29 |      53 |      0.00 |      0.00 |
+|     7 |          7 |        2 |    1 |   n |   0.28 |      53 |      0.00 |      0.00 |
+|     6 |          6 |        3 |    2 |   n |   0.30 |      53 |      0.00 |      0.00 |
+|     5 |          5 |        4 |    2 |   n |   0.31 |      53 |      0.00 |      0.00 |
+|     4 |          4 |        5 |    2 |   n |   0.32 |      53 |      0.00 |      0.00 |
+|     3 |          3 |        6 |    2 |   n |   0.34 |      53 |      0.00 |      0.00 |
+|     2 |          2 |        7 |    2 |   n |   0.37 |      53 |      0.00 |      0.00 |
+|     1 |          1 |        8 |    2 |   n |   0.38 |      53 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|    19 |          9 |        9 |    1 |   n |   0.14 |     848 |      0.00 |      0.00 |
+|    18 |         10 |        9 |    1 |   n |   0.15 |     848 |      0.00 |      0.00 |
+|    17 |         10 |       10 |    1 |   n |   0.18 |     848 |      0.00 |      0.00 |
+|    16 |         11 |        9 |    1 |   n |   0.16 |     848 |      0.00 |      0.00 |
+|    15 |         10 |       10 |    1 |   n |   0.20 |     848 |      0.00 |      0.00 |
+|    14 |         11 |       10 |    1 |   n |   0.21 |     848 |      0.00 |      0.00 |
+|    13 |         12 |       11 |    2 |   n |   0.27 |     848 |      0.00 |      0.00 |
+|    12 |         13 |       11 |    2 |   n |   0.27 |     848 |      0.00 |      0.00 |
+|    11 |         13 |       10 |    1 |   n |   0.22 |     848 |      0.00 |      0.00 |
+|    10 |         11 |       11 |    1 |   n |   0.25 |     848 |      0.00 |      0.00 |
+|     9 |         12 |       10 |    1 |   n |   0.23 |     848 |      0.00 |      0.00 |
+|     8 |         12 |       12 |    2 |   n |   0.31 |     848 |      0.00 |      0.00 |
+|     7 |         14 |       12 |    2 |   n |   0.31 |     848 |      0.00 |      0.01 |
+|     6 |         14 |       11 |    1 |   n |   0.27 |     848 |      0.00 |      0.01 |
+|     5 |         14 |       13 |    2 |   n |   0.38 |     848 |      0.00 |      0.01 |
+|     4 |         16 |       13 |    2 |   n |   0.38 |     848 |      0.00 |      0.01 |
+|     3 |         16 |       12 |    2 |   n |   0.33 |     848 |      0.00 |      0.01 |
+|     2 |         15 |       12 |    2 |   n |   0.33 |     848 |      0.00 |      0.01 |
+|     1 |         15 |       12 |    2 |   n |   0.33 |     848 |      0.00 |      0.01 |
+
+sum of inequalities over all iterations :    207
+maximal number of inequalities          :     13
+
+transformation to integer values 
+sorting system 
+
+number of equations    :    0 
+number of inequalities :   12 
+
+output written to file kp16.poi.ieq
+
+
+
+
+log for xporta -T kp17.poi 
+
+input file kp17.poi o.k.
+dimension              :    8 
+number of cone-points  :    0 
+number of conv-points  :   94 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     9 |          9 |        1 |    1 |   n |   0.34 |      84 |      0.00 |      0.00 |
+|     8 |          8 |        2 |    1 |   n |   0.32 |      84 |      0.00 |      0.00 |
+|     7 |          7 |        3 |    2 |   n |   0.32 |      84 |      0.00 |      0.00 |
+|     6 |          6 |        4 |    2 |   n |   0.33 |      84 |      0.00 |      0.00 |
+|     5 |          5 |        5 |    2 |   n |   0.34 |      84 |      0.00 |      0.00 |
+|     4 |          4 |        6 |    2 |   n |   0.36 |      84 |      0.00 |      0.00 |
+|     3 |          3 |        7 |    2 |   n |   0.38 |      84 |      0.00 |      0.00 |
+|     2 |          2 |        8 |    2 |   n |   0.39 |      84 |      0.00 |      0.00 |
+|     1 |          1 |        9 |    2 |   n |   0.39 |      84 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|    85 |         10 |       10 |    1 |   n |   0.12 |     869 |      0.00 |      0.00 |
+|    84 |         11 |       10 |    1 |   n |   0.13 |     869 |      0.00 |      0.00 |
+|    83 |         12 |       12 |    2 |   n |   0.17 |     869 |      0.00 |      0.00 |
+|    82 |         14 |       11 |    1 |   n |   0.15 |     869 |      0.00 |      0.00 |
+|    81 |         12 |       11 |    1 |   n |   0.16 |     869 |      0.00 |      0.00 |
+|    80 |         13 |       12 |    2 |   n |   0.20 |     869 |      0.00 |      0.00 |
+|    79 |         14 |       11 |    1 |   n |   0.17 |     869 |      0.00 |      0.00 |
+|    78 |         14 |       14 |    2 |   n |   0.24 |     869 |      0.00 |      0.00 |
+|    77 |         17 |       13 |    2 |   n |   0.22 |     869 |      0.00 |      0.00 |
+|    76 |         16 |       13 |    2 |   n |   0.22 |     869 |      0.00 |      0.00 |
+|    75 |         16 |       12 |    1 |   n |   0.20 |     869 |      0.00 |      0.00 |
+|    74 |         13 |       12 |    1 |   n |   0.21 |     869 |      0.00 |      0.00 |
+|    73 |         14 |       13 |    2 |   n |   0.25 |     869 |      0.00 |      0.01 |
+|    72 |         15 |       12 |    1 |   n |   0.22 |     869 |      0.00 |      0.01 |
+|    71 |         15 |       14 |    2 |   n |   0.28 |     869 |      0.00 |      0.01 |
+|    70 |         17 |       13 |    2 |   n |   0.25 |     869 |      0.00 |      0.01 |
+|    69 |         16 |       13 |    2 |   n |   0.25 |     869 |      0.00 |      0.01 |
+|    68 |         18 |       18 |    3 |   n |   0.35 |     869 |      0.00 |      0.01 |
+|    67 |         28 |       17 |    3 |   n |   0.34 |     869 |      0.00 |      0.01 |
+|    66 |         22 |       17 |    3 |   n |   0.34 |     869 |      0.00 |      0.01 |
+|    65 |         23 |       18 |    3 |   n |   0.35 |     869 |      0.00 |      0.01 |
+|    64 |         23 |       18 |    3 |   n |   0.38 |     870 |      0.00 |      0.01 |
+|    63 |         24 |       19 |    3 |   n |   0.41 |     870 |      0.00 |      0.01 |
+|    62 |         27 |       18 |    3 |   n |   0.39 |     870 |      0.00 |      0.01 |
+|    61 |         24 |       22 |    3 |   n |   0.45 |     870 |      0.00 |      0.01 |
+|    60 |         38 |       19 |    3 |   n |   0.41 |     870 |      0.00 |      0.01 |
+|    59 |         29 |       18 |    3 |   n |   0.39 |     870 |      0.00 |      0.01 |
+|    58 |         27 |       25 |    3 |   n |   0.48 |     870 |      0.00 |      0.01 |
+|    57 |         49 |       21 |    3 |   n |   0.44 |     870 |      0.00 |      0.01 |
+|    56 |         33 |       19 |    3 |   n |   0.42 |     870 |      0.00 |      0.01 |
+|    55 |         25 |       18 |    3 |   n |   0.40 |     870 |      0.00 |      0.01 |
+|    54 |         27 |       23 |    3 |   n |   0.47 |     870 |      0.00 |      0.01 |
+|    53 |         35 |       28 |    3 |   n |   0.51 |     870 |      0.00 |      0.01 |
+|    52 |         52 |       24 |    3 |   n |   0.47 |     870 |      0.00 |      0.01 |
+|    51 |         36 |       22 |    3 |   n |   0.45 |     870 |      0.00 |      0.01 |
+|    50 |         34 |       20 |    3 |   n |   0.43 |     870 |      0.00 |      0.01 |
+|    49 |         26 |       20 |    3 |   n |   0.46 |     870 |      0.00 |      0.01 |
+|    48 |         26 |       23 |    3 |   n |   0.51 |     870 |      0.00 |      0.01 |
+|    47 |         35 |       21 |    3 |   n |   0.48 |     870 |      0.00 |      0.01 |
+|    46 |         35 |       25 |    3 |   n |   0.54 |     870 |      0.00 |      0.01 |
+|    45 |         45 |       23 |    3 |   n |   0.52 |     870 |      0.00 |      0.01 |
+|    44 |         37 |       26 |    3 |   n |   0.55 |     870 |      0.00 |      0.01 |
+|    43 |         39 |       37 |    3 |   n |   0.63 |     870 |      0.00 |      0.01 |
+|    42 |         97 |       27 |    3 |   n |   0.56 |     870 |      0.00 |      0.01 |
+|    41 |         51 |       23 |    3 |   n |   0.52 |     870 |      0.00 |      0.01 |
+|    40 |         41 |       20 |    3 |   n |   0.48 |     870 |      0.00 |      0.01 |
+|    39 |         30 |       24 |    3 |   n |   0.54 |     870 |      0.00 |      0.01 |
+|    38 |         36 |       28 |    3 |   n |   0.57 |     870 |      0.00 |      0.02 |
+|    37 |         52 |       26 |    4 |   n |   0.56 |     870 |      0.00 |      0.02 |
+|    36 |         50 |       22 |    3 |   n |   0.51 |     870 |      0.00 |      0.02 |
+|    35 |         34 |       20 |    3 |   n |   0.49 |     870 |      0.00 |      0.02 |
+|    34 |         31 |       26 |    3 |   n |   0.56 |     870 |      0.00 |      0.02 |
+|    33 |         42 |       32 |    4 |   n |   0.60 |     870 |      0.00 |      0.02 |
+|    32 |         64 |       30 |    4 |   n |   0.59 |     870 |      0.00 |      0.02 |
+|    31 |         62 |       26 |    4 |   n |   0.56 |     870 |      0.00 |      0.02 |
+|    30 |         42 |       24 |    4 |   n |   0.54 |     870 |      0.00 |      0.02 |
+|    29 |         36 |       22 |    3 |   n |   0.51 |     870 |      0.00 |      0.02 |
+|    28 |         29 |       22 |    3 |   n |   0.55 |     870 |      0.00 |      0.02 |
+|    27 |         28 |       25 |    3 |   n |   0.59 |     870 |      0.00 |      0.02 |
+|    26 |         39 |       23 |    3 |   n |   0.57 |     870 |      0.00 |      0.02 |
+|    25 |         39 |       29 |    3 |   n |   0.64 |     870 |      0.00 |      0.02 |
+|    24 |         53 |       26 |    3 |   n |   0.61 |     870 |      0.00 |      0.02 |
+|    23 |         40 |       30 |    4 |   n |   0.65 |     870 |      0.00 |      0.02 |
+|    22 |         60 |       43 |    4 |   n |   0.73 |     871 |      0.00 |      0.02 |
+|    21 |        127 |       31 |    4 |   n |   0.66 |     871 |      0.00 |      0.02 |
+|    20 |         63 |       29 |    4 |   n |   0.64 |     871 |      0.00 |      0.02 |
+|    19 |         59 |       30 |    4 |   n |   0.65 |     871 |      0.00 |      0.02 |
+|    18 |         45 |       34 |    4 |   n |   0.69 |     871 |      0.00 |      0.02 |
+|    17 |         58 |       36 |    4 |   n |   0.70 |     871 |      0.00 |      0.02 |
+|    16 |         72 |       32 |    4 |   n |   0.67 |     871 |      0.00 |      0.02 |
+|    15 |         68 |       26 |    4 |   n |   0.62 |     871 |      0.00 |      0.02 |
+|    14 |         50 |       22 |    3 |   n |   0.57 |     871 |      0.00 |      0.02 |
+|    13 |         34 |       27 |    3 |   n |   0.63 |     871 |      0.00 |      0.02 |
+|    12 |         43 |       32 |    4 |   n |   0.68 |     871 |      0.00 |      0.02 |
+|    11 |         64 |       30 |    4 |   n |   0.66 |     871 |      0.00 |      0.03 |
+|    10 |         62 |       28 |    4 |   n |   0.64 |     871 |      0.00 |      0.03 |
+|     9 |         60 |       24 |    4 |   n |   0.60 |     871 |      0.00 |      0.03 |
+|     8 |         36 |       22 |    3 |   n |   0.57 |     871 |      0.00 |      0.03 |
+|     7 |         35 |       29 |    3 |   n |   0.65 |     871 |      0.00 |      0.03 |
+|     6 |         49 |       36 |    4 |   n |   0.70 |     871 |      0.00 |      0.03 |
+|     5 |         76 |       34 |    4 |   n |   0.69 |     871 |      0.00 |      0.03 |
+|     4 |         74 |       32 |    4 |   n |   0.68 |     871 |      0.00 |      0.03 |
+|     3 |         72 |       28 |    4 |   n |   0.64 |     871 |      0.00 |      0.03 |
+|     2 |         44 |       26 |    4 |   n |   0.62 |     871 |      0.00 |      0.03 |
+|     1 |         42 |       24 |    3 |   n |   0.60 |     871 |      0.00 |      0.03 |
+
+sum of inequalities over all iterations :   1925
+maximal number of inequalities          :     43
+
+transformation to integer values 
+sorting system 
+
+number of equations    :    0 
+number of inequalities :   24 
+
+output written to file kp17.poi.ieq
+
