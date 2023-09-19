@@ -8,17 +8,13 @@ INEQUALITIES_SECTION
 (  2)    -x2       <= 0
 (  3)       -x3    <= 0
 (  4)          -x4 <= 0
-(  5) +x1          <= 1
+(  5) +x1-x2-x3-x4 <= 0     # x1 <= x2+x3+x4
 (  6)       +x3+x4 <= 1
 (  7)    +x2   +x4 <= 1
 (  8) +x1+x2+x3+x4 <= 2
 
 END
 
-N = 4
+# x1 = x4
 
-P = [16, 19, 23, 28]
-
-W = [2, 3, 4, 5]
-
-B = 7
+# seul 1000 est supprimé, tout solution contient x1 et au moins un objet peut pas remplacé avec x5
