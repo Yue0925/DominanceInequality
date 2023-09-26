@@ -1,4 +1,5 @@
 include("parser.jl")
+using JuMP, CPLEX
 
 function dominanceFilterage(fname::String)
     kp = readInstance(fname)
@@ -123,4 +124,44 @@ function dominanceFilterage(fname::String)
 
 end
 
-dominanceFilterage(ARGS[1])
+
+
+function verifyObjcut(fname::String)
+    kp = readInstance(fname)
+
+    ratio = Dict{Int64, Float64}(i => kp.P[i]/kp.W[i] for i in 1:kp.N)
+
+    sorted_ratio = sort(collect(ratio), by = x->x[2], rev=true)
+
+    cover = Vector{Int64}()
+
+    x_theory = zeros((kp.N)) ; CR = kp.B
+    for (i, r) in sorted_ratio
+        if CR - kp.W[i] <= 0 
+            x_theory[i] = CR/ kp.W[i] ; push!(cover, i)
+            break 
+        end 
+        x_theory[i] = 1.0 ; CR -= kp.W[i]
+        push!(cover, i)
+    end
+
+    println("LP => x_theory=$x_theory")
+    println("Cover at LP => $cover ")
+
+    M = Model(CPLEX.Optimizer)
+    @variable(M,0<= x[1:kp.N] <=1)
+    @constraint(M, x'*kp.W <= kp.B)
+    @constraint(M, sum(x[i] for i in cover) <= length(cover)-1)
+    @objective(M, Max, x'*kp.P)
+
+    optimize!(M)
+
+    LP_cover = JuMP.value.(x)
+
+    println("LP cover => $LP_cover \n")
+
+end
+
+verifyObjcut(ARGS[1])
+
+# dominanceFilterage(ARGS[1])

@@ -1,0 +1,247 @@
+./instances/kp1 ... 
+LP => x_theory=[0.0, 0.0, 0.0, 0.8571428571428571, 1.0]
+Cover at LP => [5, 4] 
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            16.142857
+LP cover => [0.0, 0.0, 0.42857142857142855, 0.0, 1.0] 
+# # violated by x3+x4+x5 <=1  (swap x1, x5)
+
+
+
+./instances/kp2 ... 
+LP => x_theory=[1.0, 1.0, 0.75, 0.0]
+Cover at LP => [1, 2, 3] 
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            35.750000
+LP cover => [1.0, 1.0, 0.0, 0.5] 
+# # violated by x2 + x4 <=1 (swap x1, x4)
+
+
+./instances/kp3 ... 
+LP => x_theory=[0.0, 0.0, 1.0, 0.875]
+Cover at LP => [3, 4] 
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            24.000000
+LP cover => [0.6666666666666666, 1.0, 1.0, 0.0] 
+#  # violated by x3 == 0 (swap x1, x4) // x1 <= x4
+
+
+
+
+./instances/kp4 ... 
+LP => x_theory=[1.0, 1.0, 0.5, 0.0]
+Cover at LP => [1, 2, 3] 
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            46.500000
+LP cover => [1.0, 1.0, 0.0, 0.4] 
+# violated by cover 
+
+
+
+
+./instances/kp5 ... 
+LP => x_theory=[1.0, 0.875, 0.0, 0.0, 0.0]
+Cover at LP => [1, 2] 
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            24.000000
+LP cover => [0.0, 1.0, 1.0, 0.5, 0.0] 
+
+
+
+
+./instances/kp6 ... 
+LP => x_theory=[0.8666666666666667, 1.0, 1.0, 1.0]
+Cover at LP => [4, 3, 2, 1] 
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            26.000000
+LP cover => [1.0, 1.0, 0.0, 1.0] 
+
+
+
+
+./instances/kp7 ... 
+LP => x_theory=[1.0, 1.0, 0.0, 0.85, 0.0]
+Cover at LP => [1, 2, 4] 
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            28.000000
+LP cover => [1.0, 0.2777777777777778, 1.0, 0.7222222222222222, 0.0] 
+# # violated x1 + x2 +x3 +x4 <= 2 (extended cover)
+
+
+
+./instances/kp8 ... 
+LP => x_theory=[1.0, 1.0, 0.75, 0.0]
+Cover at LP => [1, 2, 3] 
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            35.750000
+LP cover => [1.0, 1.0, 0.0, 0.5] 
+# # violated by cover 
+
+
+
+./instances/kp9 ... 
+LP => x_theory=[1.0, 0.5263157894736842, 0.0, 0.0, 0.0]
+Cover at LP => [1, 2] 
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+LP Presolve eliminated 0 rows and 1 columns.
+Reduced LP has 2 rows, 4 columns, and 6 nonzeros.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            40.473684
+LP cover => [0.0, 1.0, 0.25, 0.0, 0.0] 
+
+
+
+
+./instances/kp10 ... 
+LP => x_theory=[1.0, 0.875, 0.0, 0.0]
+Cover at LP => [1, 2] 
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            19.625000
+LP cover => [1.0, 0.0, 0.7777777777777777, 0.0] 
+
+./instances/kp11 ... 
+LP => x_theory=[1.0, 1.0, 0.5, 1.0, 0.0, 0.0]
+Cover at LP => [1, 4, 2, 3] 
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            24.000000
+LP cover => [1.0, 0.0, 0.875, 0.0, 0.0, 0.0] 
+
+./instances/kp12 ... 
+LP => x_theory=[1.0, 1.0, 1.0, 0.875, 0.0, 0.0]
+Cover at LP => [1, 2, 3, 4] 
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =           112.000000
+LP cover => [1.0, 1.0, 1.0, 0.0, 1.0, 0.1] 
+
+./instances/kp13 ... 
+LP => x_theory=[1.0, 1.0, 1.0, 0.6, 1.0, 0.0, 0.0]
+Cover at LP => [1, 2, 3, 5, 4] 
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =           123.000000
+LP cover => [1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 0.0] 
+
+./instances/kp14 ... 
+LP => x_theory=[0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.45]
+Cover at LP => [5, 4, 7] 
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+LP Presolve eliminated 0 rows and 1 columns.
+Reduced LP has 2 rows, 6 columns, and 9 nonzeros.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =           107.550000
+LP cover => [0.0, 0.0, 0.47368421052631576, 1.0, 1.0, 0.0, 0.0] 
+
+
+
+
+
+./instances/kp15 ... 
+LP => x_theory=[1.0, 1.0, 1.0, 0.3888888888888889, 0.0, 0.0]
+Cover at LP => [1, 2, 3, 4] 
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            42.666667
+LP cover => [1.0, 1.0, 0.36363636363636365, 0.6363636363636364, 0.0, 0.0] 
+
+./instances/kp16 ... 
+LP => x_theory=[1.0, 1.0, 0.0, 0.9634146341463414, 0.0, 0.0, 0.0]
+Cover at LP => [1, 2, 4] 
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            89.000000
+LP cover => [1.0, 1.0, 1.0, 0.0, 0.9146341463414634, 0.0, 0.0] 
+
+
+
+
+
+./instances/kp17 ... 
+LP => x_theory=[0.08333333333333333, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+Cover at LP => [4, 2, 3, 1] 
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+LP Presolve eliminated 0 rows and 3 columns.
+Reduced LP has 2 rows, 5 columns, and 7 nonzeros.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =          3900.000000
+LP cover => [1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.09090909090909105] 
+# violated by x1 <= x6+x7 (swap x1, x7) 
+
+
+
+
