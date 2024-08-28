@@ -18,13 +18,16 @@
 # done
 
 
-for file in ./instances/*; do
+# for file in ./instances/*; do
+#     echo "$file ... "
+#     julia dominanceFilter.jl "$file"
+# done
+
+
+for file in ./completeOneSwap/*.poi; do
     echo "$file ... "
-    julia dominanceFilter.jl "$file"
+    traf "$file"
 done
 
 
-# for file in ./allSwapDominance/*.poi; do
-#     echo "$file ... "
-#     traf "$file"
-# done
+

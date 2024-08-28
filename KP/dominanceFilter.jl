@@ -19,107 +19,125 @@ function dominanceFilterage(fname::String)
 
     # close(f)
 
-    # -------------------------------------------------
-    # etape 1 : read all integer point 
-    # -------------------------------------------------
-    feasiblePts = Vector{Vector{Int64}}()
-    filename = "./PolyKP/" * kp.name * ".poi"
+    # todo : boucle de one swap ∀ i,j
+    for i in 1:kp.N-1
+        for j in i+1:kp.N
+            u = 0 ; v = 0 
+
+            println("boucle i $i , j $j")
+            if kp.P[i] > kp.P[j]
+                v = i ; u = j 
+            elseif kp.P[i] == kp.P[j]
+                continue
+            else
+                u = i ; v = j 
+            end
+
+            println("-----------------------------------------")
+            println("\t swap $u by $v ")
+
+            # -------------------------------------------------
+            # etape 1 : read all integer point 
+            # -------------------------------------------------
+            feasiblePts = Vector{Vector{Int64}}()
+            filename = "./PolyKP/" * kp.name * ".poi"
 
 
-    f = open(filename)
-    lines = readlines(f)
-    close(f)
+            f = open(filename)
+            lines = readlines(f)
+            close(f)
 
-    for line in lines
-        if length(line) == 0 || line[1] != '(' continue end 
-        l = parse.(Int64, split(split(line, ")")[end], " ")[2:end-1])
+            for line in lines
+                if length(line) == 0 || line[1] != '(' continue end 
+                l = parse.(Int64, split(split(line, ")")[end], " ")[2:end-1])
 
-        @assert length(l) == kp.N
+                @assert length(l) == kp.N
 
-        push!(feasiblePts, l)
-    end
-
-    # -------------------------------------------------
-    # etape 2 : for each point, find neighbouring point + compare + filter dominated one 
-    # -------------------------------------------------
-    dominated = Set{Int64}() ; idx = 0
-    for pt in feasiblePts
-        idx += 1
-
-        # todo one swap 
-        # ratio = kp.P./kp.W
-        # dic = Dict(i => ratio[i] for i in 1:kp.N)
-        
-        u = 1; v = kp.N 
-        if pt[u] == 1 && pt[v] == 0
+                push!(feasiblePts, l)
+            end
             
 
-        # # todo swap 
-        # for u in 1:kp.N     # object u is packed 
-        #     if pt[u] == 0 continue end 
+            # -------------------------------------------------
+            # etape 2 : for each point, find neighbouring point + compare + filter dominated one 
+            # -------------------------------------------------
+            dominated = Set{Int64}() ; idx = 0
+            for pt in feasiblePts
+                idx += 1
 
-        #     for v in 1:kp.N     # object v is free 
-        #         if pt[v] == 1 continue end
+                # todo one swap                 
+                if pt[u] == 1 && pt[v] == 0
+                    
+
+                # # todo swap 
+                # for u in 1:kp.N     # object u is packed 
+                #     if pt[u] == 0 continue end 
+
+                #     for v in 1:kp.N     # object v is free 
+                #         if pt[v] == 1 continue end
 
 
-                # if residual capacity >= 0 && profit v > u
-                # then delete actual dominated pt
-                if kp.B - pt'*kp.W + kp.W[u] - kp.W[v] ≥ 0 && kp.P[v] - kp.P[u] > 0
-                    push!(dominated, idx)
+                        # if residual capacity >= 0 && profit v > u
+                        # then delete actual dominated pt
+                        if kp.B - pt'*kp.W + kp.W[u] - kp.W[v] ≥ 0 # todo : (move before) && kp.P[v] - kp.P[u] > 0
+                            push!(dominated, idx)
+                        end
+                #     end
+                # end
                 end
-        #     end
-        # end
+
+
+                # #todo insert
+                # for u in 1:kp.N     # object u is free 
+                #     if pt[u] == 1 continue end
+
+                #     # if pushing object u is feasible (residual capa ≥ 0) and is dominated 
+                #     if kp.B - pt'*kp.W - kp.W[u] ≥ 0 && kp.P[u] > 0
+                #         push!(dominated, idx)
+                #     end
+                # end
+            end
+
+
+            println("total feasible points => $(length(feasiblePts))")
+
+            deleteat!(feasiblePts, sort(collect(dominated)))
+        
+            println("where dominated ones => $(length(dominated)) ")
+        
+            
+            # -------------------------------------------------
+            # etape 3 : write all filtered point into .poi file (ready compute convex hull with traf)
+            # -------------------------------------------------
+            # todo : 
+            newfile = "./completeOneSwap/" * kp.name * "_u$(u)_v$(v).poi"
+            f = open(newfile, "w")
+            println(f, "DIM = ", kp.N) ; println(f)
+            println(f, "CONV_SECTION")
+
+            o = 0
+            for pt in feasiblePts
+                o += 1
+                if o < 10 
+                    print(f, "(  $o) ")
+                elseif o < 100
+                    print(f, "( $o) ")
+                else
+                    print(f, "($o) ")
+                end
+
+                for x in pt print(f, "$x ") end 
+                println(f)
+
+            end
+
+            println(f)
+            println(f, "END")
+            close(f)
+
+
+
         end
-
-
-        # #todo insert
-        # for u in 1:kp.N     # object u is free 
-        #     if pt[u] == 1 continue end
-
-        #     # if pushing object u is feasible (residual capa ≥ 0) and is dominated 
-        #     if kp.B - pt'*kp.W - kp.W[u] ≥ 0 && kp.P[u] > 0
-        #         push!(dominated, idx)
-        #     end
-        # end
     end
-
-
-    println("total feasible points => $(length(feasiblePts))")
-
-    deleteat!(feasiblePts, sort(collect(dominated)))
-
-    println("where dominated ones => $(length(dominated)) ")
-
-
-    # -------------------------------------------------
-    # etape 3 : write all filtered point into .poi file (ready compute convex hull with traf)
-    # -------------------------------------------------
-    # todo : 
-    newfile = "./oneSwapDominance/" * kp.name * ".poi"
-    f = open(newfile, "w")
-    println(f, "DIM = ", kp.N) ; println(f)
-    println(f, "CONV_SECTION")
-
-    i = 0
-    for pt in feasiblePts
-        i += 1
-        if i < 10 
-            print(f, "(  $i) ")
-        elseif i < 100
-            print(f, "( $i) ")
-        else
-            print(f, "($i) ")
-        end
-
-        for x in pt print(f, "$x ") end 
-        println(f)
-
-    end
-
-    println(f)
-    println(f, "END")
-    close(f)
-
 
 
 end
@@ -162,6 +180,44 @@ function verifyObjcut(fname::String)
 
 end
 
-verifyObjcut(ARGS[1])
 
-# dominanceFilterage(ARGS[1])
+function verifyObjcut2(fname::String)
+    kp = readInstance(fname)
+
+    M = Model(CPLEX.Optimizer)
+    @variable(M,0<= x[1:kp.N] <=1)
+    @constraint(M, x'*kp.W <= kp.B)
+    @objective(M, Max, x'*kp.P)
+
+    optimize!(M)
+
+    LP = JuMP.value.(x)
+
+    println("LP => $LP \n")
+
+    # 
+    for u in 1:kp.N
+        if LP[u] != 1.0 continue end 
+
+        for v in 1:kp.N 
+            if LP[v] == 1.0 || LP[v] == 0.0 continue end 
+
+            # swap u,v 
+            println("operation swap u=$u ans v=$v ... ")
+
+            Pi = max(0.0, (1-LP[v])*kp.W[v] - kp.W[u])
+
+            println("feasibility Pi = $Pi")
+
+            if kp.P[v]*(1-LP[v]) - kp.P[u] > kp.P[v]*(LP[v] + Pi)
+                println(" ------------- found f^obj cut (swap $u, $v ) violates LP opt !!!")
+            end
+            println("l'écart $(kp.P[v]*(1-LP[v]) - kp.P[u] - kp.P[v]*(LP[v] + Pi))")
+        end
+    end
+
+end
+
+# verifyObjcut2(ARGS[1])
+
+dominanceFilterage(ARGS[1])
