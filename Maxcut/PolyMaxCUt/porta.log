@@ -1,0 +1,270 @@
+
+
+
+log for valid -V MaxCut_5_1.ieq 
+
+input file MaxCut_5_1.ieq o.k.
+dimension              :    5 
+number of equations    :    0 
+number of inequalities :    0 
+
+computing all valid integral points .
+
+number of valid integral points : 32
+
+integral points written to file MaxCut_5_1.poi
+
+
+
+log for valid -V MaxCut_5_2.ieq 
+
+input file MaxCut_5_2.ieq o.k.
+dimension              :    5 
+number of equations    :    0 
+number of inequalities :    0 
+
+computing all valid integral points .
+
+number of valid integral points : 32
+
+integral points written to file MaxCut_5_2.poi
+
+
+
+log for valid -V MaxCut_5_3.ieq 
+
+input file MaxCut_5_3.ieq o.k.
+dimension              :    5 
+number of equations    :    0 
+number of inequalities :    0 
+
+computing all valid integral points .
+
+number of valid integral points : 32
+
+integral points written to file MaxCut_5_3.poi
+
+
+
+log for valid -V MaxCut_6_1.ieq 
+
+input file MaxCut_6_1.ieq o.k.
+dimension              :    6 
+number of equations    :    0 
+number of inequalities :    0 
+
+computing all valid integral points .
+
+number of valid integral points : 64
+
+integral points written to file MaxCut_6_1.poi
+
+
+
+log for valid -V MaxCut_6_2.ieq 
+
+input file MaxCut_6_2.ieq o.k.
+dimension              :    6 
+number of equations    :    0 
+number of inequalities :    0 
+
+computing all valid integral points .
+
+number of valid integral points : 64
+
+integral points written to file MaxCut_6_2.poi
+
+
+
+log for valid -V MaxCut_6_3.ieq 
+
+input file MaxCut_6_3.ieq o.k.
+dimension              :    6 
+number of equations    :    0 
+number of inequalities :    0 
+
+computing all valid integral points .
+
+number of valid integral points : 64
+
+integral points written to file MaxCut_6_3.poi
+
+
+
+log for valid -V MaxCut_7_1.ieq 
+
+input file MaxCut_7_1.ieq o.k.
+dimension              :    7 
+number of equations    :    0 
+number of inequalities :    0 
+
+computing all valid integral points .
+
+number of valid integral points : 128
+
+integral points written to file MaxCut_7_1.poi
+
+
+
+log for valid -V MaxCut_7_2.ieq 
+
+input file MaxCut_7_2.ieq o.k.
+dimension              :    7 
+number of equations    :    0 
+number of inequalities :    0 
+
+computing all valid integral points .
+
+number of valid integral points : 128
+
+integral points written to file MaxCut_7_2.poi
+
+
+
+log for valid -V MaxCut_7_3.ieq 
+
+input file MaxCut_7_3.ieq o.k.
+dimension              :    7 
+number of equations    :    0 
+number of inequalities :    0 
+
+computing all valid integral points .
+
+number of valid integral points : 128
+
+integral points written to file MaxCut_7_3.poi
+
+
+
+log for valid -V MaxCut_8_1.ieq 
+
+input file MaxCut_8_1.ieq o.k.
+dimension              :    8 
+number of equations    :    0 
+number of inequalities :    0 
+
+computing all valid integral points .
+
+number of valid integral points : 256
+
+integral points written to file MaxCut_8_1.poi
+
+
+
+log for valid -V MaxCut_8_2.ieq 
+
+input file MaxCut_8_2.ieq o.k.
+dimension              :    8 
+number of equations    :    0 
+number of inequalities :    0 
+
+computing all valid integral points .
+
+number of valid integral points : 256
+
+integral points written to file MaxCut_8_2.poi
+
+
+
+log for valid -V MaxCut_8_3.ieq 
+
+input file MaxCut_8_3.ieq o.k.
+dimension              :    8 
+number of equations    :    0 
+number of inequalities :    0 
+
+computing all valid integral points .
+
+number of valid integral points : 256
+
+integral points written to file MaxCut_8_3.poi
+
+
+
+log for valid -V MaxCut_9_1.ieq 
+
+input file MaxCut_9_1.ieq o.k.
+dimension              :    9 
+number of equations    :    0 
+number of inequalities :    0 
+
+computing all valid integral points ..
+
+number of valid integral points : 512
+
+integral points written to file MaxCut_9_1.poi
+
+
+
+log for valid -V MaxCut_9_2.ieq 
+
+input file MaxCut_9_2.ieq o.k.
+dimension              :    9 
+number of equations    :    0 
+number of inequalities :    0 
+
+computing all valid integral points ..
+
+number of valid integral points : 512
+
+integral points written to file MaxCut_9_2.poi
+
+
+
+log for valid -V MaxCut_9_3.ieq 
+
+input file MaxCut_9_3.ieq o.k.
+dimension              :    9 
+number of equations    :    0 
+number of inequalities :    0 
+
+computing all valid integral points ..
+
+number of valid integral points : 512
+
+integral points written to file MaxCut_9_3.poi
+
+
+
+log for valid -V MaxCut_10_1.ieq 
+
+input file MaxCut_10_1.ieq o.k.
+dimension              :   10 
+number of equations    :    0 
+number of inequalities :    0 
+
+computing all valid integral points ...
+
+number of valid integral points : 1024
+
+integral points written to file MaxCut_10_1.poi
+
+
+
+log for valid -V MaxCut_10_2.ieq 
+
+input file MaxCut_10_2.ieq o.k.
+dimension              :   10 
+number of equations    :    0 
+number of inequalities :    0 
+
+computing all valid integral points ...
+
+number of valid integral points : 1024
+
+integral points written to file MaxCut_10_2.poi
+
+
+
+log for valid -V MaxCut_10_3.ieq 
+
+input file MaxCut_10_3.ieq o.k.
+dimension              :   10 
+number of equations    :    0 
+number of inequalities :    0 
+
+computing all valid integral points ...
+
+number of valid integral points : 1024
+
+integral points written to file MaxCut_10_3.poi

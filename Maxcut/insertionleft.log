@@ -1,0 +1,693 @@
+./PolyMaxCUt/MaxCut_10_1.poi ... 
+
+ ------------ MaxCut_10_1 with 1 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_1 with 2 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_1 with 3 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_1 with 4 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_1 with 5 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_1 with 6 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_1 with 7 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_1 with 8 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_1 with 9 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_1 with 10 -------------- 
+total 1024 feasible solutions 
+0 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 1024
+./PolyMaxCUt/MaxCut_10_2.poi ... 
+
+ ------------ MaxCut_10_2 with 1 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_2 with 2 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_2 with 3 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_2 with 4 -------------- 
+total 1024 feasible solutions 
+248 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 776
+
+ ------------ MaxCut_10_2 with 5 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_2 with 6 -------------- 
+total 1024 feasible solutions 
+224 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 800
+
+ ------------ MaxCut_10_2 with 7 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_2 with 8 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_2 with 9 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_2 with 10 -------------- 
+total 1024 feasible solutions 
+0 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 1024
+./PolyMaxCUt/MaxCut_10_3.poi ... 
+
+ ------------ MaxCut_10_3 with 1 -------------- 
+total 1024 feasible solutions 
+253 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 771
+
+ ------------ MaxCut_10_3 with 2 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_3 with 3 -------------- 
+total 1024 feasible solutions 
+252 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 772
+
+ ------------ MaxCut_10_3 with 4 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_3 with 5 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_3 with 6 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_3 with 7 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_3 with 8 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_3 with 9 -------------- 
+total 1024 feasible solutions 
+256 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 768
+
+ ------------ MaxCut_10_3 with 10 -------------- 
+total 1024 feasible solutions 
+0 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 1024
+./PolyMaxCUt/MaxCut_5_1.poi ... 
+
+ ------------ MaxCut_5_1 with 1 -------------- 
+total 32 feasible solutions 
+8 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 24
+
+ ------------ MaxCut_5_1 with 2 -------------- 
+total 32 feasible solutions 
+8 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 24
+
+ ------------ MaxCut_5_1 with 3 -------------- 
+total 32 feasible solutions 
+8 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 24
+
+ ------------ MaxCut_5_1 with 4 -------------- 
+total 32 feasible solutions 
+8 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 24
+
+ ------------ MaxCut_5_1 with 5 -------------- 
+total 32 feasible solutions 
+0 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 32
+./PolyMaxCUt/MaxCut_5_2.poi ... 
+
+ ------------ MaxCut_5_2 with 1 -------------- 
+total 32 feasible solutions 
+8 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 24
+
+ ------------ MaxCut_5_2 with 2 -------------- 
+total 32 feasible solutions 
+8 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 24
+
+ ------------ MaxCut_5_2 with 3 -------------- 
+total 32 feasible solutions 
+8 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 24
+
+ ------------ MaxCut_5_2 with 4 -------------- 
+total 32 feasible solutions 
+8 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 24
+
+ ------------ MaxCut_5_2 with 5 -------------- 
+total 32 feasible solutions 
+0 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 32
+./PolyMaxCUt/MaxCut_5_3.poi ... 
+
+ ------------ MaxCut_5_3 with 1 -------------- 
+total 32 feasible solutions 
+8 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 24
+
+ ------------ MaxCut_5_3 with 2 -------------- 
+total 32 feasible solutions 
+8 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 24
+
+ ------------ MaxCut_5_3 with 3 -------------- 
+total 32 feasible solutions 
+8 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 24
+
+ ------------ MaxCut_5_3 with 4 -------------- 
+total 32 feasible solutions 
+8 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 24
+
+ ------------ MaxCut_5_3 with 5 -------------- 
+total 32 feasible solutions 
+0 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 32
+./PolyMaxCUt/MaxCut_6_1.poi ... 
+
+ ------------ MaxCut_6_1 with 1 -------------- 
+total 64 feasible solutions 
+16 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 48
+
+ ------------ MaxCut_6_1 with 2 -------------- 
+total 64 feasible solutions 
+16 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 48
+
+ ------------ MaxCut_6_1 with 3 -------------- 
+total 64 feasible solutions 
+16 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 48
+
+ ------------ MaxCut_6_1 with 4 -------------- 
+total 64 feasible solutions 
+16 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 48
+
+ ------------ MaxCut_6_1 with 5 -------------- 
+total 64 feasible solutions 
+16 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 48
+
+ ------------ MaxCut_6_1 with 6 -------------- 
+total 64 feasible solutions 
+0 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 64
+./PolyMaxCUt/MaxCut_6_2.poi ... 
+
+ ------------ MaxCut_6_2 with 1 -------------- 
+total 64 feasible solutions 
+16 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 48
+
+ ------------ MaxCut_6_2 with 2 -------------- 
+total 64 feasible solutions 
+16 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 48
+
+ ------------ MaxCut_6_2 with 3 -------------- 
+total 64 feasible solutions 
+16 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 48
+
+ ------------ MaxCut_6_2 with 4 -------------- 
+total 64 feasible solutions 
+16 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 48
+
+ ------------ MaxCut_6_2 with 5 -------------- 
+total 64 feasible solutions 
+16 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 48
+
+ ------------ MaxCut_6_2 with 6 -------------- 
+total 64 feasible solutions 
+0 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 64
+./PolyMaxCUt/MaxCut_6_3.poi ... 
+
+ ------------ MaxCut_6_3 with 1 -------------- 
+total 64 feasible solutions 
+16 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 48
+
+ ------------ MaxCut_6_3 with 2 -------------- 
+total 64 feasible solutions 
+16 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 48
+
+ ------------ MaxCut_6_3 with 3 -------------- 
+total 64 feasible solutions 
+16 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 48
+
+ ------------ MaxCut_6_3 with 4 -------------- 
+total 64 feasible solutions 
+16 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 48
+
+ ------------ MaxCut_6_3 with 5 -------------- 
+total 64 feasible solutions 
+16 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 48
+
+ ------------ MaxCut_6_3 with 6 -------------- 
+total 64 feasible solutions 
+0 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 64
+./PolyMaxCUt/MaxCut_7_1.poi ... 
+
+ ------------ MaxCut_7_1 with 1 -------------- 
+total 128 feasible solutions 
+32 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 96
+
+ ------------ MaxCut_7_1 with 2 -------------- 
+total 128 feasible solutions 
+32 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 96
+
+ ------------ MaxCut_7_1 with 3 -------------- 
+total 128 feasible solutions 
+32 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 96
+
+ ------------ MaxCut_7_1 with 4 -------------- 
+total 128 feasible solutions 
+32 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 96
+
+ ------------ MaxCut_7_1 with 5 -------------- 
+total 128 feasible solutions 
+32 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 96
+
+ ------------ MaxCut_7_1 with 6 -------------- 
+total 128 feasible solutions 
+32 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 96
+
+ ------------ MaxCut_7_1 with 7 -------------- 
+total 128 feasible solutions 
+0 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 128
+./PolyMaxCUt/MaxCut_7_2.poi ... 
+
+ ------------ MaxCut_7_2 with 1 -------------- 
+total 128 feasible solutions 
+32 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 96
+
+ ------------ MaxCut_7_2 with 2 -------------- 
+total 128 feasible solutions 
+32 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 96
+
+ ------------ MaxCut_7_2 with 3 -------------- 
+total 128 feasible solutions 
+32 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 96
+
+ ------------ MaxCut_7_2 with 4 -------------- 
+total 128 feasible solutions 
+32 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 96
+
+ ------------ MaxCut_7_2 with 5 -------------- 
+total 128 feasible solutions 
+32 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 96
+
+ ------------ MaxCut_7_2 with 6 -------------- 
+total 128 feasible solutions 
+32 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 96
+
+ ------------ MaxCut_7_2 with 7 -------------- 
+total 128 feasible solutions 
+0 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 128
+./PolyMaxCUt/MaxCut_7_3.poi ... 
+
+ ------------ MaxCut_7_3 with 1 -------------- 
+total 128 feasible solutions 
+32 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 96
+
+ ------------ MaxCut_7_3 with 2 -------------- 
+total 128 feasible solutions 
+30 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 98
+
+ ------------ MaxCut_7_3 with 3 -------------- 
+total 128 feasible solutions 
+32 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 96
+
+ ------------ MaxCut_7_3 with 4 -------------- 
+total 128 feasible solutions 
+32 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 96
+
+ ------------ MaxCut_7_3 with 5 -------------- 
+total 128 feasible solutions 
+32 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 96
+
+ ------------ MaxCut_7_3 with 6 -------------- 
+total 128 feasible solutions 
+32 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 96
+
+ ------------ MaxCut_7_3 with 7 -------------- 
+total 128 feasible solutions 
+0 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 128
+./PolyMaxCUt/MaxCut_8_1.poi ... 
+
+ ------------ MaxCut_8_1 with 1 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_1 with 2 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_1 with 3 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_1 with 4 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_1 with 5 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_1 with 6 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_1 with 7 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_1 with 8 -------------- 
+total 256 feasible solutions 
+0 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 256
+./PolyMaxCUt/MaxCut_8_2.poi ... 
+
+ ------------ MaxCut_8_2 with 1 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_2 with 2 -------------- 
+total 256 feasible solutions 
+62 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 194
+
+ ------------ MaxCut_8_2 with 3 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_2 with 4 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_2 with 5 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_2 with 6 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_2 with 7 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_2 with 8 -------------- 
+total 256 feasible solutions 
+0 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 256
+./PolyMaxCUt/MaxCut_8_3.poi ... 
+
+ ------------ MaxCut_8_3 with 1 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_3 with 2 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_3 with 3 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_3 with 4 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_3 with 5 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_3 with 6 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_3 with 7 -------------- 
+total 256 feasible solutions 
+64 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 192
+
+ ------------ MaxCut_8_3 with 8 -------------- 
+total 256 feasible solutions 
+0 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 256
+./PolyMaxCUt/MaxCut_9_1.poi ... 
+
+ ------------ MaxCut_9_1 with 1 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_1 with 2 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_1 with 3 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_1 with 4 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_1 with 5 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_1 with 6 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_1 with 7 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_1 with 8 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_1 with 9 -------------- 
+total 512 feasible solutions 
+0 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 512
+./PolyMaxCUt/MaxCut_9_2.poi ... 
+
+ ------------ MaxCut_9_2 with 1 -------------- 
+total 512 feasible solutions 
+126 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 386
+
+ ------------ MaxCut_9_2 with 2 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_2 with 3 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_2 with 4 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_2 with 5 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_2 with 6 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_2 with 7 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_2 with 8 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_2 with 9 -------------- 
+total 512 feasible solutions 
+0 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 512
+./PolyMaxCUt/MaxCut_9_3.poi ... 
+
+ ------------ MaxCut_9_3 with 1 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_3 with 2 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_3 with 3 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_3 with 4 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_3 with 5 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_3 with 6 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_3 with 7 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_3 with 8 -------------- 
+total 512 feasible solutions 
+128 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 384
+
+ ------------ MaxCut_9_3 with 9 -------------- 
+total 512 feasible solutions 
+0 dominated solutions (insertion left i.e. u from V_2 to V_1)
+|Χ_dom| = 512

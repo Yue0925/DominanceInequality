@@ -1,0 +1,24 @@
+
+
+
+log for xporta -D MaxCut_5_1_u1.poi 
+
+input file MaxCut_5_1_u1.poi o.k.
+dimension              :    5 
+number of cone-points  :    0 
+number of conv-points  :   24 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     6 |          6 |        1 |    1 |   n |   0.48 |      48 |      0.00 |      0.00 |
+|     5 |          5 |        2 |    1 |   n |   0.51 |      48 |      0.00 |      0.00 |
+|     4 |          4 |        3 |    2 |   n |   0.58 |      48 |      0.00 |      0.00 |
+|     3 |          3 |        4 |    2 |   n |   0.59 |      48 |      0.00 |      0.00 |
+|     2 |          2 |        5 |    2 |   n |   0.67 |      48 |      0.00 |      0.00 |
+|     1 |          1 |        6 |    2 |   n |   0.63 |      48 |      0.00 |      0.00 |
+
+DIMENSION OF THE POLYHEDRON : 5
+

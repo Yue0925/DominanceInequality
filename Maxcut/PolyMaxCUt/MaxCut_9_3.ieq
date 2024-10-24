@@ -1,0 +1,8 @@
+DIM = 9
+
+LOWER_BOUNDS
+0 0 0 0 0 0 0 0 0 
+UPPER_BOUNDS
+1 1 1 1 1 1 1 1 1 
+
+END

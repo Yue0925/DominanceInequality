@@ -1558,3 +1558,45 @@ number of conv-points  :    5
 
 output written to file kp2test.ieq.poi
 
+
+
+
+log for xporta -T kp1.poi 
+
+input file kp1.poi o.k.
+dimension              :    5 
+number of cone-points  :    0 
+number of conv-points  :    8 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     6 |          6 |        1 |    1 |   n |   0.29 |      43 |      0.00 |      0.00 |
+|     5 |          5 |        2 |    1 |   n |   0.28 |      43 |      0.00 |      0.00 |
+|     4 |          4 |        3 |    1 |   n |   0.29 |      43 |      0.00 |      0.00 |
+|     3 |          3 |        4 |    1 |   n |   0.30 |      43 |      0.00 |      0.00 |
+|     2 |          2 |        5 |    1 |   n |   0.33 |      43 |      0.00 |      0.00 |
+|     1 |          1 |        6 |    1 |   n |   0.35 |      43 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|     2 |          7 |        7 |    1 |   n |   0.18 |     842 |      0.00 |      0.00 |
+|     1 |          8 |        7 |    1 |   n |   0.20 |     842 |      0.00 |      0.00 |
+
+sum of inequalities over all iterations :     14
+maximal number of inequalities          :      7
+
+transformation to integer values 
+sorting system 
+
+number of equations    :    0 
+number of inequalities :    7 
+
+kp1.poi.ieq moved into kp1.poi.ieq%
+output written to file kp1.poi.ieq
+
