@@ -78,7 +78,7 @@ function writeIeqFile(fname::String)
 
     nameObj = split(fname, "/")[end]
 
-    folder = "./PolyMaxCUt/"
+    folder = "./PolyMaxCut/"
     if !isdir(folder)
         mkdir(folder)
     end
@@ -124,14 +124,14 @@ end
 
 
 
-# for n in 5:10
+# for n in 4:10
 #     for iem in 1:3
 #         completeG(n, iem)
 #     end
     
 # end
 
-# completeG(5)
+
 
 
 writeIeqFile(ARGS[1])

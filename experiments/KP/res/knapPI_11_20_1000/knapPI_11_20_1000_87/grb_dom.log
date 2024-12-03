@@ -1,0 +1,89 @@
+
+Gurobi 11.0.2 (linux64) logging started Tue 03 Dec 2024 09:00:57 AM CET
+
+Set parameter LogFile to value "./res/knapPI_11_20_1000/knapPI_11_20_1000_87/grb_dom.log"
+Set parameter Presolve to value 0
+Set parameter Aggregate to value 0
+Set parameter Heuristics to value 0
+Set parameter LPWarmStart to value 0
+Set parameter NLPHeur to value 0
+Set parameter PreDepRow to value 0
+Set parameter PreDual to value 0
+Set parameter RINS to value 0
+Set parameter Symmetry to value 0
+Set parameter NodeLimit to value 1
+Set parameter Threads to value 1
+
+Gurobi 11.0.2 (linux64) logging started Tue 03 Dec 2024 09:00:57 AM CET
+
+Set parameter LogFile to value "./res/knapPI_11_20_1000/knapPI_11_20_1000_87/grb_dom.log"
+Set parameter NLPHeur to value 0
+Set parameter LPWarmStart to value 0
+Set parameter PreDepRow to value 0
+Set parameter Symmetry to value 0
+Set parameter Presolve to value 0
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Pop!_OS 20.04 LTS")
+
+CPU model: Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 4 logical processors, using up to 1 threads
+
+Optimize a model with 374 rows, 20 columns and 1239 nonzeros
+Model fingerprint: 0xb6c24480
+Variable types: 0 continuous, 20 integer (20 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 6e+02]
+  Objective range  [9e+01, 1e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [4e+03, 4e+03]
+Variable types: 0 continuous, 20 integer (20 binary)
+
+Root relaxation: objective 9.139231e+03, 1 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 9139.23077    0    1          - 9139.23077      -     -    0s
+     0     0 9138.68726    0    1          - 9138.68726      -     -    0s
+     0     0 9137.35385    0    1          - 9137.35385      -     -    0s
+     0     0 9137.35385    0    1          - 9137.35385      -     -    0s
+     0     0 9137.35385    0    1          - 9137.35385      -     -    0s
+     0     0 9137.35385    0    1          - 9137.35385      -     -    0s
+     0     0 9137.35385    0    1          - 9137.35385      -     -    0s
+     0     0 9137.35385    0    3          - 9137.35385      -     -    0s
+     0     0 9136.58015    0    3          - 9136.58015      -     -    0s
+     0     0 9136.24007    0    4          - 9136.24007      -     -    0s
+     0     0 9134.43330    0    3          - 9134.43330      -     -    0s
+     0     0 9133.89860    0    4          - 9133.89860      -     -    0s
+     0     0 9133.89860    0    4          - 9133.89860      -     -    0s
+     0     0 9133.89860    0    6          - 9133.89860      -     -    0s
+     0     0 9074.19512    0    3          - 9074.19512      -     -    0s
+     0     0 9074.19512    0    2          - 9074.19512      -     -    0s
+     0     0 9074.19512    0    4          - 9074.19512      -     -    0s
+     0     0 9074.19512    0    2          - 9074.19512      -     -    0s
+     0     0 9073.87059    0    5          - 9073.87059      -     -    0s
+     0     0 9073.87059    0    6          - 9073.87059      -     -    0s
+     0     0 9073.87059    0    8          - 9073.87059      -     -    0s
+     0     0 9073.87059    0    9          - 9073.87059      -     -    0s
+     0     0 9065.00000    0    1          - 9065.00000      -     -    0s
+*    0     0               0    9065.0000000 9065.00000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 4
+  MIR: 3
+  StrongCG: 1
+
+Explored 1 nodes (50 simplex iterations) in 0.09 seconds (0.01 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 9065 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.065000000000e+03, best bound 9.065000000000e+03, gap 0.0000%
+
+User-callback calls 178, time in user-callback 0.00 sec
+opt = true
+obj = 9065.0
+nb_dom_cuts = 373
+solved_time = 0.0947
+opt_val = 9065.0
