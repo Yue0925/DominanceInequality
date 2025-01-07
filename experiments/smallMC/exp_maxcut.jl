@@ -534,7 +534,7 @@ function run(fname::String)
     end
 
 
-    one_solve(fname, cut=true, grb_solver = true, QCR=true, root=false )
+    one_solve(fname, cut=false, grb_solver = true, QCR=true, root=false )
 
     # one_solve(fname, cut = true, grb_solver = true , QCR = false)
 
