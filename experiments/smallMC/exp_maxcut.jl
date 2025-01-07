@@ -424,7 +424,7 @@ function one_solve(fname; cut=true, grb_solver=true, QCR=false , root=false )
         set_attribute(model, "PrePasses", -1)
         set_attribute(model, "RINS", 0)
         set_attribute(model, "Symmetry", 0)
-        set_attribute(model, "PSDCuts", 0)
+        # set_attribute(model, "PSDCuts", 0)
 
         set_attribute(model, "PreQLinearize", 0)
 
@@ -455,6 +455,7 @@ function one_solve(fname; cut=true, grb_solver=true, QCR=false , root=false )
 
         set_optimizer_attribute(model, "CPX_PARAM_QPMAKEPSDIND", 0)
 
+        set_optimizer_attribute(model, "CPX_PARAM_QTOLININD", 0)    # todo !
 
         # set_optimizer_attribute(model, "CPX_PARAM_PREIND", 0)
         set_optimizer_attribute(model, "CPX_PARAM_AGGIND", 0)
@@ -533,7 +534,7 @@ function run(fname::String)
     end
 
 
-    one_solve(fname, cut=true, grb_solver = false, QCR=true, root=false )
+    one_solve(fname, cut=true, grb_solver = true, QCR=true, root=false )
 
     # one_solve(fname, cut = true, grb_solver = true , QCR = false)
 

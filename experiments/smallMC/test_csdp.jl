@@ -65,19 +65,76 @@ end
 
 
 
+function csdp_QCR2()
+    
+
+    model = Model(CSDP.Optimizer)
+    JuMP.set_silent(model)
+
+
+    @variable(model, 0<= x[1:N] )
+    @variable(model, X[1:N, 1:N], Symmetric)
+
+    @constraint(model, [1 x'; x X] in PSDCone())
+
+    
+    @objective(model, Min, tr(Q * X) + c'*x )
+
+    @constraint(model, a'*x == b) 
+
+
+    con_μ = @constraint(model, [i in 1:N], X[i,i] - x[i] == 0)
+
+    con_β = @constraint(model, sum(a[i]*a[j]*X[i,j] for i in 1:N for j in 1:N) - 
+                            2 * sum(b * a[j] * x[j] for j in 1:N) +
+                            b^2  == 0 
+            ) 
+
+    optimize!(model)
+
+    if termination_status(model)== OPTIMAL
+        sol = value.(x)
+        obj = objective_value(model)
+
+        println("obj = ", obj, " \n x = ", sol, "\n X = ", value.(X))
+
+        μ = dual.(con_μ)
+
+        β = dual(con_β)
+
+        println("μ = ", μ)
+
+        println("β = ", β)
+
+        return -β, -μ
+    end
+
+    return 0.0, zeros(N)
+end
+
+
+
+
 function solve(QCR)
         
 
     model = Model(CPLEX.Optimizer)
 
-    @variable(model, 0<= x[1:N] <=1 )
+    @variable(model, 0 <= x[1:N] <= 1 )
 
     if QCR
-        α, μ = csdp_QCR()
+        # α, μ = csdp_QCR()
 
-        @objective(model, Min, x'*Q*x + c'*x  + 
+        # @objective(model, Min, x'*Q*x + c'*x  + 
+        #                         sum(μ[i] * (x[i]^2 - x[i]) for i in 1:N) +
+        #                         sum(α[i] * x[i] for i in 1:N ) * ( a'*x -b )
+        # )
+
+        β, μ = csdp_QCR2()
+
+        @objective(model, Min, x'*Q*x + c'*x + 
                                 sum(μ[i] * (x[i]^2 - x[i]) for i in 1:N) +
-                                sum(α[i] * x[i] for i in 1:N ) * ( a'*x -b )
+                                β * (a'*x - b )^2
         )
 
     else
