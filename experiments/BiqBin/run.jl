@@ -220,6 +220,5 @@ function run(fname)
 end
 
 
-# run(ARGS[1])
+run(ARGS[1])
 
-run("./instances_uni/Graph_100_05_a.txt")
