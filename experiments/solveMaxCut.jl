@@ -160,7 +160,8 @@ function one_solve(N, W, logname; cut=false, grb_solver=true, QCR=false , root=f
     if root
         println(fout, "root_relax = $obj")
     else
-        opt ? println(fout, "opt_val = $obj") : nothing 
+        println(fout, "opt = $opt") 
+        println(fout, "obj_val = $obj") 
         println(fout, "solved_time = ", solved_time)
         println(fout, "explored_nodes = ", explored_nodes)   
 

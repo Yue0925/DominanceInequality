@@ -67,7 +67,7 @@ function run(fname)
     if !isdir(folder)
         mkdir(folder)
     end
-    logname = folder * "/" *split(fname, "/")[end]* ".txt"
+    logname = folder * "/" *split(fname, "/")[end]*
     if isfile(logname)
         nothing
     else
@@ -80,7 +80,7 @@ function run(fname)
     if !isdir(folder)
         mkdir(folder)
     end
-    logname = folder * "/" *split(fname, "/")[end]* ".txt"
+    logname = folder * "/" *split(fname, "/")[end]
     if isfile(logname)
         nothing
     else
@@ -93,7 +93,7 @@ function run(fname)
     if !isdir(folder)
         mkdir(folder)
     end
-    logname = folder * "/" *split(fname, "/")[end]* ".txt"
+    logname = folder * "/" *split(fname, "/")[end]
     if isfile(logname)
         nothing
     else
@@ -106,7 +106,7 @@ function run(fname)
     if !isdir(folder)
         mkdir(folder)
     end
-    logname = folder * "/" *split(fname, "/")[end]* ".txt"
+    logname = folder * "/" *split(fname, "/")[end]
     if isfile(logname)
         nothing
     else
@@ -131,7 +131,7 @@ function run(fname)
     if !isdir(folder)
         mkdir(folder)
     end
-    logname = folder * "/" *split(fname, "/")[end]* ".txt"
+    logname = folder * "/" *split(fname, "/")[end]
     if isfile(logname)
         nothing
     else
@@ -144,7 +144,7 @@ function run(fname)
     if !isdir(folder)
         mkdir(folder)
     end
-    logname = folder * "/" *split(fname, "/")[end]* ".txt"
+    logname = folder * "/" *split(fname, "/")[end]
     if isfile(logname)
         nothing
     else
@@ -157,7 +157,7 @@ function run(fname)
     if !isdir(folder)
         mkdir(folder)
     end
-    logname = folder * "/" *split(fname, "/")[end]* ".txt"
+    logname = folder * "/" *split(fname, "/")[end]
     if isfile(logname)
         nothing
     else
@@ -170,7 +170,7 @@ function run(fname)
     if !isdir(folder)
         mkdir(folder)
     end
-    logname = folder * "/" *split(fname, "/")[end]* ".txt"
+    logname = folder * "/" *split(fname, "/")[end]
     if isfile(logname)
         nothing
     else
