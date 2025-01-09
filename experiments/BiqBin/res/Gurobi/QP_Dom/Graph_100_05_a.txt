@@ -1,0 +1,67 @@
+root_relax = 439.46
+solved_time = 3.0038
+explored_nodes = 23852
+nb_dom_cuts = 404
+:23 PM CET
+
+Set parameter LogFile to value "./res/Gurobi/QP_Dom/Graph_100_05_a.txt"
+Set parameter Presolve to value 0
+Set parameter Aggregate to value 0
+Set parameter Heuristics to value 0
+Set parameter LPWarmStart to value 0
+Set parameter NLPHeur to value 0
+Set parameter PreDepRow to value 0
+Set parameter PreDual to value 0
+Set parameter RINS to value 0
+Set parameter Symmetry to value 0
+Set parameter PreQLinearize to value 0
+Set parameter NonConvex to value 0
+
+Gurobi 11.0.3 (linux64) logging started Thu 09 Jan 2025 05:15:32 PM CET
+
+Set parameter LogFile to value "./res/Gurobi/QP_Dom/Graph_100_05_a.txt"
+Set parameter NLPHeur to value 0
+Set parameter NonConvex to value 0
+Set parameter LPWarmStart to value 0
+Set parameter PreDepRow to value 0
+Set parameter Symmetry to value 0
+Set parameter Presolve to value 0
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Pop!_OS 20.04 LTS")
+
+CPU model: Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 404 rows, 100 columns and 1748 nonzeros
+Model fingerprint: 0x40b48377
+Model has 242 quadratic objective terms
+Variable types: 0 continuous, 100 integer (100 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e+00, 2e+01]
+  QObjective range [8e+00, 8e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 6e+00]
+Variable types: 0 continuous, 100 integer (100 binary)
+
+Root relaxation: objective 4.409767e+02, 149 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  440.97668    0   98          -  440.97668      -     -    0s
+     0     0  439.45880    0   98          -  439.45880      -     -    0s
+     0     2  439.45880    0   98          -  439.45880      -     -    0s
+*  278   278              52     388.0000000  434.54124  12.0%   4.5    0s
+*  282   288              57     390.0000000  434.54124  11.4%   4.5    0s
+* 2031  1381              65     392.0000000  431.67639  10.1%   4.7    0s
+* 2862  1626              62     394.0000000  431.67639  9.56%   4.7    0s
+
+Explored 23852 nodes (112058 simplex iterations) in 3.00 seconds (2.13 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 394 392 390 388 
+
+Time limit reached
+Best objective 3.940000000000e+02, best bound 4.227891274622e+02, gap 7.3069%
+
+User-callback calls 47989, time in user-callback 0.01 sec

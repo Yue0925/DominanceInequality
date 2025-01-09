@@ -38,6 +38,31 @@ function readFormat1(fname)
     return n, W
 end
 
+"""
+w,w,w,w ...
+w,w,w,w ...
+"""
+function readFormat2(fname)
+    N = 0; W= []; col = 0
+    f = open(fname)
+
+    for line in readlines(f)
+        N += 1
+
+        if col == 0 
+            col = length(split(line, ","))
+        elseif col != length(split(line, ","))
+            error("line $N, col = ", length(split(line, ",")))
+        end
+
+        push!(W, parse.(Float64, split(line, ",")) )
+    end
+    close(f)
+
+    Mat = reduce(vcat,transpose.(W))
+
+    return N, Mat
+end
 
 function run(fname)
     folder = "./res/"
@@ -51,6 +76,15 @@ function run(fname)
     if split(fname, "/")[end-1] == "instances_neg"
         N, W = readFormat1(fname)
         println("N = ", N)
+
+    elseif split(fname, "/")[end-1] == "instances_neqfloat"
+        N, W = readFormat2(fname)
+        println("N = ", N)
+
+    elseif split(fname, "/")[end-1] == "instances_uni"
+        N, W = readFormat2(fname)
+        println("N = ", N)
+        
     else
         error("Unkown input file $fname ...")
     end
@@ -72,40 +106,52 @@ function run(fname)
         mkdir(folder)
     end
     logname = folder * "/" *split(fname, "/")[end]
-    println("loging $logname ... ")
-    one_solve(N, W, logname, cut=false, grb_solver=true, QCR=false , root=true )
-    one_solve(N, W, logname, cut=false, grb_solver=true, QCR=false , root=false )
-
+    if isfile(logname)
+        nothing
+    else
+        println("loging $logname ... ")
+        one_solve(N, W, logname, cut=false, grb_solver=true, QCR=false , root=true )
+        one_solve(N, W, logname, cut=false, grb_solver=true, QCR=false , root=false )
+    end
 
     folder = "./res/Gurobi/QP_Dom"
     if !isdir(folder)
         mkdir(folder)
     end
     logname = folder * "/" *split(fname, "/")[end]
-    println("loging $logname ... ")
-    one_solve(N, W, logname, cut=true, grb_solver=true, QCR=false , root=true )
-    one_solve(N, W, logname, cut=true, grb_solver=true, QCR=false , root=false )
-
+    if isfile(logname)
+        nothing
+    else
+        println("loging $logname ... ")
+        one_solve(N, W, logname, cut=true, grb_solver=true, QCR=false , root=true )
+        one_solve(N, W, logname, cut=true, grb_solver=true, QCR=false , root=false )
+    end
 
     folder = "./res/Gurobi/QCR_QP"
     if !isdir(folder)
         mkdir(folder)
     end
     logname = folder * "/" *split(fname, "/")[end]
-    println("loging $logname ... ")
-    one_solve(N, W, logname, cut=false, grb_solver=true, QCR=true , root=true )
-    one_solve(N, W, logname, cut=false, grb_solver=true, QCR=true , root=false )
-
+    if isfile(logname)
+        nothing
+    else
+        println("loging $logname ... ")
+        one_solve(N, W, logname, cut=false, grb_solver=true, QCR=true , root=true )
+        one_solve(N, W, logname, cut=false, grb_solver=true, QCR=true , root=false )
+    end
 
     folder = "./res/Gurobi/QCR_QP_Dom"
     if !isdir(folder)
         mkdir(folder)
     end
     logname = folder * "/" *split(fname, "/")[end]
-    println("loging $logname ... ")
-    one_solve(N, W, logname, cut=true, grb_solver=true, QCR=true , root=true )
-    one_solve(N, W, logname, cut=true, grb_solver=true, QCR=true , root=false )
-
+    if isfile(logname)
+        nothing
+    else
+        println("loging $logname ... ")
+        one_solve(N, W, logname, cut=true, grb_solver=true, QCR=true , root=true )
+        one_solve(N, W, logname, cut=true, grb_solver=true, QCR=true , root=false )
+    end
 
 
     # -------------------------------
@@ -124,41 +170,56 @@ function run(fname)
         mkdir(folder)
     end
     logname = folder * "/" *split(fname, "/")[end]
-    println("loging $logname ... ")
-    one_solve(N, W, logname, cut=false, grb_solver=false, QCR=false , root=true )
-    one_solve(N, W, logname, cut=false, grb_solver=false, QCR=false , root=false )
-
+    if isfile(logname)
+        nothing
+    else
+        println("loging $logname ... ")
+        one_solve(N, W, logname, cut=false, grb_solver=false, QCR=false , root=true )
+        one_solve(N, W, logname, cut=false, grb_solver=false, QCR=false , root=false )
+    end
 
     folder = "./res/Cplex/QP_Dom"
     if !isdir(folder)
         mkdir(folder)
     end
     logname = folder * "/" *split(fname, "/")[end]
-    println("loging $logname ... ")
-    one_solve(N, W, logname, cut=true, grb_solver=false, QCR=false , root=true )
-    one_solve(N, W, logname, cut=true, grb_solver=false, QCR=false , root=false )
-
+    if isfile(logname)
+        nothing
+    else
+        println("loging $logname ... ")
+        one_solve(N, W, logname, cut=true, grb_solver=false, QCR=false , root=true )
+        one_solve(N, W, logname, cut=true, grb_solver=false, QCR=false , root=false )
+    end
 
     folder = "./res/Cplex/QCR_QP"
     if !isdir(folder)
         mkdir(folder)
     end
     logname = folder * "/" *split(fname, "/")[end]
-    println("loging $logname ... ")
-    one_solve(N, W, logname, cut=false, grb_solver=false, QCR=true , root=true )
-    one_solve(N, W, logname, cut=false, grb_solver=false, QCR=true , root=false )
-
+    if isfile(logname)
+        nothing
+    else
+        println("loging $logname ... ")
+        one_solve(N, W, logname, cut=false, grb_solver=false, QCR=true , root=true )
+        one_solve(N, W, logname, cut=false, grb_solver=false, QCR=true , root=false )
+    end
 
     folder = "./res/Cplex/QCR_QP_Dom"
     if !isdir(folder)
         mkdir(folder)
     end
     logname = folder * "/" *split(fname, "/")[end]
-    println("loging $logname ... ")
-    one_solve(N, W, logname, cut=true, grb_solver=false, QCR=true , root=true )
-    one_solve(N, W, logname, cut=true, grb_solver=false, QCR=true , root=false )
+    if isfile(logname)
+        nothing
+    else
+        println("loging $logname ... ")
+        one_solve(N, W, logname, cut=true, grb_solver=false, QCR=true , root=true )
+        one_solve(N, W, logname, cut=true, grb_solver=false, QCR=true , root=false )
+    end 
 
 end
 
 
-run(ARGS[1])
+# run(ARGS[1])
+
+run("./instances_uni/Graph_100_05_a.txt")

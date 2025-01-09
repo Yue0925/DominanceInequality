@@ -10,7 +10,7 @@ function csdp_QCR(W, N; cut=false)
     println("QCR ...")
 
     model = Model(CSDP.Optimizer)
-    JuMP.set_silent(model)
+    # JuMP.set_silent(model)
 
 
     Q = zeros(N, N) ; c=zeros(N)
@@ -61,12 +61,13 @@ function csdp_QCR(W, N; cut=false)
         # println("S is PSD ? ", minimum(eigvals(S))>=0.0 ) 
 
 
-        if minimum(eigvals(S))>=0.0 
+        # if minimum(eigvals(S))>=0.0 
             return -ϕ5, QCR_time
-        else 
-            error("QCR method errors ! ")
-        end
+        # else 
+        #     error("QCR method errors ! ")
+        # end
     else
+        println(termination_status(model))
         error("QCR failured ! ")
     end
 

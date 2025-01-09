@@ -112,7 +112,7 @@ function all_insertion_left_ineq(N, W)
         end
     end
 
-    println(ineqs)
+    # println(ineqs)
     
     return ineqs
 end

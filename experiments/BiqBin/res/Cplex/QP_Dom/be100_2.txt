@@ -1,0 +1,80 @@
+root_relax = 13623.26
+solved_time = 3.0134
+explored_nodes = 1315
+nb_dom_cuts = 1754
+_Preprocessing_Aggregator                0
+CPXPARAM_Preprocessing_NumPass                   0
+CPXPARAM_Output_CloneLog                         -1
+CPXPARAM_MIP_Cuts_Cliques                        -1
+CPXPARAM_Preprocessing_CoeffReduce               0
+CPXPARAM_MIP_Cuts_Covers                         -1
+CPXPARAM_Preprocessing_BoundStrength             0
+CPXPARAM_Preprocessing_Relax                     0
+CPXPARAM_MIP_Cuts_FlowCovers                     -1
+CPXPARAM_MIP_Cuts_Implied                        -1
+CPXPARAM_MIP_Strategy_Probe                      -1
+CPXPARAM_MIP_Cuts_GUBCovers                      -1
+CPXPARAM_MIP_Cuts_Gomory                         -1
+CPXPARAM_MIP_Cuts_PathCut                        -1
+CPXPARAM_MIP_Cuts_MIRCut                         -1
+CPXPARAM_MIP_Cuts_Disjunctive                    -1
+CPXPARAM_Preprocessing_Symmetry                  0
+CPXPARAM_Preprocessing_RepeatPresolve            0
+CPXPARAM_MIP_Strategy_FPHeur                     -1
+CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
+CPXPARAM_MIP_Cuts_LiftProj                       -1
+CPXPARAM_MIP_Strategy_HeuristicFreq              -1
+CPXPARAM_MIP_Limits_CutPasses                    -1
+CPXPARAM_MIP_Strategy_RINSHeur                   -1
+CPXPARAM_TimeLimit                               3
+Tried aggregator 0 times.
+MIP Presolve added 10012 rows and 5006 columns.
+Reduced MIP has 11766 rows, 5107 columns, and 101734 nonzeros.
+Reduced MIP has 5107 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (6.70 ticks)
+Classifier predicts products in MIQP should not be linearized.
+Represolve...
+
+Tried aggregator 0 times.
+Repairing indefinite Q in the objective.
+Reduced MIQP has 1754 rows, 101 columns, and 81710 nonzeros.
+Reduced MIQP has 101 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 10113 nonzeros.
+Presolve time = 0.01 sec. (10.42 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.63 sec. (1489.41 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0    13623.2616   101                  13623.2616        8         
+      0     2    13623.2616   101                  13623.2616        8         
+Elapsed time = 0.68 sec. (1533.11 ticks, tree = 0.02 MB, solutions = 0)
+    184   168    12162.2938    82                  13610.5395      177         
+*   267   247      integral     0     7495.5000    13610.5395      268   81.58%
+    420   376     9666.6882    49     7495.5000    13610.5395      405   81.58%
+*   538   470      integral     0     8101.0000    13610.5395      520   68.01%
+*   559   491      integral     0     8207.0000    13584.5478      544   65.52%
+    715   597     9642.9243    49     8207.0000    13404.1640      728   63.33%
+   1169   979    11004.6421    70     8207.0000    13312.9800     1149   62.21%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 0 times.
+Reduced MIQP has 1754 rows, 101 columns, and 81710 nonzeros.
+Reduced MIQP has 101 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQP objective Q matrix has 10113 nonzeros.
+Presolve time = 0.01 sec. (6.55 ticks)
+Represolve time = 0.01 sec. (7.71 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.66 sec. (1519.81 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    2.35 sec. (2278.51 ticks)
+  Sync time (average)   =    0.29 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    3.01 sec. (3798.32 ticks)

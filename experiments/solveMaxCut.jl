@@ -14,8 +14,10 @@ function one_solve(N, W, logname; cut=false, grb_solver=true, QCR=false , root=f
 
     if grb_solver 
         model = Model(Gurobi.Optimizer) 
+        set_time_limit_sec(model, 1800.0)  # todo : 
     else
         model = direct_model(CPLEX.Optimizer())
+        set_optimizer_attribute(model, "CPXPARAM_TimeLimit", 1800) # todo : 
     end
 
     if root 
