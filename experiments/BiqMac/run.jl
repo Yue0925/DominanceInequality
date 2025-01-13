@@ -67,7 +67,7 @@ function run(fname)
     if !isdir(folder)
         mkdir(folder)
     end
-    logname = folder * "/" *split(fname, "/")[end]*
+    logname = folder * "/" *split(fname, "/")[end]
     if isfile(logname)
         nothing
     else
