@@ -2,39 +2,16 @@
 
 
 
-for file in ./instances_neg/*.txt; do
-    echo "$file ... "
-    julia run.jl "$file"
-done
-
-
-
-for file in ./instances_uni/*.txt; do
-    echo "$file ... "
-    julia run.jl "$file"
-done
-
-
-
-
-for file in ./instances_neqfloat/*.txt; do
-    echo "$file ... "
-    julia run.jl "$file"
-done
-
-
-
-
 # for file in ./instances_neg/*.txt; do
 #     echo "$file ... "
-#     julia tabWriter.jl "$file"
+#     julia run.jl "$file"
 # done
 
 
 
 # for file in ./instances_uni/*.txt; do
 #     echo "$file ... "
-#     julia tabWriter.jl "$file"
+#     julia run.jl "$file"
 # done
 
 
@@ -42,6 +19,29 @@ done
 
 # for file in ./instances_neqfloat/*.txt; do
 #     echo "$file ... "
-#     julia tabWriter.jl "$file"
+#     julia run.jl "$file"
 # done
+
+
+
+
+for file in ./instances_neg/*.txt; do
+    echo "$file ... "
+    julia tabWriter.jl "$file"
+done
+
+
+
+for file in ./instances_uni/*.txt; do
+    echo "$file ... "
+    julia tabWriter.jl "$file"
+done
+
+
+
+
+for file in ./instances_neqfloat/*.txt; do
+    echo "$file ... "
+    julia tabWriter.jl "$file"
+done
 

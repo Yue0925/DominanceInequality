@@ -1,0 +1,100 @@
+root_relax = 385.56
+opt = true
+obj_val = 199.01
+solved_time = 47.3786
+explored_nodes = 274036
+nb_dom_cuts = 444
+value "./res/Gurobi/QP_Dom/bcc1615.txt"
+Set parameter Presolve to value 0
+Set parameter AggFill to value -1
+Set parameter Aggregate to value 0
+Set parameter Heuristics to value 0
+Set parameter LPWarmStart to value 0
+Set parameter NLPHeur to value 0
+Set parameter NoRelHeurTime to value 0
+Set parameter PreCrush to value 0
+Set parameter PreDepRow to value 0
+Set parameter PreDual to value 0
+Set parameter PrePasses to value -1
+Set parameter RINS to value 0
+Set parameter Symmetry to value 0
+Set parameter PreQLinearize to value 0
+Set parameter NonConvex to value 0
+
+Gurobi 12.0.0 (linux64) logging started Sun Jan 12 04:56:25 2025
+
+Set parameter LogFile to value "./res/Gurobi/QP_Dom/bcc1615.txt"
+Set parameter PreCrush to value 0
+Set parameter PrePasses to value -1
+Set parameter AggFill to value -1
+Set parameter NoRelHeurTime to value 0
+Set parameter NLPHeur to value 0
+Set parameter NonConvex to value 0
+Set parameter LPWarmStart to value 0
+Set parameter PreDepRow to value 0
+Set parameter Symmetry to value 0
+Set parameter Presolve to value 0
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Debian GNU/Linux 12 (bookworm)")
+
+CPU model: Intel(R) Xeon(R) Silver 4210R CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 1 physical cores, 2 logical processors, using up to 2 threads
+
+Non-default parameters:
+TimeLimit  1800
+LPWarmStart  0
+Heuristics  0
+RINS  0
+NLPHeur  0
+Symmetry  0
+Aggregate  0
+PreDual  0
+NonConvex  0
+PreDepRow  0
+PreQLinearize  0
+Presolve  0
+
+Optimize a model with 444 rows, 41 columns and 5068 nonzeros
+Model fingerprint: 0xe8c2bce0
+Model has 352 quadratic objective terms
+Variable types: 0 continuous, 41 integer (41 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e+00, 3e+01]
+  QObjective range [4e+00, 4e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 1e+01]
+Variable types: 0 continuous, 41 integer (41 binary)
+
+Root relaxation: objective 3.855592e+02, 49 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  385.55917    0   35          -  385.55917      -     -    0s
+     0     0  385.55917    0   35          -  385.55917      -     -    0s
+     0     2  385.55917    0   35          -  385.55917      -     -    0s
+*   52    50              30     194.0000000  364.16259  87.7%   3.1    0s
+*  153   124              31     195.0000000  362.69577  86.0%   3.4    0s
+*  194   141              26     196.0000000  350.29752  78.7%   3.4    0s
+*  303   207              27     197.0000000  338.02127  71.6%   3.7    0s
+* 1378   740              40     198.0000000  323.15727  63.2%   4.3    0s
+ 25286  8876  201.13041   30   11  198.00000  250.77420  26.7%   4.2    5s
+ 54004 15016  204.96398   29   15  198.00000  238.29788  20.4%   4.3   10s
+*69301 16680              39     199.0000000  233.35710  17.3%   4.3   12s
+ 82890 18287  200.54360   30   16  199.00000  229.66721  15.4%   4.3   15s
+ 111154 19751  210.56429   28   16  199.00000  227.29773  14.2%   4.4   20s
+ 141147 19570  212.61149   28   15  199.00000  221.01529  11.1%   4.3   25s
+ 170273 18898  204.15901   29   16  199.00000  219.61769  10.4%   4.3   30s
+ 200686 16057  200.07976   31   10  199.00000  214.55185  7.81%   4.3   35s
+ 230747 12120  200.63100   30   14  199.00000  212.22277  6.64%   4.3   40s
+ 260207  6722  199.87694   30   15  199.00000  206.29897  3.67%   4.3   45s
+
+Explored 274036 nodes (1162897 simplex iterations) in 47.38 seconds (41.15 work units)
+Thread count was 2 (of 2 available processors)
+
+Solution count 6: 199 198 197 ... 194
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.990000000000e+02, best bound 1.990089285714e+02, gap 0.0045%
+
+User-callback calls 548503, time in user-callback 0.16 sec
