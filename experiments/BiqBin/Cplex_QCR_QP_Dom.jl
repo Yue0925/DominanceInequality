@@ -178,57 +178,6 @@ function run(fname)
         mkdir(folder)
     end
  
-    folder = "./res/Cplex/QP"
-    if !isdir(folder)
-        mkdir(folder)
-    end
-    logname = folder * "/" *split(fname, "/")[end]
-    if isfile(logname)
-        nothing
-    else
-        println("loging $logname ... ")
-        one_solve(N, W, logname, cut=false, grb_solver=false, QCR=false , root=true )
-        one_solve(N, W, logname, cut=false, grb_solver=false, QCR=false , root=false )
-    end
-
-    folder = "./res/Cplex/QP_Dom"
-    if !isdir(folder)
-        mkdir(folder)
-    end
-    logname = folder * "/" *split(fname, "/")[end]
-    if isfile(logname)
-        nothing
-    else
-        println("loging $logname ... ")
-        one_solve(N, W, logname, cut=true, grb_solver=false, QCR=false , root=true )
-        one_solve(N, W, logname, cut=true, grb_solver=false, QCR=false , root=false )
-    end
-
-    folder = "./res/Cplex/QCR_QP"
-    if !isdir(folder)
-        mkdir(folder)
-    end
-    logname = folder * "/" *split(fname, "/")[end]
-    if isfile(logname)
-        nothing
-    else
-        println("loging $logname ... ")
-        one_solve(N, W, logname, cut=false, grb_solver=false, QCR=true , root=true )
-        one_solve(N, W, logname, cut=false, grb_solver=false, QCR=true , root=false )
-    end
-
-    folder = "./res/Cplex/Dom_QCR_QP"
-    if !isdir(folder)
-        mkdir(folder)
-    end
-    logname = folder * "/" *split(fname, "/")[end]
-    if isfile(logname)
-        nothing
-    else
-        println("loging $logname ... ")
-        one_solve(N, W, logname, qcr_cut = true, cut=false, grb_solver=false, QCR=true , root=true )
-        one_solve(N, W, logname, qcr_cut = true, cut=false, grb_solver=false, QCR=true , root=false )
-    end 
 
 
     folder = "./res/Cplex/QCR_QP_Dom"

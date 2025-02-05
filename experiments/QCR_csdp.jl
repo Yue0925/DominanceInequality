@@ -27,6 +27,7 @@ function csdp_QCR(W, N; cut=false)
     @variable(model, X[1:N, 1:N], Symmetric)
     @constraint(model, [1 x'; x X] in PSDCone())
 
+    nb_dom_cuts = 0
     if cut
         ineqs = all_insertion_left_ineq(N, W) ; nb_dom_cuts += length(ineqs) *2
         for inq in ineqs
@@ -41,6 +42,8 @@ function csdp_QCR(W, N; cut=false)
 
     con5 = @constraint(model, [i in 1:N], X[i,i] - x[i] == 0)
 
+    # todo coeff gamma  :
+    
 
     optimize!(model)
 
@@ -62,7 +65,7 @@ function csdp_QCR(W, N; cut=false)
 
 
         # if minimum(eigvals(S))>=0.0 
-            return -ϕ5, QCR_time
+            return -ϕ5, QCR_time, nb_dom_cuts
         # else 
         #     error("QCR method errors ! ")
         # end
@@ -71,5 +74,5 @@ function csdp_QCR(W, N; cut=false)
         error("QCR failured ! ")
     end
 
-    return zeros(N), QCR_time
+    return zeros(N), QCR_time, nb_dom_cuts
 end

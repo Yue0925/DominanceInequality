@@ -7,10 +7,11 @@ include("QCR_csdp.jl")
 
 
 
-function one_solve(N, W, logname; cut=false, grb_solver=true, QCR=false , root=false )
+function one_solve(N, W, logname; qcr_cut = false, cut=false, grb_solver=true, QCR=false , root=false )
 
     println(" dominance cuts ? ", cut, "\n grb solver ? ", grb_solver, "\n QCR ? ", QCR, "\n root limit ? ", root)
     fout = open(logname, "a")
+    nb_dom_cuts=0
 
     if grb_solver 
         model = Model(Gurobi.Optimizer) 
@@ -45,8 +46,9 @@ function one_solve(N, W, logname; cut=false, grb_solver=true, QCR=false , root=f
             end
         end
 
-        λ, QCR_time = csdp_QCR(W, N)
+        λ, QCR_time, nb_dom_cuts = csdp_QCR(W, N, cut=qcr_cut)
         if !root println(fout, "QCR_time = $QCR_time") end 
+        qcr_cut ? println(fout, "nb_dom_cuts = $nb_dom_cuts") : nothing
 
         f = x'*(-Q)*x -c'*x + sum((λ[i]+0.00001) * (x[i]^2 - x[i] ) for i in 1:N)
         @objective(model, Min, f)
@@ -57,7 +59,6 @@ function one_solve(N, W, logname; cut=false, grb_solver=true, QCR=false , root=f
 
   
     nb_dom_cuts=0
-
     if cut
         ineqs = all_insertion_left_ineq(N, W) ; nb_dom_cuts += length(ineqs) *2
         for inq in ineqs
