@@ -44,26 +44,26 @@ function warmUp( ; grb_solver=true, QCR=false )
 
     # Gurobi parameters 
     if grb_solver
-        # set_attribute(model, "Presolve", 0)
-        # set_attribute(model, "AggFill", -1)
-        # set_attribute(model, "Aggregate", 0)
-        # set_attribute(model, "Heuristics", 0)
-        # set_attribute(model, "LPWarmStart", 0)
-        # set_attribute(model, "NLPHeur", 0)
-        # set_attribute(model, "NoRelHeurTime", 0)
-        # set_attribute(model, "PreCrush", 0)
-        # set_attribute(model, "PreDepRow", 0)
-        # set_attribute(model, "PreDual", 0)
-        # set_attribute(model, "PrePasses", -1)
-        # set_attribute(model, "RINS", 0)
-        # set_attribute(model, "Symmetry", 0)
-        # # set_attribute(model, "PSDCuts", 0)
+        set_attribute(model, "Presolve", 0)
+        set_attribute(model, "AggFill", -1)
+        set_attribute(model, "Aggregate", 0)
+        set_attribute(model, "Heuristics", 0)
+        set_attribute(model, "LPWarmStart", 0)
+        set_attribute(model, "NLPHeur", 0)
+        set_attribute(model, "NoRelHeurTime", 0)
+        set_attribute(model, "PreCrush", 0)
+        set_attribute(model, "PreDepRow", 0)
+        set_attribute(model, "PreDual", 0)
+        set_attribute(model, "PrePasses", -1)
+        set_attribute(model, "RINS", 0)
+        set_attribute(model, "Symmetry", 0)
+        # set_attribute(model, "PSDCuts", 0)
 
         set_attribute(model, "PreQLinearize", 0)
 
-        if QCR
+        # if QCR
             set_attribute(model, "NonConvex", 0)
-        end
+        # end
     else
     
         # todo : turn off parameters 

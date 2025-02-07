@@ -1,0 +1,90 @@
+root_relax = 8935.08
+QCR_time = 21.9968
+opt = true
+obj_val = 8598.0
+solved_time = 0.1386
+explored_nodes = 6115
+o value "./res/Gurobi/QCR_QP/gka4a.txt"
+Set parameter Presolve to value 0
+Set parameter AggFill to value -1
+Set parameter Aggregate to value 0
+Set parameter Heuristics to value 0
+Set parameter LPWarmStart to value 0
+Set parameter NLPHeur to value 0
+Set parameter NoRelHeurTime to value 0
+Set parameter PreCrush to value 0
+Set parameter PreDepRow to value 0
+Set parameter PreDual to value 0
+Set parameter PrePasses to value -1
+Set parameter RINS to value 0
+Set parameter Symmetry to value 0
+Set parameter PreQLinearize to value 0
+Set parameter NonConvex to value 0
+
+Gurobi 12.0.0 (linux64) logging started Thu Feb  6 03:01:42 2025
+
+Set parameter LogFile to value "./res/Gurobi/QCR_QP/gka4a.txt"
+Set parameter PreCrush to value 0
+Set parameter PrePasses to value -1
+Set parameter AggFill to value -1
+Set parameter NoRelHeurTime to value 0
+Set parameter NLPHeur to value 0
+Set parameter NonConvex to value 0
+Set parameter LPWarmStart to value 0
+Set parameter PreDepRow to value 0
+Set parameter Symmetry to value 0
+Set parameter Presolve to value 0
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Debian GNU/Linux 12 (bookworm)")
+
+CPU model: Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 40 logical processors, using up to 20 threads
+
+Non-default parameters:
+TimeLimit  1800
+LPWarmStart  0
+Heuristics  0
+RINS  0
+NLPHeur  0
+Symmetry  0
+Aggregate  0
+PreDual  0
+NonConvex  0
+PreDepRow  0
+PreQLinearize  0
+Presolve  0
+
+Optimize a model with 0 rows, 81 columns and 0 nonzeros
+Model fingerprint: 0xd307e960
+Model has 465 quadratic objective terms
+Variable types: 0 continuous, 81 integer (81 binary)
+Coefficient statistics:
+  Matrix range     [0e+00, 0e+00]
+  Objective range  [6e+00, 1e+04]
+  QObjective range [4e+00, 2e+04]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [0e+00, 0e+00]
+Variable types: 0 continuous, 81 integer (81 binary)
+
+Root relaxation: objective -8.935080e+03, 135 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -8935.0801    0   81          - -8935.0801      -     -    0s
+     0     0 -8935.0800    0   81          - -8935.0800      -     -    0s
+     0     2 -8935.0800    0   81          - -8935.0800      -     -    0s
+*  999  1162              56    -8484.000000 -8917.4013  5.11%   5.9    0s
+* 1005  1162              49    -8565.000000 -8917.4013  4.11%   5.9    0s
+* 1160  1162              50    -8574.000000 -8917.4013  4.01%   5.4    0s
+* 2564  1138              51    -8598.000000 -8798.4995  2.33%   6.0    0s
+
+Explored 6115 nodes (32793 simplex iterations) in 0.14 seconds (0.08 work units)
+Thread count was 20 (of 40 available processors)
+
+Solution count 4: -8598 -8574 -8565 -8484 
+No other solutions better than -8598
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -8.598000000000e+03, best bound -8.598000000000e+03, gap 0.0000%
+
+User-callback calls 12335, time in user-callback 0.00 sec

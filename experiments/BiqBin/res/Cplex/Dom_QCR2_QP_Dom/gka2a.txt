@@ -1,0 +1,64 @@
+nb_dom_cuts = 108
+root_relax = -8459.65
+QCR_time = 675.5233
+nb_dom_cuts = 108
+opt = true
+obj_val = -6063.0
+solved_time = 1.0831
+explored_nodes = 3
+nb_dom_cuts = 108
+ng_NumPass                   0
+CPXPARAM_Output_CloneLog                         -1
+CPXPARAM_MIP_Cuts_Cliques                        -1
+CPXPARAM_Preprocessing_CoeffReduce               0
+CPXPARAM_MIP_Cuts_Covers                         -1
+CPXPARAM_Preprocessing_BoundStrength             0
+CPXPARAM_Preprocessing_Relax                     0
+CPXPARAM_MIP_Cuts_FlowCovers                     -1
+CPXPARAM_MIP_Cuts_Implied                        -1
+CPXPARAM_MIP_Strategy_Probe                      -1
+CPXPARAM_MIP_Cuts_GUBCovers                      -1
+CPXPARAM_MIP_Cuts_Gomory                         -1
+CPXPARAM_MIP_Cuts_PathCut                        -1
+CPXPARAM_MIP_Cuts_MIRCut                         -1
+CPXPARAM_MIP_Cuts_Disjunctive                    -1
+CPXPARAM_Preprocessing_Symmetry                  0
+CPXPARAM_Preprocessing_RepeatPresolve            0
+CPXPARAM_MIP_Strategy_FPHeur                     -1
+CPXPARAM_MIP_Cuts_ZeroHalfCut                    -1
+CPXPARAM_MIP_Cuts_LiftProj                       -1
+CPXPARAM_MIP_Strategy_HeuristicFreq              -1
+CPXPARAM_MIP_Limits_CutPasses                    -1
+CPXPARAM_MIP_Strategy_RINSHeur                   -1
+CPXPARAM_TimeLimit                               1800
+Tried aggregator 0 times.
+MIP Presolve eliminated 37 rows and 0 columns.
+MIP Presolve added 3660 rows and 1830 columns.
+MIP Presolve modified 82 coefficients.
+Reduced MIP has 14894 rows, 5612 columns, and 33603 nonzeros.
+Reduced MIP has 1891 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (3.42 ticks)
+Classifier predicts products in MIQP should be linearized.
+Clique table members: 2556.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 32 threads.
+Root relaxation solution time = 0.32 sec. (247.23 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0    -8459.6548   699                  -8459.6548       22         
+      0     2    -8459.6548   699                  -8459.6548       22         
+Elapsed time = 0.65 sec. (339.78 ticks, tree = 0.02 MB, solutions = 0)
+*     1     1      integral     0    -6063.0000    -8453.4603     2399   39.43%
+      2     1    -6063.0000     0    -6063.0000    -8453.4603     2789   39.43%
+
+Root node processing (before b&c):
+  Real time             =    0.41 sec. (325.26 ticks)
+Parallel b&c, 32 threads:
+  Real time             =    0.67 sec. (503.96 ticks)
+  Sync time (average)   =    0.48 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    1.08 sec. (829.21 ticks)

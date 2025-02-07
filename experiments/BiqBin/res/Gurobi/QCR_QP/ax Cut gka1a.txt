@@ -1,10 +1,10 @@
 root_relax = 1890.36
-QCR_time = 3.6616
+QCR_time = 8.8454
 opt = true
-obj_val = 1762.15
-solved_time = 0.1042
-explored_nodes = 1663
-o value "./res/Gurobi/QCR_QP/ax Cut gka1a.txt"
+obj_val = 1762.0
+solved_time = 0.0473
+explored_nodes = 3031
+to value "./res/Gurobi/QCR_QP/ax Cut gka1a.txt"
 Set parameter Presolve to value 0
 Set parameter AggFill to value -1
 Set parameter Aggregate to value 0
@@ -21,7 +21,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Sat Jan 11 22:12:31 2025
+Gurobi 12.0.0 (linux64) logging started Wed Feb  5 17:59:25 2025
 
 Set parameter LogFile to value "./res/Gurobi/QCR_QP/ax Cut gka1a.txt"
 Set parameter PreCrush to value 0
@@ -36,8 +36,8 @@ Set parameter Symmetry to value 0
 Set parameter Presolve to value 0
 Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Debian GNU/Linux 12 (bookworm)")
 
-CPU model: Intel(R) Xeon(R) Silver 4210R CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
-Thread count: 1 physical cores, 2 logical processors, using up to 2 threads
+CPU model: Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 40 logical processors, using up to 20 threads
 
 Non-default parameters:
 TimeLimit  1800
@@ -54,7 +54,7 @@ PreQLinearize  0
 Presolve  0
 
 Optimize a model with 0 rows, 50 columns and 0 nonzeros
-Model fingerprint: 0xa983aaeb
+Model fingerprint: 0x5a344e8a
 Model has 156 quadratic objective terms
 Variable types: 0 continuous, 50 integer (50 binary)
 Coefficient statistics:
@@ -73,16 +73,18 @@ Root relaxation: objective -1.890357e+03, 76 iterations, 0.00 seconds (0.00 work
      0     0 -1890.3569    0   50          - -1890.3569      -     -    0s
      0     0 -1890.3568    0   50          - -1890.3568      -     -    0s
      0     2 -1890.3568    0   50          - -1890.3568      -     -    0s
-*   40    35              33    -1751.000000 -1890.3568  7.96%   4.0    0s
-*  106    76              28    -1758.000000 -1890.3568  7.53%   4.5    0s
-*  137    94              28    -1762.000000 -1890.1128  7.27%   4.5    0s
+*  704   792              37    -1642.000000 -1886.6992  14.9%   4.8    0s
+*  797   792              28    -1754.000000 -1886.6992  7.57%   4.5    0s
+* 1650   810              25    -1755.000000 -1863.9471  6.21%   4.6    0s
+* 1776   800              25    -1762.000000 -1863.9471  5.79%   4.5    0s
 
-Explored 1663 nodes (6689 simplex iterations) in 0.10 seconds (0.03 work units)
-Thread count was 2 (of 2 available processors)
+Explored 3031 nodes (10915 simplex iterations) in 0.05 seconds (0.01 work units)
+Thread count was 20 (of 40 available processors)
 
-Solution count 3: -1762 -1758 -1751 
+Solution count 4: -1762 -1755 -1754 -1642 
+No other solutions better than -1762
 
 Optimal solution found (tolerance 1.00e-04)
-Best objective -1.762000000000e+03, best bound -1.762145851646e+03, gap 0.0083%
+Best objective -1.762000000000e+03, best bound -1.762000000000e+03, gap 0.0000%
 
-User-callback calls 3399, time in user-callback 0.00 sec
+User-callback calls 6149, time in user-callback 0.00 sec

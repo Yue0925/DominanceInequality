@@ -111,8 +111,8 @@ function run(fname)
         nothing
     else
         println("loging $logname ... ")
-        one_solve(N, W, logname, qcr_cut = true , cut=false, grb_solver=true, QCR=true , root=true )
-        one_solve(N, W, logname, qcr_cut = true , cut=false, grb_solver=true, QCR=true , root=false )
+        one_solve(N, W, logname, qcr_cut = true , cut=true, grb_solver=true, QCR=true , root=true )
+        one_solve(N, W, logname, qcr_cut = true , cut=true, grb_solver=true, QCR=true , root=false )
     end
 
    

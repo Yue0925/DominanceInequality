@@ -1,9 +1,9 @@
 root_relax = 602.26
-QCR_time = 10.0318
+QCR_time = 12.924
 opt = true
 obj_val = 602.0
-solved_time = 0.1296
-explored_nodes = 114
+solved_time = 0.2791
+explored_nodes = 1166
 nb_dom_cuts = 1156
 robi/QCR_QP_Dom/bcc13285.txt"
 Set parameter Presolve to value 0
@@ -22,7 +22,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Sun Jan 12 01:45:09 2025
+Gurobi 12.0.0 (linux64) logging started Wed Feb  5 18:05:55 2025
 
 Set parameter LogFile to value "./res/Gurobi/QCR_QP_Dom/bcc13285.txt"
 Set parameter PreCrush to value 0
@@ -37,8 +37,8 @@ Set parameter Symmetry to value 0
 Set parameter Presolve to value 0
 Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Debian GNU/Linux 12 (bookworm)")
 
-CPU model: Intel(R) Xeon(R) Silver 4210R CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
-Thread count: 1 physical cores, 2 logical processors, using up to 2 threads
+CPU model: Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 40 logical processors, using up to 20 threads
 
 Non-default parameters:
 TimeLimit  1800
@@ -55,7 +55,7 @@ PreQLinearize  0
 Presolve  0
 
 Optimize a model with 1156 rows, 63 columns and 23884 nonzeros
-Model fingerprint: 0x960b5469
+Model fingerprint: 0xaf09e58a
 Model has 1042 quadratic objective terms
 Variable types: 0 continuous, 63 integer (63 binary)
 Coefficient statistics:
@@ -74,10 +74,10 @@ Root relaxation: objective -6.022609e+02, 127 iterations, 0.01 seconds (0.01 wor
      0     0 -602.26093    0   63          - -602.26093      -     -    0s
      0     0 -602.26077    0   63          - -602.26077      -     -    0s
      0     2 -602.26077    0   63          - -602.26077      -     -    0s
-*   35    11              34    -602.0000000 -602.26077  0.04%   5.5    0s
+*  550   550              30    -602.0000000 -602.23808  0.04%   3.7    0s
 
-Explored 114 nodes (833 simplex iterations) in 0.13 seconds (0.16 work units)
-Thread count was 2 (of 2 available processors)
+Explored 1166 nodes (2667 simplex iterations) in 0.28 seconds (0.19 work units)
+Thread count was 20 (of 40 available processors)
 
 Solution count 1: -602 
 No other solutions better than -602
@@ -85,4 +85,4 @@ No other solutions better than -602
 Optimal solution found (tolerance 1.00e-04)
 Best objective -6.020000000000e+02, best bound -6.020000000000e+02, gap 0.0000%
 
-User-callback calls 348, time in user-callback 0.00 sec
+User-callback calls 2475, time in user-callback 0.00 sec

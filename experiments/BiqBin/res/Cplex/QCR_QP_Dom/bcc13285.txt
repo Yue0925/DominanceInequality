@@ -1,11 +1,11 @@
 root_relax = 602.26
-QCR_time = 9.6026
+QCR_time = 13.4254
 opt = true
-obj_val = 602.0
-solved_time = 0.2705
-explored_nodes = 141
+obj_val = 602.01
+solved_time = 0.4848
+explored_nodes = 784
 nb_dom_cuts = 1156
-PXPARAM_Preprocessing_NumPass                   0
+PARAM_Preprocessing_NumPass                   0
 CPXPARAM_Output_CloneLog                         -1
 CPXPARAM_MIP_Cuts_Cliques                        -1
 CPXPARAM_Preprocessing_CoeffReduce               0
@@ -38,23 +38,23 @@ Reduced MIQP objective Q matrix has 2021 nonzeros.
 Presolve time = 0.00 sec. (1.49 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.18 sec. (359.82 ticks)
+Parallel mode: deterministic, using up to 32 threads.
+Root relaxation solution time = 0.18 sec. (123.63 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
       0     0     -602.2609    63                   -602.2609        8         
       0     2     -602.2609    63                   -602.2609        8         
-Elapsed time = 0.21 sec. (369.06 ticks, tree = 0.02 MB, solutions = 0)
-*    49    27      integral     0     -602.0000     -602.2607      271    0.04%
-*    56    35      integral     0     -602.0000     -602.2607      317    0.04%
+Elapsed time = 0.25 sec. (131.78 ticks, tree = 0.02 MB, solutions = 0)
+*   611   392      integral     0     -594.0000     -602.2121     1607    1.38%
+*   693   315      integral     0     -602.0000     -602.2121     2009    0.04%
 
 Root node processing (before b&c):
-  Real time             =    0.19 sec. (364.87 ticks)
-Parallel b&c, 2 threads:
-  Real time             =    0.08 sec. (85.97 ticks)
-  Sync time (average)   =    0.01 sec.
+  Real time             =    0.19 sec. (128.69 ticks)
+Parallel b&c, 32 threads:
+  Real time             =    0.29 sec. (48.89 ticks)
+  Sync time (average)   =    0.14 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.27 sec. (450.84 ticks)
+Total (root+branch&cut) =    0.47 sec. (177.57 ticks)

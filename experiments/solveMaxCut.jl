@@ -7,7 +7,7 @@ include("QCR_csdp.jl")
 
 
 
-function one_solve(N, W, logname; qcr_cut = false, cut=false, grb_solver=true, QCR=false , root=false )
+function one_solve(N, W, logname; qcr_cut = false, cut=false, grb_solver=true, QCR=false , QCR2 = false, root=false )
 
     println(" dominance cuts ? ", cut, "\n grb solver ? ", grb_solver, "\n QCR ? ", QCR, "\n root limit ? ", root)
     fout = open(logname, "a")
@@ -35,6 +35,8 @@ function one_solve(N, W, logname; qcr_cut = false, cut=false, grb_solver=true, Q
  
     @variable(model, x[1:N], Bin )
 
+    # -----------------------------------------------
+    # -------------------- QCR 1
     if QCR
         Q = zeros(N, N) ; c=zeros(N)
         for i in 1:N
@@ -50,14 +52,43 @@ function one_solve(N, W, logname; qcr_cut = false, cut=false, grb_solver=true, Q
         if !root println(fout, "QCR_time = $QCR_time") end 
         qcr_cut ? println(fout, "nb_dom_cuts = $nb_dom_cuts") : nothing
 
-        f = x'*(-Q)*x -c'*x + sum((λ[i]+0.00001) * (x[i]^2 - x[i] ) for i in 1:N)
+        f = x'*(-Q)*x -c'*x + sum( (λ[i]+0.00001) * (x[i]^2 - x[i] ) for i in 1:N)
         @objective(model, Min, f)
+
+
+    # ------------------------------------------------------------
+    # ---------------------- QCR 2
+    elseif QCR2
+        @variable(model, z[1:N, 1:N] ≥ 0 ) 
+        @constraint(model, [i in 1:N, j in 1:N], z[i,j] ≤ x[i]) ; @constraint(model, [i in 1:N, j in 1:N], z[i,j] ≤ x[j])
+        @constraint(model, [i in 1:N, j in 1:N], z[i,j] ≥ x[i] + x[j] - 1 )
+
+        Q = zeros(N, N) ; c=zeros(N)
+        for i in 1:N
+            for j in 1:N
+                c[i] +=  W[i,j]
+                c[j] +=  W[i,j]
+
+                Q[i,j] += -2 * W[i,j]     
+            end
+        end
+
+        λ, Γ, QCR_time, nb_dom_cuts = csdp_QCR2(W, N, cut=qcr_cut)
+        if !root println(fout, "QCR_time = $QCR_time") end 
+        qcr_cut ? println(fout, "nb_dom_cuts = $nb_dom_cuts") : nothing
+
+        f = x'*(-Q)*x -c'*x + sum((λ[i]+0.00001) * (x[i]^2 - x[i] ) for i in 1:N) +
+                    sum(Γ[i,j] * (z[i,j] - x[i]*x[j]) for i in 1:N for j in 1:N)
+        @objective(model, Min, f)
+
+
     else
         f = sum( W[i,j] * (x[i]*(1-x[j]) + x[j]*(1-x[i]) ) for i in 1:N for j in 1:N) 
         @objective(model, Max, f)
     end
 
-  
+    
+
     nb_dom_cuts=0
     if cut
         ineqs = all_insertion_left_ineq(N, W) ; nb_dom_cuts += length(ineqs) *2

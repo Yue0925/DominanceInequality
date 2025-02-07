@@ -1,8 +1,8 @@
 root_relax = 77.61
 opt = true
 obj_val = 70.0
-solved_time = 0.0557
-explored_nodes = 1054
+solved_time = 0.0472
+explored_nodes = 2321
 t parameter LogFile to value "./res/Gurobi/QP/21_2_2019.txt"
 Set parameter Presolve to value 0
 Set parameter AggFill to value -1
@@ -20,7 +20,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Thu Jan  9 18:10:07 2025
+Gurobi 12.0.0 (linux64) logging started Wed Feb  5 17:16:01 2025
 
 Set parameter LogFile to value "./res/Gurobi/QP/21_2_2019.txt"
 Set parameter PreCrush to value 0
@@ -35,8 +35,8 @@ Set parameter Symmetry to value 0
 Set parameter Presolve to value 0
 Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Debian GNU/Linux 12 (bookworm)")
 
-CPU model: Intel(R) Xeon(R) Silver 4210R CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
-Thread count: 1 physical cores, 2 logical processors, using up to 2 threads
+CPU model: Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 40 logical processors, using up to 20 threads
 
 Non-default parameters:
 TimeLimit  1800
@@ -72,15 +72,15 @@ Root relaxation: objective 7.760614e+01, 67 iterations, 0.00 seconds (0.00 work 
      0     0   77.60614    0   51          -   77.60614      -     -    0s
      0     0   77.60614    0   51          -   77.60614      -     -    0s
      0     2   77.60614    0   51          -   77.60614      -     -    0s
-*   39    33              33      69.0000000   75.88656  10.0%   2.7    0s
-*   73    51              29      70.0000000   75.08139  7.26%   2.6    0s
+*  555   670              33      68.0000000   74.66851  9.81%   2.7    0s
+*  735   672              31      70.0000000   74.24431  6.06%   2.5    0s
 
-Explored 1054 nodes (3107 simplex iterations) in 0.06 seconds (0.02 work units)
-Thread count was 2 (of 2 available processors)
+Explored 2321 nodes (5155 simplex iterations) in 0.05 seconds (0.00 work units)
+Thread count was 20 (of 40 available processors)
 
-Solution count 2: 70 69 
+Solution count 2: 70 68 
 
 Optimal solution found (tolerance 1.00e-04)
-Best objective 7.000000000000e+01, best bound 7.000246690641e+01, gap 0.0035%
+Best objective 7.000000000000e+01, best bound 7.000000000000e+01, gap 0.0000%
 
-User-callback calls 2179, time in user-callback 0.00 sec
+User-callback calls 4725, time in user-callback 0.00 sec

@@ -1,0 +1,108 @@
+nb_dom_cuts = 120
+root_relax = -70.69
+QCR_time = 416.1161
+nb_dom_cuts = 120
+opt = true
+obj_val = -70.0
+solved_time = 51.2572
+explored_nodes = 6347
+bi/Dom_QCR2_QP/21_2_2019_b.txt"
+Set parameter Presolve to value 0
+Set parameter AggFill to value -1
+Set parameter Aggregate to value 0
+Set parameter Heuristics to value 0
+Set parameter LPWarmStart to value 0
+Set parameter NLPHeur to value 0
+Set parameter NoRelHeurTime to value 0
+Set parameter PreCrush to value 0
+Set parameter PreDepRow to value 0
+Set parameter PreDual to value 0
+Set parameter PrePasses to value -1
+Set parameter RINS to value 0
+Set parameter Symmetry to value 0
+Set parameter PreQLinearize to value 0
+Set parameter NonConvex to value 0
+
+Gurobi 12.0.0 (linux64) logging started Thu Feb  6 16:51:29 2025
+
+Set parameter LogFile to value "./res/Gurobi/Dom_QCR2_QP/21_2_2019_b.txt"
+Set parameter PreCrush to value 0
+Set parameter PrePasses to value -1
+Set parameter AggFill to value -1
+Set parameter NoRelHeurTime to value 0
+Set parameter NLPHeur to value 0
+Set parameter NonConvex to value 0
+Set parameter LPWarmStart to value 0
+Set parameter PreDepRow to value 0
+Set parameter Symmetry to value 0
+Set parameter Presolve to value 0
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Debian GNU/Linux 12 (bookworm)")
+
+CPU model: Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 40 logical processors, using up to 20 threads
+
+Non-default parameters:
+TimeLimit  1800
+LPWarmStart  0
+Heuristics  0
+RINS  0
+NLPHeur  0
+Symmetry  0
+Aggregate  0
+PreDual  0
+NonConvex  0
+PreDepRow  0
+PreQLinearize  0
+Presolve  0
+
+Optimize a model with 10800 rows, 3660 columns and 25140 nonzeros
+Model fingerprint: 0xf855c615
+Model has 1830 quadratic objective terms
+Variable types: 3600 continuous, 60 integer (60 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+00]
+  Objective range  [3e-13, 4e+02]
+  QObjective range [1e-12, 1e+01]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 1e+00]
+Warning: Model contains large quadratic objective coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Variable types: 3600 continuous, 60 integer (60 binary)
+
+Root relaxation: objective -7.068760e+01, 4561 iterations, 0.35 seconds (0.21 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -70.68760    0   60          -  -70.68760      -     -    0s
+     0     0  -70.68760    0   60          -  -70.68760      -     -    1s
+     0     0  -70.68760    0   60          -  -70.68760      -     -    1s
+H    0     0                     -70.0000000  -70.68760  0.98%     -    2s
+     0     0  -70.68760    0   60  -70.00000  -70.68760  0.98%     -    2s
+     0     2  -70.68760    0   60  -70.00000  -70.68760  0.98%     -    2s
+    31    52  -70.68754    5   53  -70.00000  -70.68754  0.98%  1218    5s
+   294   392  -70.40055   13   33  -70.00000  -70.68754  0.98%   654   10s
+   981   459  -70.57141    7   30  -70.00000  -70.68754  0.98%   570   16s
+  1438   540  -70.22926   10   26  -70.00000  -70.68754  0.98%   522   20s
+  2153   670  -70.41325   11   15  -70.00000  -70.68753  0.98%   515   26s
+  2577   706  -70.68746   10   44  -70.00000  -70.68753  0.98%   533   30s
+  2883   743  -70.09496   12   45  -70.00000  -70.68753  0.98%   550   35s
+  3476   770     cutoff   12       -70.00000  -70.68595  0.98%   556   40s
+  4030   756     cutoff    9       -70.00000  -70.64503  0.92%   549   45s
+  5150   428  -70.07110   14   10  -70.00000  -70.31210  0.45%   487   50s
+
+Cutting planes:
+  RLT: 959
+  BQP: 4879
+
+Explored 6347 nodes (2648895 simplex iterations) in 51.25 seconds (44.30 work units)
+Thread count was 20 (of 40 available processors)
+
+Solution count 1: -70 
+No other solutions better than -70
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -7.000000000000e+01, best bound -7.000000000000e+01, gap 0.0000%
+
+User-callback calls 17371, time in user-callback 0.01 sec

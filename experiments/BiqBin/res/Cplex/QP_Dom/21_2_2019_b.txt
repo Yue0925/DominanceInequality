@@ -1,8 +1,8 @@
 root_relax = 75.0
 opt = true
 obj_val = 70.0
-solved_time = 0.0129
-explored_nodes = 14
+solved_time = 0.1072
+explored_nodes = 29
 nb_dom_cuts = 120
 or                0
 CPXPARAM_Preprocessing_NumPass                   0
@@ -40,7 +40,7 @@ Classifier predicts products in MIQP should be linearized.
 Clique table members: 83.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
+Parallel mode: deterministic, using up to 32 threads.
 Root relaxation solution time = 0.00 sec. (0.65 ticks)
 
         Nodes                                         Cuts/
@@ -48,14 +48,15 @@ Root relaxation solution time = 0.00 sec. (0.65 ticks)
 
       0     0       75.0000    52                     75.0000      119         
       0     2       75.0000    52                     75.0000      119         
-Elapsed time = 0.01 sec. (1.46 ticks, tree = 0.02 MB, solutions = 0)
-*    10     6      integral     0       70.0000       71.5000      164    2.14%
+Elapsed time = 0.09 sec. (1.46 ticks, tree = 0.02 MB, solutions = 0)
+*    18     8      integral     0       68.0000       70.0000      185    2.94%
+*    19     6      integral     0       70.0000       70.0000      172    0.00%
 
 Root node processing (before b&c):
   Real time             =    0.00 sec. (1.37 ticks)
-Parallel b&c, 2 threads:
-  Real time             =    0.01 sec. (0.74 ticks)
-  Sync time (average)   =    0.00 sec.
+Parallel b&c, 32 threads:
+  Real time             =    0.10 sec. (0.86 ticks)
+  Sync time (average)   =    0.01 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.01 sec. (2.11 ticks)
+Total (root+branch&cut) =    0.10 sec. (2.23 ticks)

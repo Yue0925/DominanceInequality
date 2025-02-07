@@ -1,10 +1,10 @@
 root_relax = 867.0
-QCR_time = 8.3256
+QCR_time = 9.4125
 opt = true
 obj_val = 867.0
-solved_time = 0.0899
-explored_nodes = 91
-r                0
+solved_time = 0.1143
+explored_nodes = 1472
+               0
 CPXPARAM_Preprocessing_NumPass                   0
 CPXPARAM_Output_CloneLog                         -1
 CPXPARAM_MIP_Cuts_Cliques                        -1
@@ -38,23 +38,24 @@ Reduced MIQP objective Q matrix has 3417 nonzeros.
 Presolve time = 0.00 sec. (0.25 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.00 sec. (2.45 ticks)
+Parallel mode: deterministic, using up to 32 threads.
+Root relaxation solution time = 0.00 sec. (1.53 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
       0     0     -867.0001    59                   -867.0001        7         
       0     2     -867.0001    59                   -867.0001        7         
-Elapsed time = 0.04 sec. (3.43 ticks, tree = 0.02 MB, solutions = 0)
-*    86    60      integral     0     -867.0000     -867.0000       72    0.00%
-*    90    45      integral     0     -867.0000     -867.0000       64    0.00%
+Elapsed time = 0.08 sec. (2.51 ticks, tree = 0.02 MB, solutions = 0)
+*  1275   121      integral     0     -867.0000     -867.0000      132    0.00%
+*  1387   768      integral     0     -867.0000     -867.0000      790    0.00%
+*  1394   685      integral     0     -867.0000     -867.0000      708    0.00%
 
 Root node processing (before b&c):
-  Real time             =    0.01 sec. (2.91 ticks)
-Parallel b&c, 2 threads:
-  Real time             =    0.08 sec. (3.49 ticks)
-  Sync time (average)   =    0.06 sec.
+  Real time             =    0.01 sec. (2.00 ticks)
+Parallel b&c, 32 threads:
+  Real time             =    0.10 sec. (4.06 ticks)
+  Sync time (average)   =    0.03 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.09 sec. (6.40 ticks)
+Total (root+branch&cut) =    0.11 sec. (6.06 ticks)

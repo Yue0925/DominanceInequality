@@ -1,9 +1,9 @@
 root_relax = 900.05
-QCR_time = 10.1628
+QCR_time = 11.4099
 opt = true
-obj_val = 900.05
-solved_time = 0.2017
-explored_nodes = 90
+obj_val = 900.0
+solved_time = 0.1104
+explored_nodes = 684
                0
 CPXPARAM_Preprocessing_NumPass                   0
 CPXPARAM_Output_CloneLog                         -1
@@ -35,26 +35,27 @@ Tried aggregator 0 times.
 Reduced MIQP has 0 rows, 63 columns, and 0 nonzeros.
 Reduced MIQP has 63 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 3211 nonzeros.
-Presolve time = 0.01 sec. (0.25 ticks)
+Presolve time = 0.00 sec. (0.25 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.02 sec. (2.24 ticks)
+Parallel mode: deterministic, using up to 32 threads.
+Root relaxation solution time = 0.00 sec. (1.62 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
       0     0     -900.0543    63                   -900.0543        7         
       0     2     -900.0543    63                   -900.0543        7         
-Elapsed time = 0.14 sec. (3.21 ticks, tree = 0.02 MB, solutions = 0)
-*    41    32      integral     0     -894.0000     -900.0541      118    0.68%
-*    60    34      integral     0     -900.0000     -900.0541      219    0.01%
+Elapsed time = 0.08 sec. (2.59 ticks, tree = 0.02 MB, solutions = 0)
+*   424    50      integral     0     -899.0000     -900.0088      241    0.11%
+*   555    66      integral     0     -900.0000     -900.0088      987    0.00%
+*   674    85      integral     0     -900.0000     -900.0088     1301    0.00%
 
 Root node processing (before b&c):
-  Real time             =    0.07 sec. (2.68 ticks)
-Parallel b&c, 2 threads:
-  Real time             =    0.12 sec. (5.77 ticks)
-  Sync time (average)   =    0.01 sec.
+  Real time             =    0.01 sec. (2.07 ticks)
+Parallel b&c, 32 threads:
+  Real time             =    0.10 sec. (5.19 ticks)
+  Sync time (average)   =    0.02 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.20 sec. (8.45 ticks)
+Total (root+branch&cut) =    0.10 sec. (7.26 ticks)

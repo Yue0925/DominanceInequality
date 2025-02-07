@@ -1,0 +1,100 @@
+root_relax = 9184.85
+QCR_time = 33.4133
+opt = true
+obj_val = 8645.0
+solved_time = 36.5568
+explored_nodes = 155299
+nb_dom_cuts = 1754
+QCR_QP_Dom/be100_2.txt"
+Set parameter Presolve to value 0
+Set parameter AggFill to value -1
+Set parameter Aggregate to value 0
+Set parameter Heuristics to value 0
+Set parameter LPWarmStart to value 0
+Set parameter NLPHeur to value 0
+Set parameter NoRelHeurTime to value 0
+Set parameter PreCrush to value 0
+Set parameter PreDepRow to value 0
+Set parameter PreDual to value 0
+Set parameter PrePasses to value -1
+Set parameter RINS to value 0
+Set parameter Symmetry to value 0
+Set parameter PreQLinearize to value 0
+Set parameter NonConvex to value 0
+
+Gurobi 12.0.0 (linux64) logging started Thu Feb  6 03:51:32 2025
+
+Set parameter LogFile to value "./res/Gurobi/QCR_QP_Dom/be100_2.txt"
+Set parameter PreCrush to value 0
+Set parameter PrePasses to value -1
+Set parameter AggFill to value -1
+Set parameter NoRelHeurTime to value 0
+Set parameter NLPHeur to value 0
+Set parameter NonConvex to value 0
+Set parameter LPWarmStart to value 0
+Set parameter PreDepRow to value 0
+Set parameter Symmetry to value 0
+Set parameter Presolve to value 0
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Debian GNU/Linux 12 (bookworm)")
+
+CPU model: Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 40 logical processors, using up to 20 threads
+
+Non-default parameters:
+TimeLimit  1800
+LPWarmStart  0
+Heuristics  0
+RINS  0
+NLPHeur  0
+Symmetry  0
+Aggregate  0
+PreDual  0
+NonConvex  0
+PreDepRow  0
+PreQLinearize  0
+Presolve  0
+
+Optimize a model with 1754 rows, 101 columns and 81710 nonzeros
+Model fingerprint: 0x59a75589
+Model has 5107 quadratic objective terms
+Variable types: 0 continuous, 101 integer (101 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [9e+01, 7e+03]
+  QObjective range [2e+00, 2e+04]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 6e+01]
+Variable types: 0 continuous, 101 integer (101 binary)
+
+Root relaxation: objective -9.184851e+03, 188 iterations, 0.05 seconds (0.05 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -9184.8514    0  101          - -9184.8514      -     -    0s
+     0     0 -9184.8513    0  101          - -9184.8513      -     -    0s
+     0     2 -9184.8513    0  101          - -9184.8513      -     -    0s
+*  833   875              69    -8551.000000 -9164.1704  7.17%   8.3    1s
+* 1049   960              71    -8593.000000 -9156.5497  6.56%   7.8    1s
+* 2622  1587              70    -8607.500000 -9062.7899  5.29%   7.5    1s
+ 10540  4171 -8680.6958   38   52 -8607.5000 -8964.8142  4.15%   6.9    5s
+*12332  4978              84    -8615.500000 -8947.9326  3.86%   6.8    5s
+*14986  5884              90    -8628.000000 -8933.5550  3.54%   6.7    6s
+ 30972 12392 -8635.4668   46   45 -8628.0000 -8860.7674  2.70%   6.5   10s
+ 46371 17243 -8792.6659   49   38 -8628.0000 -8824.3689  2.28%   6.3   15s
+*53725 17422              89    -8645.000000 -8814.5532  1.96%   6.3   16s
+ 70044 20071 -8699.9189   48   42 -8645.0000 -8786.2656  1.63%   6.2   20s
+ 94237 20940 -8670.8258   44   47 -8645.0000 -8753.9670  1.26%   6.1   25s
+ 120479 17501     cutoff   42      -8645.0000 -8722.1923  0.89%   6.0   30s
+ 144739  7002     cutoff   38      -8645.0000 -8682.7268  0.44%   6.0   35s
+
+Explored 155299 nodes (913813 simplex iterations) in 36.55 seconds (54.94 work units)
+Thread count was 20 (of 40 available processors)
+
+Solution count 6: -8645 -8628 -8615.5 ... -8551
+No other solutions better than -8645
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -8.645000000000e+03, best bound -8.645000000000e+03, gap 0.0000%
+
+User-callback calls 312215, time in user-callback 0.05 sec

@@ -1,9 +1,9 @@
 root_relax = 70.69
-QCR_time = 6.8082
+QCR_time = 9.0191
 opt = true
 obj_val = 70.0
-solved_time = 0.1326
-explored_nodes = 85
+solved_time = 0.098
+explored_nodes = 481
 nb_dom_cuts = 120
 0
 CPXPARAM_Preprocessing_NumPass                   0
@@ -42,22 +42,22 @@ Presolve time = 0.00 sec. (0.08 ticks)
 Clique table members: 8.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.01 sec. (1.80 ticks)
+Parallel mode: deterministic, using up to 32 threads.
+Root relaxation solution time = 0.01 sec. (1.42 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
       0     0      -70.6876    52                    -70.6876        8         
       0     2      -70.6876    52                    -70.6876        8         
-Elapsed time = 0.06 sec. (2.12 ticks, tree = 0.02 MB, solutions = 0)
-*    24    13      integral     0      -70.0000      -70.6870      166    0.98%
+Elapsed time = 0.05 sec. (1.75 ticks, tree = 0.02 MB, solutions = 0)
+*   188    63      integral     0      -70.0000      -70.5364      561    0.77%
 
 Root node processing (before b&c):
-  Real time             =    0.01 sec. (1.96 ticks)
-Parallel b&c, 2 threads:
-  Real time             =    0.12 sec. (4.76 ticks)
-  Sync time (average)   =    0.08 sec.
+  Real time             =    0.01 sec. (1.59 ticks)
+Parallel b&c, 32 threads:
+  Real time             =    0.08 sec. (3.74 ticks)
+  Sync time (average)   =    0.03 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.13 sec. (6.71 ticks)
+Total (root+branch&cut) =    0.09 sec. (5.33 ticks)
