@@ -1,12 +1,13 @@
 nb_dom_cuts = 1754
 root_relax = 9184.85
-QCR_time = 43.8541
+QCR_time = 50.4015
 nb_dom_cuts = 1754
 opt = true
 obj_val = 8645.0
-solved_time = 6.0828
-explored_nodes = 167919
-/Dom_QCR_QP/be100_2.txt"
+solved_time = 34.5707
+explored_nodes = 137093
+nb_dom_cuts = 1754
+txt"
 Set parameter Presolve to value 0
 Set parameter AggFill to value -1
 Set parameter Aggregate to value 0
@@ -23,7 +24,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Thu Feb  6 03:59:39 2025
+Gurobi 12.0.0 (linux64) logging started Sat Feb  8 01:33:18 2025
 
 Set parameter LogFile to value "./res/Gurobi/Dom_QCR_QP/be100_2.txt"
 Set parameter PreCrush to value 0
@@ -55,19 +56,19 @@ PreDepRow  0
 PreQLinearize  0
 Presolve  0
 
-Optimize a model with 0 rows, 101 columns and 0 nonzeros
-Model fingerprint: 0x38ace7a5
+Optimize a model with 1754 rows, 101 columns and 81710 nonzeros
+Model fingerprint: 0xe6f7391c
 Model has 5107 quadratic objective terms
 Variable types: 0 continuous, 101 integer (101 binary)
 Coefficient statistics:
-  Matrix range     [0e+00, 0e+00]
+  Matrix range     [1e+00, 1e+00]
   Objective range  [9e+01, 7e+03]
   QObjective range [2e+00, 2e+04]
   Bounds range     [0e+00, 0e+00]
-  RHS range        [0e+00, 0e+00]
+  RHS range        [1e+00, 6e+01]
 Variable types: 0 continuous, 101 integer (101 binary)
 
-Root relaxation: objective -9.184851e+03, 178 iterations, 0.01 seconds (0.01 work units)
+Root relaxation: objective -9.184851e+03, 178 iterations, 0.04 seconds (0.04 work units)
 
     Nodes    |    Current Node    |     Objective Bounds      |     Work
  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
@@ -75,27 +76,23 @@ Root relaxation: objective -9.184851e+03, 178 iterations, 0.01 seconds (0.01 wor
      0     0 -9184.8515    0  101          - -9184.8515      -     -    0s
      0     0 -9184.8513    0  101          - -9184.8513      -     -    0s
      0     2 -9184.8513    0  101          - -9184.8513      -     -    0s
-* 1441  1561              75    -8050.000000 -9177.1956  14.0%   6.4    0s
-* 1769  1458              80    -8107.500000 -9177.1956  13.2%   6.0    0s
-* 1804  1380              77    -8177.500000 -9176.5998  12.2%   6.1    0s
-* 1875  1220              70    -8520.000000 -9169.5507  7.62%   6.1    0s
-* 2024  1220              75    -8555.000000 -9169.5507  7.18%   6.1    0s
-* 4491  2039              84    -8576.000000 -9094.7203  6.05%   6.7    0s
-* 4642  2126              87    -8587.000000 -9088.6301  5.84%   6.7    0s
-* 4654  2027              87    -8601.500000 -9087.7315  5.65%   6.7    0s
-* 5895  2334              87    -8607.500000 -9044.2078  5.07%   6.6    0s
-*37607 15648              87    -8616.500000 -8854.0610  2.76%   6.3    2s
-*75457 24633              85    -8623.000000 -8788.4896  1.92%   6.0    3s
-*90475 23797              89    -8645.000000 -8769.5177  1.44%   6.0    3s
- 128048 20398     cutoff   43      -8645.0000 -8722.7513  0.90%   5.9    5s
+*  946   985              67    -8551.000000 -9169.1950  7.23%   8.0    1s
+* 1264  1111              69    -8607.500000 -9165.2961  6.48%   7.6    1s
+* 1306  1111              68    -8645.000000 -9154.6697  5.90%   7.6    1s
+  9117  3168     cutoff   53      -8645.0000 -8969.4800  3.75%   7.0    5s
+ 29218 11100 -8683.5722   40   46 -8645.0000 -8854.0813  2.42%   6.5   10s
+ 46468 15198 -8746.6143   32   65 -8645.0000 -8811.7126  1.93%   6.3   15s
+ 64108 17582 -8711.8473   32   60 -8645.0000 -8780.9601  1.57%   6.2   20s
+ 88577 17615     cutoff   48      -8645.0000 -8746.5952  1.18%   6.1   25s
+ 112917 12992     cutoff   48      -8645.0000 -8713.0714  0.79%   6.0   30s
 
-Explored 167919 nodes (961539 simplex iterations) in 6.08 seconds (9.50 work units)
+Explored 137093 nodes (803981 simplex iterations) in 34.57 seconds (48.62 work units)
 Thread count was 20 (of 40 available processors)
 
-Solution count 10: -8645 -8623 -8616.5 ... -8177.5
+Solution count 3: -8645 -8607.5 -8551 
 No other solutions better than -8645
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective -8.645000000000e+03, best bound -8.645000000000e+03, gap 0.0000%
 
-User-callback calls 336453, time in user-callback 0.05 sec
+User-callback calls 275936, time in user-callback 0.07 sec

@@ -1,12 +1,13 @@
 nb_dom_cuts = 1950
 root_relax = 900.05
-QCR_time = 22.1344
+QCR_time = 25.6547
 nb_dom_cuts = 1950
 opt = true
-obj_val = 900.0
-solved_time = 0.0888
-explored_nodes = 710
-XPARAM_Preprocessing_NumPass                   0
+obj_val = 900.01
+solved_time = 0.7454
+explored_nodes = 348
+nb_dom_cuts = 1950
+_NumPass                   0
 CPXPARAM_Output_CloneLog                         -1
 CPXPARAM_MIP_Cuts_Cliques                        -1
 CPXPARAM_Preprocessing_CoeffReduce               0
@@ -33,29 +34,28 @@ CPXPARAM_MIP_Limits_CutPasses                    -1
 CPXPARAM_MIP_Strategy_RINSHeur                   -1
 CPXPARAM_TimeLimit                               1800
 Tried aggregator 0 times.
-Reduced MIQP has 0 rows, 63 columns, and 0 nonzeros.
+Reduced MIQP has 1950 rows, 63 columns, and 56654 nonzeros.
 Reduced MIQP has 63 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Reduced MIQP objective Q matrix has 3211 nonzeros.
-Presolve time = 0.00 sec. (0.25 ticks)
+Presolve time = 0.00 sec. (3.33 ticks)
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 32 threads.
-Root relaxation solution time = 0.00 sec. (1.62 ticks)
+Root relaxation solution time = 0.41 sec. (395.83 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-      0     0     -900.0543    63                   -900.0543        7         
-      0     2     -900.0543    63                   -900.0543        7         
-Elapsed time = 0.06 sec. (2.60 ticks, tree = 0.02 MB, solutions = 0)
-*   428   143      integral     0     -899.0000     -900.0088      455    0.11%
-*   561    77      integral     0     -900.0000     -900.0088      978    0.00%
+      0     0     -900.0543    63                   -900.0543        9         
+      0     2     -900.0543    63                   -900.0543        9         
+Elapsed time = 0.48 sec. (416.59 ticks, tree = 0.02 MB, solutions = 0)
+*   289   136      integral     0     -900.0000     -900.0087      652    0.00%
 
 Root node processing (before b&c):
-  Real time             =    0.01 sec. (2.07 ticks)
+  Real time             =    0.43 sec. (407.43 ticks)
 Parallel b&c, 32 threads:
-  Real time             =    0.08 sec. (4.82 ticks)
-  Sync time (average)   =    0.02 sec.
+  Real time             =    0.31 sec. (51.35 ticks)
+  Sync time (average)   =    0.18 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.08 sec. (6.89 ticks)
+Total (root+branch&cut) =    0.73 sec. (458.78 ticks)
