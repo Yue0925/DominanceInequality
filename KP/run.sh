@@ -24,9 +24,9 @@
 # done
 
 
-for file in ./completeOneSwap/*.poi; do
+for file in ./completeOneSwap/kp16*; do
     echo "$file ... "
-    traf "$file"
+    julia analyse.jl "$file"
 done
 
 

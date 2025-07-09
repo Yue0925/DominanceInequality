@@ -11,7 +11,7 @@
 #SBATCH --output=BiqBin_GQP.txt
 #SBATCH --error=BiqBin_GQP.txt
 
-module load /softs/modules/gurobi/1200
+# module load /softs/modules/gurobi/1200
 
 
 for file in ./instances_neg/*.txt; do
