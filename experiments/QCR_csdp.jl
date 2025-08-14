@@ -35,6 +35,15 @@ function csdp_QCR(W, N; cut=false)
 
             @constraint(model, sum(x[i] for i in inq) ≤ length(inq)-1 )
         end
+
+        ineqs = all_swap_ineq(N, W) ;  nb_dom_cuts += length(ineqs) *2
+
+        for inq in ineqs
+            u = inq[1]; V = inq[2] ; v = inq[3]; V_ = inq[4]
+            @constraint(model, x[u] + sum(x[t] for t in V) ≤ length(V) + x[v] + sum(x[t] for t in V_) )
+
+            @constraint(model, x[v] + sum(x[t] for t in V_) ≤ length(V_) + x[u] + sum(x[t] for t in V) )
+        end
     end
 
 
@@ -106,6 +115,15 @@ function csdp_QCR2(W, N; cut=false)
             @constraint(model, sum(x[i] for i in inq) ≥ 1)
 
             @constraint(model, sum(x[i] for i in inq) ≤ length(inq)-1 )
+        end
+
+        ineqs = all_swap_ineq(N, W) ;  nb_dom_cuts += length(ineqs) *2
+
+        for inq in ineqs
+            u = inq[1]; V = inq[2] ; v = inq[3]; V_ = inq[4]
+            @constraint(model, x[u] + sum(x[t] for t in V) ≤ length(V) + x[v] + sum(x[t] for t in V_) )
+
+            @constraint(model, x[v] + sum(x[t] for t in V_) ≤ length(V_) + x[u] + sum(x[t] for t in V) )
         end
     end
 

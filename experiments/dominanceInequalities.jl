@@ -1,38 +1,38 @@
-# """
-#   one inequality z_u + \sum z(V) ≥ 1    
-# """
+"""
+  one inequality z_u + \sum z(V) ≥ 1    
+"""
 # todo : verify negative coefficients
-# function insertion_left(N, W, u)
-#     O = collect(1:N) ; deleteat!(O, u)
+function insertion_left(N, W, u)
+    O = collect(1:N) ; deleteat!(O, u)
 
-#     V = [] 
+    V = [] 
 
-#     sort!(O, by = x -> W[u, x]+W[x, u], rev = true)
+    sort!(O, by = x -> W[u, x]+W[x, u], rev = true)
     
-#     for o in O
-#         push!(V, o)
+    for o in O
+        push!(V, o)
 
-#         V_ =collect(1:N) ; deleteat!(V_, sort([V; u]))
+        V_ =collect(1:N) ; deleteat!(V_, sort([V; u]))
 
-#         weight_V = sum(W[v, u]+W[u,v] for v in V)
-#         weight_V_ = sum(W[v, u]+W[u,v] for v in V_)
+        weight_V = sum(W[v, u]+W[u,v] for v in V)
+        weight_V_ = sum(W[v, u]+W[u,v] for v in V_)
 
-#         is_minimal = false 
+        is_minimal = false 
 
-#         if weight_V > weight_V_
+        if weight_V > weight_V_
 
-#             is_minimal = true
-#             for v in V
-#                 if weight_V - (W[u,v]+W[v,u]) ≥ weight_V_ + (W[u,v]+W[v,u])
-#                     is_minimal = false ; break
-#                 end
-#             end
-#         end
+            is_minimal = true
+            for v in V
+                if weight_V - (W[u,v]+W[v,u]) ≥ weight_V_ + (W[u,v]+W[v,u])
+                    is_minimal = false ; break
+                end
+            end
+        end
 
-#         if is_minimal return V end 
-#     end
-#     return []
-# end
+        if is_minimal return V end 
+    end
+    return []
+end
 
 """
     multiple inequalities V' 
@@ -95,6 +95,59 @@ function insertion_left2(N, W, u)
 end
 
 
+
+"""
+    x_u + x(V) <= |V| + x_v + x(V_)
+Return : Set of tuple (u, V, v, V_)
+"""
+function swap2(N, W, u, v)
+    O = collect(1:N) ; deleteat!(O, [u,v])
+    ineqs = Set()
+
+    sort!(O, by = x -> abs( W[u, x]+W[x, u] - W[v, x]-W[x, v] ), rev = true)
+
+    forbid = [-1 ; O[:] ]
+
+    for p in forbid
+        V = [] ; V_ = []
+
+        for o in O
+            if p == o continue end 
+
+            if W[u, o]+W[o, u] - W[v, o] - W[o, v] > W[v, o]+W[o, v] - W[u, o]-W[o, u]
+                push!(V,o)
+
+            elseif W[u, o]+W[o, u] - W[v, o] - W[o, v] < W[v, o]+W[o, v] - W[u, o]-W[o, u]
+                push!(V_, o)
+            else
+                length(V)<length(V_) ? push!(V,o) : push!(V_, o)
+            end
+
+            # objective variation
+            Δ = length(V)>0 ? sum(W[t, u]+W[u,t] for t in V) : 0 + 
+                length(V_)>0 ? sum(W[v, t]+W[t,v] for t in V_) : 0 - 
+                length(V)>0 ? sum(W[t, v]+W[v,t] for t in V) : 0 - 
+                length(V_)>0 ? sum(W[t, u]+W[u,t] for t in V_) : 0
+
+            if Δ <= 0
+                continue
+            end
+
+            # stop criteria
+            V_tilde = collect(1:N) ; deleteat!(V_tilde, sort(collect(Set([V; V_; u ; v]))))
+
+            if Δ > (length(V_tilde)>0 ? sum(abs(W[t, u]+W[u,t]-W[t, v]-W[v,t]) for t in V_tilde) : 0 )
+                # todo : find a valid inequality 
+                push!(ineqs, (u, V, v, V_) )
+                break
+            end
+
+        end
+    end
+
+    return ineqs
+end
+
 function all_insertion_left_ineq(N, W)
     ineqs = []
 
@@ -114,5 +167,30 @@ function all_insertion_left_ineq(N, W)
 
     # println(ineqs)
     
+    return ineqs
+end
+
+
+"""
+return vector of tuples 
+"""
+function all_swap_ineq(N, W)
+    ineqs = []
+
+    for u in 1:N-1
+        for v in u+1:N
+            # # todo : 
+            # inq = swap(N, W, u, v)
+            # if inq != nothing
+            #     push!(ineqs, inq)
+            # end
+
+            for inq in swap2(N, W, u, v)
+                push!(ineqs, inq)
+            end
+        end
+    end
+
+    # println(ineqs)
     return ineqs
 end

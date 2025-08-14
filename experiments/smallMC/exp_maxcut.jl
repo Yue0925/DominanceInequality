@@ -1,38 +1,130 @@
 
 using JuMP, Gurobi, CPLEX
 
+"""
+    x_u + x(V) <= |V| + x_v + x(V_)
+Return : tuple (u, V, v, V_)
+"""
+function swap(N, W, u, v)
+    O = collect(1:N) ; deleteat!(O, [u,v])
 
-#todo :  one inequality z_u + \sum z(V) ≥ 1
-function insertion_left(N, W, u)
-    O = collect(1:N) ; deleteat!(O, u)
+    V = [] ; V_ = []
 
-    V = [] 
+    sort!(O, by = x -> abs( W[u, x]+W[x, u] - W[v, x]-W[x, v] ), rev = true)
 
-    sort!(O, by = x -> W[u, x]+W[x, u], rev = true)
-    
     for o in O
-        push!(V, o)
+        if W[u, o]+W[o, u] - W[v, o] - W[o, v] > W[v, o]+W[o, v] - W[u, o]-W[o, u]
+            push!(V,o)
 
-        V_ =collect(1:N) ; deleteat!(V_, sort([V; u]))
-
-        weight_V = sum(W[v, u]+W[u,v] for v in V)
-        weight_V_ = sum(W[v, u]+W[u,v] for v in V_)
-
-        is_minimal = false 
-
-        if weight_V > weight_V_
-
-            is_minimal = true
-            for v in V
-                if weight_V - (W[u,v]+W[v,u]) ≥ weight_V_ + (W[u,v]+W[v,u])
-                    is_minimal = false ; break
-                end
-            end
+        elseif W[u, o]+W[o, u] - W[v, o] - W[o, v] < W[v, o]+W[o, v] - W[u, o]-W[o, u]
+            push!(V_, o)
+        else
+            length(V)<length(V_) ? push!(V,o) : push!(V_, o)
         end
 
-        if is_minimal return V end 
+        # objective variation
+        Δ = length(V)>0 ? sum(W[t, u]+W[u,t] for t in V) : 0 + 
+            length(V_)>0 ? sum(W[v, t]+W[t,v] for t in V_) : 0 - 
+            length(V)>0 ? sum(W[t, v]+W[v,t] for t in V) : 0 - 
+            length(V_)>0 ? sum(W[t, u]+W[u,t] for t in V_) : 0
+
+        if Δ <= 0
+            continue
+        end
+
+        # stop criteria
+        V_tilde = collect(1:N) ; deleteat!(V_tilde, sort(collect(Set([V; V_; u ; v]))))
+
+        if Δ > (length(V_tilde)>0 ? sum(abs(W[t, u]+W[u,t]-W[t, v]-W[v,t]) for t in V_tilde) : 0 )
+            # todo : find a valid inequality 
+            return (u, V, v, V_)
+        end
     end
-    return []
+      
+    return nothing
+end
+
+
+# #todo :  one inequality z_u + \sum z(V) ≥ 1
+# function insertion_left(N, W, u)
+#     O = collect(1:N) ; deleteat!(O, u)
+
+#     V = [] 
+
+#     sort!(O, by = x -> W[u, x]+W[x, u], rev = true)
+    
+#     for o in O
+#         push!(V, o)
+
+#         V_ =collect(1:N) ; deleteat!(V_, sort([V; u]))
+
+#         weight_V = sum(W[v, u]+W[u,v] for v in V)
+#         weight_V_ = sum(W[v, u]+W[u,v] for v in V_)
+
+#         is_minimal = false 
+
+#         if weight_V > weight_V_
+
+#             is_minimal = true
+#             for v in V
+#                 if weight_V - (W[u,v]+W[v,u]) ≥ weight_V_ + (W[u,v]+W[v,u])
+#                     is_minimal = false ; break
+#                 end
+#             end
+#         end
+
+#         if is_minimal return V end 
+#     end
+#     return []
+# end
+
+
+function swap2(N, W, u, v)
+    O = collect(1:N) ; deleteat!(O, [u,v])
+    ineqs = Set()
+
+    sort!(O, by = x -> abs( W[u, x]+W[x, u] - W[v, x]-W[x, v] ), rev = true)
+
+    forbid = [-1 ; O[:] ]
+
+    for p in forbid
+        V = [] ; V_ = []
+
+        for o in O
+            if p == o continue end 
+
+            if W[u, o]+W[o, u] - W[v, o] - W[o, v] > W[v, o]+W[o, v] - W[u, o]-W[o, u]
+                push!(V,o)
+
+            elseif W[u, o]+W[o, u] - W[v, o] - W[o, v] < W[v, o]+W[o, v] - W[u, o]-W[o, u]
+                push!(V_, o)
+            else
+                length(V)<length(V_) ? push!(V,o) : push!(V_, o)
+            end
+
+            # objective variation
+            Δ = length(V)>0 ? sum(W[t, u]+W[u,t] for t in V) : 0 + 
+                length(V_)>0 ? sum(W[v, t]+W[t,v] for t in V_) : 0 - 
+                length(V)>0 ? sum(W[t, v]+W[v,t] for t in V) : 0 - 
+                length(V_)>0 ? sum(W[t, u]+W[u,t] for t in V_) : 0
+
+            if Δ <= 0
+                continue
+            end
+
+            # stop criteria
+            V_tilde = collect(1:N) ; deleteat!(V_tilde, sort(collect(Set([V; V_; u ; v]))))
+
+            if Δ > (length(V_tilde)>0 ? sum(abs(W[t, u]+W[u,t]-W[t, v]-W[v,t]) for t in V_tilde) : 0 )
+                # todo : find a valid inequality 
+                push!(ineqs, (u, V, v, V_) )
+                break
+            end
+
+        end
+    end
+
+    return ineqs
 end
 
 
@@ -99,16 +191,41 @@ function insertion_left2(N, W, u)
     return ineqs
 end
 
+"""
+return vector of tuples 
+"""
+function all_swap_ineq(fname)
+    include(fname)
+    ineqs = []
+
+    for u in 1:N-1
+        for v in u+1:N
+            # # todo : 
+            # inq = swap(N, W, u, v)
+            # if inq != nothing
+            #     push!(ineqs, inq)
+            # end
+
+            for inq in swap2(N, W, u, v)
+                push!(ineqs, inq)
+            end
+        end
+    end
+
+    println(ineqs)
+    return ineqs
+end
+
 
 function all_insertion_left_ineq(fname)
-    # include(fname) 
+    include(fname) 
 
     # # todo : uncomment for BiqMac instances 
     # W = readBiqMac(fname)
     # N = size(W, 1)
 
-    W = parserPW(fname)
-    N = size(W, 1)
+    # W = parserPW(fname)
+    # N = size(W, 1)
     
     ineqs = []
 
@@ -134,83 +251,83 @@ end
 
 using LinearAlgebra, CSDP
 
-function readBiqMac(fname)
-    f = open(fname)
+# function readBiqMac(fname)
+#     f = open(fname)
 
-    line = readline(f)
+#     line = readline(f)
 
-    n = parse(Int64, split(line, " ")[1] ) ; l = parse(Int64, split(line, " ")[2] ) 
-    W = zeros(n, n)
+#     n = parse(Int64, split(line, " ")[1] ) ; l = parse(Int64, split(line, " ")[2] ) 
+#     W = zeros(n, n)
 
-    for i in 1:l
-        line = readline(f)
-        v = split(line, " ")
+#     for i in 1:l
+#         line = readline(f)
+#         v = split(line, " ")
 
-        i = parse(Int64, v[1]) ; j = parse(Int64, v[2] ) 
-        w = parse(Float64, v[3] ) 
-        W[i,j] = w
-    end
+#         i = parse(Int64, v[1]) ; j = parse(Int64, v[2] ) 
+#         w = parse(Float64, v[3] ) 
+#         W[i,j] = w
+#     end
 
-    close(f)
+#     close(f)
 
-    # println(W)
+#     # println(W)
 
-    # for i in 1:N 
-    #     for j in 1:N 
-    #         println("i : $i , j : $j \t $(W[i,j])")
-    #     end
-    # end
+#     # for i in 1:N 
+#     #     for j in 1:N 
+#     #         println("i : $i , j : $j \t $(W[i,j])")
+#     #     end
+#     # end
 
-    for i in 1:n
-        for j in 1:n
-            if i==j continue end 
-            if W[i,j] != 0.0 && W[j,i] != W[i, j]
-                error("directed edges !! ")
-            end
-        end
+#     for i in 1:n
+#         for j in 1:n
+#             if i==j continue end 
+#             if W[i,j] != 0.0 && W[j,i] != W[i, j]
+#                 error("directed edges !! ")
+#             end
+#         end
         
-    end
-    return W
-end
+#     end
+#     return W
+# end
 
-function parserPW(fname)
-    f = open(fname)
+# function parserPW(fname)
+#     f = open(fname)
 
-    line = readline(f)
+#     line = readline(f)
 
-    n = parse(Int64, split(line, " ")[1] ) ; l = parse(Int64, split(line, " ")[2] ) 
-    W = zeros(n, n)
+#     n = parse(Int64, split(line, " ")[1] ) ; l = parse(Int64, split(line, " ")[2] ) 
+#     W = zeros(n, n)
 
-    for i in 1:l
-        line = readline(f)
-        v = split(line, " ")
+#     for i in 1:l
+#         line = readline(f)
+#         v = split(line, " ")
 
-        i = parse(Int64, v[1]) ; j = parse(Int64, v[2] ) 
-        w = parse(Float64, v[3] ) 
-        W[i,j] = w
-    end
+#         i = parse(Int64, v[1]) ; j = parse(Int64, v[2] ) 
+#         w = parse(Float64, v[3] ) 
+#         W[i,j] = w
+#     end
 
-    close(f)
+#     close(f)
 
-    # println(W)
+#     # println(W)
 
-    # for i in 1:N 
-    #     for j in 1:N 
-    #         println("i : $i , j : $j \t $(W[i,j])")
-    #     end
-    # end
+#     # for i in 1:N 
+#     #     for j in 1:N 
+#     #         println("i : $i , j : $j \t $(W[i,j])")
+#     #     end
+#     # end
 
-    for i in 1:n
-        for j in 1:n
-            if i==j continue end 
-            if W[i,j] != 0.0 && W[j,i] != 0.0
-                error("directed edges !! ")
-            end
-        end
+#     for i in 1:n
+#         for j in 1:n
+#             if i==j continue end 
+#             if W[i,j] != 0.0 && W[j,i] != 0.0
+#                 error("directed edges !! ")
+#             end
+#         end
         
-    end
-    return W
-end
+#     end
+#     return W
+# end
 
 
 """
@@ -218,14 +335,14 @@ Return the convexification coefficients Q and c.
 """
 function csdp_QCR(fname; cut=false)
     
-    # include(fname)
+    include(fname)
 
     # # todo : uncomment for BiqMac instances 
     # W = readBiqMac(fname)
     # N = size(W, 1)
 
-    W = parserPW(fname)
-    N = size(W, 1)
+    # W = parserPW(fname)
+    # N = size(W, 1)
 
     model = Model(CSDP.Optimizer)
     JuMP.set_silent(model)
@@ -306,8 +423,8 @@ function QP_solve(fname ; grb_solver=true, QCR=false)
     # W = readBiqMac(fname)
     # N = size(W, 1)
 
-    W = parserPW(fname)
-    N = size(W, 1)
+    # W = parserPW(fname)
+    # N = size(W, 1)
 
     if grb_solver 
         model = Model(Gurobi.Optimizer)
@@ -351,15 +468,15 @@ function one_solve(fname; cut=true, grb_solver=true, QCR=false , root=false )
 
     println(" dominance cuts ? ", cut, "\n grb solver ? ", grb_solver, "\n QCR ? ", QCR, "\n root limit ? ", root)
 
-    # include(fname)
+    include(fname)
 
 
     # # todo : uncomment for BiqMac instances 
     # W = readBiqMac(fname)
     # N = size(W, 1)
 
-    W = parserPW(fname)
-    N = size(W, 1)
+    # W = parserPW(fname)
+    # N = size(W, 1)
 
     if grb_solver 
         model = Model(Gurobi.Optimizer) 
@@ -406,6 +523,18 @@ function one_solve(fname; cut=true, grb_solver=true, QCR=false , root=false )
 
             @constraint(model, sum(x[i] for i in inq) ≤ length(inq)-1 )
         end
+
+        println("\n\n----------------------swap inequalities\n")
+        ineqs = all_swap_ineq(fname) ;  nb_dom_cuts += length(ineqs) *2
+
+        for inq in ineqs
+            u = inq[1]; V = inq[2] ; v = inq[3]; V_ = inq[4]
+            @constraint(model, x[u] + sum(x[t] for t in V) ≤ length(V) + x[v] + sum(x[t] for t in V_) )
+
+            @constraint(model, x[v] + sum(x[t] for t in V_) ≤ length(V_) + x[u] + sum(x[t] for t in V) )
+        end
+
+
     end
     
 
@@ -534,7 +663,7 @@ function run(fname::String)
     end
 
 
-    one_solve(fname, cut=false, grb_solver = true, QCR=true, root=false )
+    one_solve(fname, cut=true, grb_solver = true, QCR=false, root=false )
 
     # one_solve(fname, cut = true, grb_solver = true , QCR = false)
 
@@ -555,7 +684,7 @@ function run(fname::String)
 end
 
 
-fname = "./instances/ax Cut gka1a"
+fname = "./instances/MaxCut_10_1"
 run(fname)
 
 # run(fname)
@@ -571,17 +700,4 @@ run(fname)
 
 
 # run("./instances/MaxCut_10_3")
-
-
-
-# 25 35       32
-# 25 36       38
-# 25 19       -27
-
-
-# V''(- max)   V'(+ min)
-#     -5          +38
-#     -32         +11
-
-
 

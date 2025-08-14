@@ -89,96 +89,19 @@ function run(fname)
         error("Unkown input file $fname ...")
     end
 
-    # # -------------------------------
-    # # ---- Gurobi -------------------
-    # # -------------------------------
-    # warmUp(grb_solver=true, QCR=true)
-    # println("# -------------------------- \n\n")
-
-    # folder = "./res/Gurobi"
-    # if !isdir(folder)
-    #     mkdir(folder)
-    # end
-
- 
-    # folder = "./res/Gurobi/QP"
-    # if !isdir(folder)
-    #     mkdir(folder)
-    # end
-    # logname = folder * "/" *split(fname, "/")[end]
-    # if isfile(logname)
-    #     nothing
-    # else
-    #     println("loging $logname ... ")
-    #     one_solve(N, W, logname, cut=false, grb_solver=true, QCR=false , root=true )
-    #     one_solve(N, W, logname, cut=false, grb_solver=true, QCR=false , root=false )
-    # end
-
-    # folder = "./res/Gurobi/QP_Dom"
-    # if !isdir(folder)
-    #     mkdir(folder)
-    # end
-    # logname = folder * "/" *split(fname, "/")[end]
-    # if isfile(logname)
-    #     nothing
-    # else
-    #     println("loging $logname ... ")
-    #     one_solve(N, W, logname, cut=true, grb_solver=true, QCR=false , root=true )
-    #     one_solve(N, W, logname, cut=true, grb_solver=true, QCR=false , root=false )
-    # end
-
-    # folder = "./res/Gurobi/QCR_QP"
-    # if !isdir(folder)
-    #     mkdir(folder)
-    # end
-    # logname = folder * "/" *split(fname, "/")[end]
-    # if isfile(logname)
-    #     nothing
-    # else
-    #     println("loging $logname ... ")
-    #     one_solve(N, W, logname, cut=false, grb_solver=true, QCR=true , root=true )
-    #     one_solve(N, W, logname, cut=false, grb_solver=true, QCR=true , root=false )
-    # end
-
-    # folder = "./res/Gurobi/Dom_QCR_QP"
-    # if !isdir(folder)
-    #     mkdir(folder)
-    # end
-    # logname = folder * "/" *split(fname, "/")[end]
-    # if isfile(logname)
-    #     nothing
-    # else
-    #     println("loging $logname ... ")
-    #     one_solve(N, W, logname, qcr_cut = true , cut=false, grb_solver=true, QCR=true , root=true )
-    #     one_solve(N, W, logname, qcr_cut = true , cut=false, grb_solver=true, QCR=true , root=false )
-    # end
-
-    # folder = "./res/Gurobi/QCR_QP_Dom"
-    # if !isdir(folder)
-    #     mkdir(folder)
-    # end
-    # logname = folder * "/" *split(fname, "/")[end]
-    # if isfile(logname)
-    #     nothing
-    # else
-    #     println("loging $logname ... ")
-    #     one_solve(N, W, logname, cut=true, grb_solver=true, QCR=true , root=true )
-    #     one_solve(N, W, logname, cut=true, grb_solver=true, QCR=true , root=false )
-    # end
-
-
     # -------------------------------
-    # ---- CPLEX -------------------
+    # ---- Gurobi -------------------
     # -------------------------------
-    warmUp(grb_solver=false, QCR=true)
+    warmUp(grb_solver=true, QCR=true)
     println("# -------------------------- \n\n")
 
-    folder = "./res/Cplex"
+    folder = "./res/Gurobi"
     if !isdir(folder)
         mkdir(folder)
     end
+
  
-    folder = "./res/Cplex/QP"
+    folder = "./res/Gurobi/QP"
     if !isdir(folder)
         mkdir(folder)
     end
@@ -187,11 +110,11 @@ function run(fname)
         nothing
     else
         println("loging $logname ... ")
-        one_solve(N, W, logname, cut=false, grb_solver=false, QCR=false , root=true )
-        one_solve(N, W, logname, cut=false, grb_solver=false, QCR=false , root=false )
+        one_solve(N, W, logname, cut=false, grb_solver=true, QCR=false , root=true )
+        one_solve(N, W, logname, cut=false, grb_solver=true, QCR=false , root=false )
     end
 
-    folder = "./res/Cplex/QP_Dom"
+    folder = "./res/Gurobi/QP_Dom"
     if !isdir(folder)
         mkdir(folder)
     end
@@ -200,11 +123,11 @@ function run(fname)
         nothing
     else
         println("loging $logname ... ")
-        one_solve(N, W, logname, cut=true, grb_solver=false, QCR=false , root=true )
-        one_solve(N, W, logname, cut=true, grb_solver=false, QCR=false , root=false )
+        one_solve(N, W, logname, cut=true, grb_solver=true, QCR=false , root=true )
+        one_solve(N, W, logname, cut=true, grb_solver=true, QCR=false , root=false )
     end
 
-    folder = "./res/Cplex/QCR_QP"
+    folder = "./res/Gurobi/QCR_QP"
     if !isdir(folder)
         mkdir(folder)
     end
@@ -213,11 +136,11 @@ function run(fname)
         nothing
     else
         println("loging $logname ... ")
-        one_solve(N, W, logname, cut=false, grb_solver=false, QCR=true , root=true )
-        one_solve(N, W, logname, cut=false, grb_solver=false, QCR=true , root=false )
+        one_solve(N, W, logname, cut=false, grb_solver=true, QCR=true , root=true )
+        one_solve(N, W, logname, cut=false, grb_solver=true, QCR=true , root=false )
     end
 
-    folder = "./res/Cplex/Dom_QCR_QP"
+    folder = "./res/Gurobi/Dom_QCR_QP"
     if !isdir(folder)
         mkdir(folder)
     end
@@ -226,12 +149,11 @@ function run(fname)
         nothing
     else
         println("loging $logname ... ")
-        one_solve(N, W, logname, qcr_cut = true, cut=false, grb_solver=false, QCR=true , root=true )
-        one_solve(N, W, logname, qcr_cut = true, cut=false, grb_solver=false, QCR=true , root=false )
-    end 
+        one_solve(N, W, logname, qcr_cut = true , cut=false, grb_solver=true, QCR=true , root=true )
+        one_solve(N, W, logname, qcr_cut = true , cut=false, grb_solver=true, QCR=true , root=false )
+    end
 
-
-    folder = "./res/Cplex/QCR_QP_Dom"
+    folder = "./res/Gurobi/QCR_QP_Dom"
     if !isdir(folder)
         mkdir(folder)
     end
@@ -240,9 +162,87 @@ function run(fname)
         nothing
     else
         println("loging $logname ... ")
-        one_solve(N, W, logname, cut=true, grb_solver=false, QCR=true , root=true )
-        one_solve(N, W, logname, cut=true, grb_solver=false, QCR=true , root=false )
-    end 
+        one_solve(N, W, logname, cut=true, grb_solver=true, QCR=true , root=true )
+        one_solve(N, W, logname, cut=true, grb_solver=true, QCR=true , root=false )
+    end
+
+
+    # # -------------------------------
+    # # ---- CPLEX -------------------
+    # # -------------------------------
+    # warmUp(grb_solver=false, QCR=true)
+    # println("# -------------------------- \n\n")
+
+    # folder = "./res/Cplex"
+    # if !isdir(folder)
+    #     mkdir(folder)
+    # end
+ 
+    # folder = "./res/Cplex/QP"
+    # if !isdir(folder)
+    #     mkdir(folder)
+    # end
+    # logname = folder * "/" *split(fname, "/")[end]
+    # if isfile(logname)
+    #     nothing
+    # else
+    #     println("loging $logname ... ")
+    #     one_solve(N, W, logname, cut=false, grb_solver=false, QCR=false , root=true )
+    #     one_solve(N, W, logname, cut=false, grb_solver=false, QCR=false , root=false )
+    # end
+
+    # folder = "./res/Cplex/QP_Dom"
+    # if !isdir(folder)
+    #     mkdir(folder)
+    # end
+    # logname = folder * "/" *split(fname, "/")[end]
+    # if isfile(logname)
+    #     nothing
+    # else
+    #     println("loging $logname ... ")
+    #     one_solve(N, W, logname, cut=true, grb_solver=false, QCR=false , root=true )
+    #     one_solve(N, W, logname, cut=true, grb_solver=false, QCR=false , root=false )
+    # end
+
+    # folder = "./res/Cplex/QCR_QP"
+    # if !isdir(folder)
+    #     mkdir(folder)
+    # end
+    # logname = folder * "/" *split(fname, "/")[end]
+    # if isfile(logname)
+    #     nothing
+    # else
+    #     println("loging $logname ... ")
+    #     one_solve(N, W, logname, cut=false, grb_solver=false, QCR=true , root=true )
+    #     one_solve(N, W, logname, cut=false, grb_solver=false, QCR=true , root=false )
+    # end
+
+    # folder = "./res/Cplex/Dom_QCR_QP"
+    # if !isdir(folder)
+    #     mkdir(folder)
+    # end
+    # logname = folder * "/" *split(fname, "/")[end]
+    # if isfile(logname)
+    #     nothing
+    # else
+    #     println("loging $logname ... ")
+    #     one_solve(N, W, logname, qcr_cut = true, cut=false, grb_solver=false, QCR=true , root=true )
+    #     one_solve(N, W, logname, qcr_cut = true, cut=false, grb_solver=false, QCR=true , root=false )
+    # end 
+
+
+    # folder = "./res/Cplex/QCR_QP_Dom"
+    # if !isdir(folder)
+    #     mkdir(folder)
+    # end
+    # logname = folder * "/" *split(fname, "/")[end]
+    # if isfile(logname)
+    #     nothing
+    # else
+    #     println("loging $logname ... ")
+    #     one_solve(N, W, logname, cut=true, grb_solver=false, QCR=true , root=true )
+    #     one_solve(N, W, logname, cut=true, grb_solver=false, QCR=true , root=false )
+    # end 
 
 
 end
