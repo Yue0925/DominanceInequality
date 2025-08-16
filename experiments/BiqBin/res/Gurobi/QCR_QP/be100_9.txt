@@ -1,10 +1,10 @@
 root_relax = 14725.67
-QCR_time = 33.8046
+QCR_time = 45.4671
 opt = true
-obj_val = 13295.09
-solved_time = 28.3896
-explored_nodes = 894839
-ue "./res/Gurobi/QCR_QP/be100_9.txt"
+obj_val = 13294.0
+solved_time = 28.6157
+explored_nodes = 903389
+lue "./res/Gurobi/QCR_QP/be100_9.txt"
 Set parameter Presolve to value 0
 Set parameter AggFill to value -1
 Set parameter Aggregate to value 0
@@ -21,7 +21,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Wed Feb  5 23:53:00 2025
+Gurobi 12.0.0 (linux64) logging started Fri Aug 15 00:56:59 2025
 
 Set parameter LogFile to value "./res/Gurobi/QCR_QP/be100_9.txt"
 Set parameter PreCrush to value 0
@@ -54,7 +54,7 @@ PreQLinearize  0
 Presolve  0
 
 Optimize a model with 0 rows, 101 columns and 0 nonzeros
-Model fingerprint: 0x467bc637
+Model fingerprint: 0x5b9cbcdd
 Model has 5098 quadratic objective terms
 Variable types: 0 continuous, 101 integer (101 binary)
 Coefficient statistics:
@@ -73,27 +73,25 @@ Root relaxation: objective -1.472567e+04, 191 iterations, 0.01 seconds (0.01 wor
      0     0 -14725.675    0  101          - -14725.675      -     -    0s
      0     0 -14725.675    0  101          - -14725.675      -     -    0s
      0     2 -14725.675    0  101          - -14725.675      -     -    0s
-* 1723  1839              78    -12526.00000 -14712.129  17.5%   5.8    0s
-* 1745  1651              76    -12874.00000 -14711.188  14.3%   5.8    0s
-* 1782  1569              80    -13011.00000 -14711.188  13.1%   5.7    0s
-* 1881  1543              74    -13046.00000 -14711.188  12.8%   5.6    0s
-* 5241  2859              78    -13070.00000 -14474.211  10.7%   6.7    0s
-* 5320  2662              76    -13140.00000 -14474.211  10.2%   6.7    0s
-* 5339  2518              76    -13191.00000 -14474.211  9.73%   6.7    0s
-* 6099  2946              76    -13221.00000 -14415.862  9.04%   6.7    0s
-* 9930  4296              75    -13294.00000 -14284.432  7.45%   6.6    0s
- 122189 52060 -13580.027   33   63 -13294.000 -13809.922  3.88%   5.9    5s
- 279495 90890     cutoff   37      -13294.000 -13667.794  2.81%   5.7   10s
- 436121 108720 -13336.670   47   45 -13294.000 -13581.000  2.16%   5.6   15s
- 603662 105005 -13408.901   49   48 -13294.000 -13507.262  1.60%   5.6   20s
- 772903 69713 -13346.891   44   49 -13294.000 -13427.121  1.00%   5.5   25s
+* 1433  1666              68    -12827.00000 -14714.981  14.7%   6.4    0s
+* 1798  1620              77    -13003.00000 -14698.120  13.0%   6.0    0s
+* 1987  1497              69    -13146.00000 -14698.120  11.8%   6.0    0s
+* 7036  3368              76    -13153.00000 -14375.991  9.30%   6.7    0s
+* 7087  3116              78    -13233.00000 -14368.002  8.58%   6.7    0s
+* 8378  3355              75    -13294.00000 -14333.992  7.82%   6.7    0s
+ 126594 53300     cutoff   44      -13294.000 -13803.095  3.83%   6.0    5s
+ 280781 90536 -13658.852   32   63 -13294.000 -13665.187  2.79%   5.8   10s
+ 441612 108378 -13364.712   38   47 -13294.000 -13578.694  2.14%   5.7   15s
+ 608539 104771     cutoff   46      -13294.000 -13506.315  1.60%   5.6   20s
+ 774001 71138 -13429.464   45   44 -13294.000 -13430.545  1.03%   5.5   25s
 
-Explored 894839 nodes (4853566 simplex iterations) in 28.39 seconds (46.05 work units)
+Explored 903389 nodes (4913114 simplex iterations) in 28.61 seconds (46.35 work units)
 Thread count was 20 (of 40 available processors)
 
-Solution count 9: -13294 -13221 -13191 ... -12526
+Solution count 6: -13294 -13233 -13153 ... -12827
+No other solutions better than -13294
 
 Optimal solution found (tolerance 1.00e-04)
-Best objective -1.329400000000e+04, best bound -1.329509343955e+04, gap 0.0082%
+Best objective -1.329400000000e+04, best bound -1.329400000000e+04, gap 0.0000%
 
-User-callback calls 1791201, time in user-callback 0.37 sec
+User-callback calls 1808227, time in user-callback 0.19 sec

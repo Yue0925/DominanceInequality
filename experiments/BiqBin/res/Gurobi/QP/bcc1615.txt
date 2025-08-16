@@ -1,7 +1,7 @@
 root_relax = 385.31
 opt = true
 obj_val = 199.0
-solved_time = 2.5684
+solved_time = 2.3236
 explored_nodes = 272580
 arameter LogFile to value "./res/Gurobi/QP/bcc1615.txt"
 Set parameter Presolve to value 0
@@ -20,7 +20,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Wed Feb  5 19:02:55 2025
+Gurobi 12.0.0 (linux64) logging started Thu Aug 14 19:44:51 2025
 
 Set parameter LogFile to value "./res/Gurobi/QP/bcc1615.txt"
 Set parameter PreCrush to value 0
@@ -76,7 +76,7 @@ Root relaxation: objective 3.855592e+02, 48 iterations, 0.00 seconds (0.00 work 
 * 1298  1288              32     197.0000000  366.36090  86.0%   2.8    0s
 *15004  4554              37     199.0000000  271.55710  36.5%   3.7    0s
 
-Explored 272580 nodes (1063686 simplex iterations) in 2.57 seconds (0.55 work units)
+Explored 272580 nodes (1063686 simplex iterations) in 2.32 seconds (0.55 work units)
 Thread count was 20 (of 40 available processors)
 
 Solution count 3: 199 197 193 
@@ -84,4 +84,4 @@ Solution count 3: 199 197 193
 Optimal solution found (tolerance 1.00e-04)
 Best objective 1.990000000000e+02, best bound 1.990000000000e+02, gap 0.0000%
 
-User-callback calls 545336, time in user-callback 0.21 sec
+User-callback calls 545342, time in user-callback 0.08 sec

@@ -1,11 +1,8 @@
 root_relax = 2181.3
-QCR_time = 226.7849
-opt = true
-obj_val = 2181.17
-solved_time = 25.9361
-explored_nodes = 208239
-nb_dom_cuts = 2488
-R_QP_Dom/bcc16601.txt"
+
+Gurobi 12.0.0 (linux64) logging started Thu Aug 14 20:08:17 2025
+
+Set parameter LogFile to value "./res/Gurobi/QCR_QP_Dom/bcc16601.txt"
 Set parameter Presolve to value 0
 Set parameter AggFill to value -1
 Set parameter Aggregate to value 0
@@ -22,7 +19,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Wed Feb  5 18:20:37 2025
+Gurobi 12.0.0 (linux64) logging started Thu Aug 14 20:33:22 2025
 
 Set parameter LogFile to value "./res/Gurobi/QCR_QP_Dom/bcc16601.txt"
 Set parameter PreCrush to value 0
@@ -54,8 +51,8 @@ PreDepRow  0
 PreQLinearize  0
 Presolve  0
 
-Optimize a model with 2488 rows, 160 columns and 88064 nonzeros
-Model fingerprint: 0xe2df0cc7
+Optimize a model with 661312 rows, 160 columns and 32956240 nonzeros
+Model fingerprint: 0x038a41c3
 Model has 2585 quadratic objective terms
 Variable types: 0 continuous, 160 integer (160 binary)
 Coefficient statistics:
@@ -63,30 +60,34 @@ Coefficient statistics:
   Objective range  [2e+00, 2e+02]
   QObjective range [4e-01, 2e+02]
   Bounds range     [0e+00, 0e+00]
-  RHS range        [1e+00, 6e+01]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 0 rows and 0 columns (presolve time = 13s)...
 Variable types: 0 continuous, 160 integer (160 binary)
 
-Root relaxation: objective -2.181296e+03, 214 iterations, 0.04 seconds (0.04 work units)
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   0.000000e+00   1.021001e+03     32s
+     360   -6.9195543e+02   0.000000e+00   3.692886e+03     41s
+     727   -2.0831616e+03   0.000000e+00   1.009980e+02     51s
+    1220   -2.1812957e+03   0.000000e+00   6.122703e-02     66s
+    1530   -2.1812957e+03   0.000000e+00   4.404912e-04     81s
+    1621   -2.1812961e+03   0.000000e+00   0.000000e+00     91s
+
+Root relaxation: objective -2.181296e+03, 1621 iterations, 62.89 seconds (59.24 work units)
 
     Nodes    |    Current Node    |     Objective Bounds      |     Work
  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
 
-     0     0 -2181.2961    0  160          - -2181.2961      -     -    0s
-     0     0 -2181.2958    0  160          - -2181.2958      -     -    0s
-     0     2 -2181.2958    0  160          - -2181.2958      -     -    0s
-*  857  1935              60    -2181.000000 -2181.2958  0.01%   2.8    1s
- 23909  9312 -2181.2500   31   21 -2181.0000 -2181.2529  0.01%   3.0    5s
- 52783 22946 -2181.0000   37   12 -2181.0000 -2181.2501  0.01%   2.6   10s
- 103974 41826 -2181.0000   34   13 -2181.0000 -2181.2500  0.01%   2.4   15s
- 155325 62598 -2181.0000   32   13 -2181.0000 -2181.2500  0.01%   2.4   20s
- 197797 78800 -2181.0000   31   14 -2181.0000 -2181.2500  0.01%   2.4   25s
-
-Explored 208239 nodes (495643 simplex iterations) in 25.93 seconds (21.99 work units)
-Thread count was 20 (of 40 available processors)
-
-Solution count 1: -2181 
-
-Optimal solution found (tolerance 1.00e-04)
-Best objective -2.181000000000e+03, best bound -2.181166704693e+03, gap 0.0076%
-
-User-callback calls 417983, time in user-callback 0.06 sec
+     0     0 -2181.2961    0  160          - -2181.2961      -     -  117s
+     0     0 -2181.2958    0  160          - -2181.2958      -     -  153s
+     0     2 -2181.2958    0  160          - -2181.2958      -     -  167s
+     1     4 -2181.2958    1  153          - -2181.2958      -  15.0  186s
+     3     8 -2181.2958    2  152          - -2181.2958      -  10.7  201s
+     7    16 -2181.2958    3  151          - -2181.2958      -   5.7  217s
+    15    32 -2181.2958    4  150          - -2181.2958      -   3.7  240s
+    31    52 -2181.2957    5  149          - -2181.2958      -   2.8  256s
+    51   112 -2181.2957    6  148          - -2181.2958      -   2.5  288s
+   111   198 -2181.2957    8  146          - -2181.2958      -   2.2  344s
+   197   377 -2181.2957   11  143          - -2181.2958      -   2.1  438s
+   376   755 -2181.2957   19  131          - -2181.2958      -   2.1  636s

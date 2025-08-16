@@ -1,9 +1,9 @@
 root_relax = 929.0
-QCR_time = 10.7612
+QCR_time = 17.7199
 opt = true
 obj_val = 929.0
-solved_time = 0.0991
-explored_nodes = 2511
+solved_time = 0.1021
+explored_nodes = 2513
 to value "./res/Gurobi/QCR_QP/bcc85962.txt"
 Set parameter Presolve to value 0
 Set parameter AggFill to value -1
@@ -21,7 +21,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Wed Feb  5 19:33:43 2025
+Gurobi 12.0.0 (linux64) logging started Thu Aug 14 19:48:19 2025
 
 Set parameter LogFile to value "./res/Gurobi/QCR_QP/bcc85962.txt"
 Set parameter PreCrush to value 0
@@ -54,7 +54,7 @@ PreQLinearize  0
 Presolve  0
 
 Optimize a model with 0 rows, 64 columns and 0 nonzeros
-Model fingerprint: 0x5271b152
+Model fingerprint: 0x071cf158
 Model has 1863 quadratic objective terms
 Variable types: 0 continuous, 64 integer (64 binary)
 Coefficient statistics:
@@ -73,15 +73,15 @@ Root relaxation: objective -9.290002e+02, 94 iterations, 0.00 seconds (0.00 work
      0     0 -929.00016    0   64          - -929.00016      -     -    0s
      0     0 -929.00013    0   64          - -929.00013      -     -    0s
      0     2 -929.00013    0   64          - -929.00013      -     -    0s
-*  970  2296              64    -928.0000000 -929.00013  0.11%   2.0    0s
-* 1556  2296              53    -929.0000000 -929.00013  0.00%   2.0    0s
+*  966  2298              64    -928.0000000 -929.00013  0.11%   2.0    0s
+* 1552  2298              53    -929.0000000 -929.00013  0.00%   2.0    0s
 
-Explored 2511 nodes (5174 simplex iterations) in 0.10 seconds (0.09 work units)
+Explored 2513 nodes (5178 simplex iterations) in 0.10 seconds (0.09 work units)
 Thread count was 20 (of 40 available processors)
 
 Solution count 2: -929 -928 
 
 Optimal solution found (tolerance 1.00e-04)
-Best objective -9.290000000001e+02, best bound -9.290001268597e+02, gap 0.0000%
+Best objective -9.290000000001e+02, best bound -9.290001268598e+02, gap 0.0000%
 
-User-callback calls 5105, time in user-callback 0.00 sec
+User-callback calls 5109, time in user-callback 0.00 sec

@@ -1,9 +1,9 @@
 root_relax = 352.0
 opt = true
 obj_val = 199.0
-solved_time = 5.4921
-explored_nodes = 312981
-nb_dom_cuts = 444
+solved_time = 2.4887
+explored_nodes = 1005
+nb_dom_cuts = 18898
 o value "./res/Gurobi/QP_Dom/bcc1615.txt"
 Set parameter Presolve to value 0
 Set parameter AggFill to value -1
@@ -21,7 +21,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Wed Feb  5 19:15:12 2025
+Gurobi 12.0.0 (linux64) logging started Thu Aug 14 19:44:55 2025
 
 Set parameter LogFile to value "./res/Gurobi/QP_Dom/bcc1615.txt"
 Set parameter PreCrush to value 0
@@ -53,8 +53,8 @@ PreDepRow  0
 PreQLinearize  0
 Presolve  0
 
-Optimize a model with 444 rows, 41 columns and 5068 nonzeros
-Model fingerprint: 0xe8c2bce0
+Optimize a model with 18898 rows, 41 columns and 315340 nonzeros
+Model fingerprint: 0xa7a49e77
 Model has 352 quadratic objective terms
 Variable types: 0 continuous, 41 integer (41 binary)
 Coefficient statistics:
@@ -62,30 +62,28 @@ Coefficient statistics:
   Objective range  [3e+00, 3e+01]
   QObjective range [4e+00, 4e+00]
   Bounds range     [0e+00, 0e+00]
-  RHS range        [1e+00, 1e+01]
+  RHS range        [1e+00, 3e+01]
 Variable types: 0 continuous, 41 integer (41 binary)
 
-Root relaxation: objective 3.855592e+02, 49 iterations, 0.00 seconds (0.00 work units)
+Root relaxation: objective 3.855592e+02, 235 iterations, 0.13 seconds (0.14 work units)
 
     Nodes    |    Current Node    |     Objective Bounds      |     Work
  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
 
      0     0  385.55917    0   35          -  385.55917      -     -    0s
-     0     0  352.00000    0   35          -  352.00000      -     -    0s
-     0     2  352.00000    0   35          -  352.00000      -     -    0s
-*  819   958              34     188.0000000  327.77182  74.3%   3.3    0s
-*  850   958              31     196.0000000  327.77182  67.2%   3.3    0s
-* 1835  1456              29     197.0000000  313.83109  59.3%   3.5    0s
-* 5381  2754              40     198.0000000  287.62125  45.3%   3.8    0s
- 277470 12296  207.46398   29   14  198.00000  208.47564  5.29%   4.3    5s
-*310472   338              40     199.0000000  200.02500  0.52%   4.3    5s
+H    0     0                     195.0000000  352.00000  80.5%     -    0s
+     0     0  352.00000    0   35  195.00000  352.00000  80.5%     -    0s
+     0     2  352.00000    0   35  195.00000  352.00000  80.5%     -    0s
+*  250   144              18     196.0000000  297.83079  52.0%   6.5    1s
+*  273   148              15     198.0000000  297.83079  50.4%   6.3    1s
+*  870    60              15     199.0000000  219.21298  10.2%   5.2    2s
 
-Explored 312981 nodes (1327365 simplex iterations) in 5.49 seconds (4.76 work units)
+Explored 1005 nodes (5147 simplex iterations) in 2.48 seconds (2.35 work units)
 Thread count was 20 (of 40 available processors)
 
-Solution count 5: 199 198 197 ... 188
+Solution count 4: 199 198 196 195 
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective 1.990000000000e+02, best bound 1.990000000000e+02, gap 0.0000%
 
-User-callback calls 626429, time in user-callback 0.09 sec
+User-callback calls 2492, time in user-callback 0.00 sec

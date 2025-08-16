@@ -1,7 +1,7 @@
 root_relax = 6829.24
 opt = true
 obj_val = 6063.0
-solved_time = 0.1145
+solved_time = 0.1183
 explored_nodes = 7443
 parameter LogFile to value "./res/Gurobi/QP/gka2a.txt"
 Set parameter Presolve to value 0
@@ -20,7 +20,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Thu Feb  6 06:19:11 2025
+Gurobi 12.0.0 (linux64) logging started Fri Aug 15 07:26:59 2025
 
 Set parameter LogFile to value "./res/Gurobi/QP/gka2a.txt"
 Set parameter PreCrush to value 0
@@ -76,7 +76,7 @@ Root relaxation: objective 6.829241e+03, 68 iterations, 0.00 seconds (0.00 work 
 *  828   980              49    6051.0000000 6636.69472  9.68%   2.7    0s
 * 3498  1081              47    6063.0000000 6316.22624  4.18%   2.7    0s
 
-Explored 7443 nodes (19854 simplex iterations) in 0.11 seconds (0.03 work units)
+Explored 7443 nodes (19854 simplex iterations) in 0.12 seconds (0.03 work units)
 Thread count was 20 (of 40 available processors)
 
 Solution count 3: 6063 6051 5489 

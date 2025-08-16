@@ -1,10 +1,10 @@
 root_relax = 415.8
-QCR_time = 33.1106
+QCR_time = 46.7801
 opt = true
 obj_val = 394.0
-solved_time = 46.769
-explored_nodes = 4477788
-value "./res/Gurobi/QCR_QP/test_17_7_2020.txt"
+solved_time = 47.0514
+explored_nodes = 4505250
+alue "./res/Gurobi/QCR_QP/test_17_7_2020.txt"
 Set parameter Presolve to value 0
 Set parameter AggFill to value -1
 Set parameter Aggregate to value 0
@@ -21,7 +21,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Thu Feb  6 03:27:24 2025
+Gurobi 12.0.0 (linux64) logging started Fri Aug 15 04:14:13 2025
 
 Set parameter LogFile to value "./res/Gurobi/QCR_QP/test_17_7_2020.txt"
 Set parameter PreCrush to value 0
@@ -54,7 +54,7 @@ PreQLinearize  0
 Presolve  0
 
 Optimize a model with 0 rows, 100 columns and 0 nonzeros
-Model fingerprint: 0xc4dca023
+Model fingerprint: 0xc82fa80a
 Model has 342 quadratic objective terms
 Variable types: 0 continuous, 100 integer (100 binary)
 Coefficient statistics:
@@ -73,27 +73,27 @@ Root relaxation: objective -4.157993e+02, 154 iterations, 0.00 seconds (0.00 wor
      0     0 -415.79933    0  100          - -415.79933      -     -    0s
      0     0 -415.79926    0  100          - -415.79926      -     -    0s
      0     2 -415.79925    0  100          - -415.79925      -     -    0s
-* 1444  1714              67    -384.0000000 -415.73966  8.27%   5.5    0s
-* 1879  1769              66    -388.0000000 -415.55697  7.10%   5.1    0s
-* 2047  1703              64    -390.0000000 -415.55697  6.55%   5.2    0s
-* 4610  2980              75    -392.0000000 -414.03553  5.62%   5.4    0s
-*13839  7134              75    -394.0000000 -410.43564  4.17%   5.1    0s
- 381660 165468 -399.84314   28   75 -394.00000 -402.18488  2.08%   4.6    5s
- 878259 302649 -394.31330   33   60 -394.00000 -400.29596  1.60%   4.5   10s
- 1345912 388589 -394.99286   36   56 -394.00000 -399.28996  1.34%   4.4   15s
- 1846470 444443     cutoff   38      -394.00000 -398.49822  1.14%   4.4   20s
- 2338152 465081 -396.38642   35   56 -394.00000 -397.85878  0.98%   4.3   25s
- 2847651 450945     cutoff   42      -394.00000 -397.25963  0.83%   4.3   30s
- 3344895 398350 -394.35514   42   49 -394.00000 -396.68305  0.68%   4.3   35s
- 3835364 298033 -394.56391   38   54 -394.00000 -396.03129  0.52%   4.3   40s
- 4317658 113756 -394.14911   43   47 -394.00000 -394.97205  0.25%   4.2   45s
+* 1441  1698              69    -384.0000000 -415.61345  8.23%   5.6    0s
+* 2259  1898              75    -390.0000000 -415.60899  6.57%   5.0    0s
+* 5104  3033              72    -392.0000000 -413.81539  5.57%   5.4    0s
+*19073 11765              71    -394.0000000 -409.37009  3.90%   5.2    0s
+ 396198 170749 -395.09041   31   61 -394.00000 -402.13374  2.06%   4.7    5s
+ 867967 300416     cutoff   39      -394.00000 -400.36808  1.62%   4.6   10s
+ 1356068 389610 -394.25979   44   44 -394.00000 -399.31836  1.35%   4.5   15s
+ 1854462 443801 -397.80918   28   67 -394.00000 -398.54440  1.15%   4.5   20s
+ 2352644 464276     cutoff   36      -394.00000 -397.90577  0.99%   4.5   25s
+ 2846526 450457 -397.19083   31   76 -394.00000 -397.33351  0.85%   4.5   30s
+ 3342875 400399 -394.18103   38   54 -394.00000 -396.76535  0.70%   4.4   35s
+ 3834108 303390 -395.10468   43   35 -394.00000 -396.12126  0.54%   4.4   40s
+ 4316716 128263 -394.82430   38   54 -394.00000 -395.10668  0.28%   4.4   45s
 
-Explored 4477788 nodes (18890101 simplex iterations) in 46.77 seconds (18.62 work units)
+Explored 4505250 nodes (19594430 simplex iterations) in 47.04 seconds (19.38 work units)
 Thread count was 20 (of 40 available processors)
 
-Solution count 5: -394 -392 -390 ... -384
+Solution count 4: -394 -392 -390 -384 
+No other solutions better than -394
 
 Optimal solution found (tolerance 1.00e-04)
-Best objective -3.940000000000e+02, best bound -3.940044489424e+02, gap 0.0011%
+Best objective -3.940000000000e+02, best bound -3.940000000000e+02, gap 0.0000%
 
-User-callback calls 8957258, time in user-callback 1.57 sec
+User-callback calls 9012151, time in user-callback 1.39 sec

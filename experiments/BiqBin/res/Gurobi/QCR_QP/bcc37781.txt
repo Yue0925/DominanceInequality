@@ -1,8 +1,8 @@
 root_relax = 897.05
-QCR_time = 11.3064
+QCR_time = 16.2851
 opt = true
-obj_val = 897.05
-solved_time = 0.0548
+obj_val = 897.04
+solved_time = 0.0542
 explored_nodes = 811
 to value "./res/Gurobi/QCR_QP/bcc37781.txt"
 Set parameter Presolve to value 0
@@ -21,7 +21,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Wed Feb  5 18:21:21 2025
+Gurobi 12.0.0 (linux64) logging started Thu Aug 14 19:03:00 2025
 
 Set parameter LogFile to value "./res/Gurobi/QCR_QP/bcc37781.txt"
 Set parameter PreCrush to value 0
@@ -54,7 +54,7 @@ PreQLinearize  0
 Presolve  0
 
 Optimize a model with 0 rows, 63 columns and 0 nonzeros
-Model fingerprint: 0x23f5c890
+Model fingerprint: 0x7c40fcf5
 Model has 1623 quadratic objective terms
 Variable types: 0 continuous, 63 integer (63 binary)
 Coefficient statistics:
@@ -73,15 +73,15 @@ Root relaxation: objective -8.970504e+02, 122 iterations, 0.00 seconds (0.00 wor
      0     0 -897.05042    0   63          - -897.05042      -     -    0s
      0     0 -897.05029    0   63          - -897.05029      -     -    0s
      0     2 -897.05028    0   63          - -897.05028      -     -    0s
-*  699   800              37    -895.0000000 -897.04722  0.23%   3.5    0s
-*  783   800              37    -897.0000000 -897.04722  0.01%   3.4    0s
+*  616   670              36    -896.0000000 -897.04894  0.12%   3.8    0s
+*  699   566              37    -897.0000000 -897.04894  0.01%   3.9    0s
 
-Explored 811 nodes (2994 simplex iterations) in 0.05 seconds (0.03 work units)
+Explored 811 nodes (3550 simplex iterations) in 0.05 seconds (0.03 work units)
 Thread count was 20 (of 40 available processors)
 
-Solution count 2: -897 -895 
+Solution count 2: -897 -896 
 
 Optimal solution found (tolerance 1.00e-04)
-Best objective -8.970000000000e+02, best bound -8.970472200880e+02, gap 0.0053%
+Best objective -8.970000000000e+02, best bound -8.970416826113e+02, gap 0.0046%
 
-User-callback calls 1708, time in user-callback 0.00 sec
+User-callback calls 1710, time in user-callback 0.00 sec

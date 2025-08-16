@@ -1,10 +1,10 @@
 root_relax = 415.8
-QCR_time = 33.2846
+QCR_time = 48.4191
 opt = true
-obj_val = 394.0
-solved_time = 46.3929
-explored_nodes = 4477788
-alue "./res/Gurobi/QCR_QP/max_cut_2021_06_03.txt"
+obj_val = 394.01
+solved_time = 48.2415
+explored_nodes = 4644955
+lue "./res/Gurobi/QCR_QP/max_cut_2021_06_03.txt"
 Set parameter Presolve to value 0
 Set parameter AggFill to value -1
 Set parameter Aggregate to value 0
@@ -21,7 +21,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Thu Feb  6 03:21:12 2025
+Gurobi 12.0.0 (linux64) logging started Fri Aug 15 04:06:48 2025
 
 Set parameter LogFile to value "./res/Gurobi/QCR_QP/max_cut_2021_06_03.txt"
 Set parameter PreCrush to value 0
@@ -54,7 +54,7 @@ PreQLinearize  0
 Presolve  0
 
 Optimize a model with 0 rows, 100 columns and 0 nonzeros
-Model fingerprint: 0xc4dca023
+Model fingerprint: 0x174a7bed
 Model has 342 quadratic objective terms
 Variable types: 0 continuous, 100 integer (100 binary)
 Coefficient statistics:
@@ -73,27 +73,25 @@ Root relaxation: objective -4.157993e+02, 154 iterations, 0.00 seconds (0.00 wor
      0     0 -415.79933    0  100          - -415.79933      -     -    0s
      0     0 -415.79926    0  100          - -415.79926      -     -    0s
      0     2 -415.79925    0  100          - -415.79925      -     -    0s
-* 1444  1714              67    -384.0000000 -415.73966  8.27%   5.5    0s
-* 1879  1769              66    -388.0000000 -415.55697  7.10%   5.1    0s
-* 2047  1703              64    -390.0000000 -415.55697  6.55%   5.2    0s
-* 4610  2980              75    -392.0000000 -414.03553  5.62%   5.4    0s
-*13839  7134              75    -394.0000000 -410.43564  4.17%   5.1    0s
- 390536 168609 -394.40289   35   60 -394.00000 -402.13074  2.06%   4.6    5s
- 878259 302649 -394.31330   33   60 -394.00000 -400.29596  1.60%   4.5   10s
- 1380538 393761 -395.01791   36   56 -394.00000 -399.22727  1.33%   4.4   15s
- 1876271 446764 -398.02627   30   60 -394.00000 -398.45641  1.13%   4.4   20s
- 2378888 465300 -396.30890   35   58 -394.00000 -397.80979  0.97%   4.3   25s
- 2878484 448771 -395.29793   40   45 -394.00000 -397.22360  0.82%   4.3   30s
- 3376388 393659 -395.31952   36   57 -394.00000 -396.64578  0.67%   4.3   35s
- 3872998 287601 -395.71153   39   52 -394.00000 -395.97125  0.50%   4.3   40s
- 4358545 89478 -394.40803   41   51 -394.00000 -394.81078  0.21%   4.2   45s
+* 1434  1682              61    -384.0000000 -415.76887  8.27%   5.6    0s
+* 1622  1544              61    -392.0000000 -415.76887  6.06%   5.3    0s
+*71521 37988              70    -394.0000000 -406.58741  3.19%   4.8    1s
+ 416784 177602 -398.78018   33   63 -394.00000 -402.26714  2.10%   4.5    5s
+ 906461 315178 -399.16816   30   75 -394.00000 -400.45362  1.64%   4.4   10s
+ 1395589 406644     cutoff   36      -394.00000 -399.40531  1.37%   4.4   15s
+ 1896315 462034 -395.51017   43   43 -394.00000 -398.62655  1.17%   4.3   20s
+ 2392029 483917 -394.16950   44   41 -394.00000 -397.99271  1.01%   4.3   25s
+ 2892371 473325     cutoff   45      -394.00000 -397.41495  0.87%   4.3   30s
+ 3395097 425554     cutoff   35      -394.00000 -396.84343  0.72%   4.2   35s
+ 3886056 333906 -396.21417   39   55 -394.00000 -396.21677  0.56%   4.2   40s
+ 4359678 178064 -394.02941   41   48 -394.00000 -395.35491  0.34%   4.2   45s
 
-Explored 4477788 nodes (18890101 simplex iterations) in 46.39 seconds (18.62 work units)
+Explored 4644955 nodes (19310024 simplex iterations) in 48.24 seconds (18.87 work units)
 Thread count was 20 (of 40 available processors)
 
-Solution count 5: -394 -392 -390 ... -384
+Solution count 3: -394 -392 -384 
 
 Optimal solution found (tolerance 1.00e-04)
-Best objective -3.940000000000e+02, best bound -3.940044489424e+02, gap 0.0011%
+Best objective -3.940000000000e+02, best bound -3.940093486397e+02, gap 0.0024%
 
-User-callback calls 8957345, time in user-callback 1.43 sec
+User-callback calls 9291509, time in user-callback 1.17 sec

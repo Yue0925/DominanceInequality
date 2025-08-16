@@ -1,7 +1,7 @@
 root_relax = 10278.74
 opt = true
 obj_val = 8598.01
-solved_time = 8.8585
+solved_time = 8.4897
 explored_nodes = 695075
 ameter LogFile to value "./res/Gurobi/QP/gka4a.txt"
 Set parameter Presolve to value 0
@@ -20,7 +20,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Thu Feb  6 06:20:13 2025
+Gurobi 12.0.0 (linux64) logging started Fri Aug 15 07:27:49 2025
 
 Set parameter LogFile to value "./res/Gurobi/QP/gka4a.txt"
 Set parameter PreCrush to value 0
@@ -79,9 +79,9 @@ Root relaxation: objective 1.027874e+04, 87 iterations, 0.00 seconds (0.00 work 
 * 4626  2833              79    8461.0000000 9730.78216  15.0%   2.7    0s
 * 4672  2708              76    8578.0000000 9726.29262  13.4%   2.7    0s
 * 7584  3660              77    8598.0000000 9545.78782  11.0%   2.7    0s
- 352327 77310 8671.92808   32   53 8598.00000 8822.21753  2.61%   2.6    5s
+ 370347 77282 8681.13331   36   46 8598.00000 8812.58744  2.50%   2.6    5s
 
-Explored 695075 nodes (1777701 simplex iterations) in 8.86 seconds (5.64 work units)
+Explored 695075 nodes (1777701 simplex iterations) in 8.49 seconds (5.64 work units)
 Thread count was 20 (of 40 available processors)
 
 Solution count 7: 8598 8578 8461 ... 8341
@@ -89,4 +89,4 @@ Solution count 7: 8598 8578 8461 ... 8341
 Optimal solution found (tolerance 1.00e-04)
 Best objective 8.598000000000e+03, best bound 8.598014245190e+03, gap 0.0002%
 
-User-callback calls 1390758, time in user-callback 0.20 sec
+User-callback calls 1390779, time in user-callback 0.15 sec

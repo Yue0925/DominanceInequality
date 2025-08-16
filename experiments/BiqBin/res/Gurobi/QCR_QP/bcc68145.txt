@@ -1,9 +1,9 @@
 root_relax = 416.53
-QCR_time = 12.5864
+QCR_time = 18.2266
 opt = true
-obj_val = 416.0
-solved_time = 0.0389
-explored_nodes = 1000
+obj_val = 416.01
+solved_time = 0.0393
+explored_nodes = 995
 to value "./res/Gurobi/QCR_QP/bcc68145.txt"
 Set parameter Presolve to value 0
 Set parameter AggFill to value -1
@@ -21,7 +21,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Wed Feb  5 18:28:18 2025
+Gurobi 12.0.0 (linux64) logging started Thu Aug 14 19:09:51 2025
 
 Set parameter LogFile to value "./res/Gurobi/QCR_QP/bcc68145.txt"
 Set parameter PreCrush to value 0
@@ -54,7 +54,7 @@ PreQLinearize  0
 Presolve  0
 
 Optimize a model with 0 rows, 63 columns and 0 nonzeros
-Model fingerprint: 0x089f3753
+Model fingerprint: 0xddc9511f
 Model has 714 quadratic objective terms
 Variable types: 0 continuous, 63 integer (63 binary)
 Coefficient statistics:
@@ -75,12 +75,12 @@ Root relaxation: objective -4.165313e+02, 105 iterations, 0.00 seconds (0.00 wor
      0     2 -416.53113    0   63          - -416.53113      -     -    0s
 *  352   450              22    -416.0000000 -416.34417  0.08%   3.2    0s
 
-Explored 1000 nodes (1713 simplex iterations) in 0.04 seconds (0.01 work units)
+Explored 995 nodes (1715 simplex iterations) in 0.04 seconds (0.01 work units)
 Thread count was 20 (of 40 available processors)
 
 Solution count 1: -416 
 
 Optimal solution found (tolerance 1.00e-04)
-Best objective -4.160000000003e+02, best bound -4.160039203197e+02, gap 0.0009%
+Best objective -4.160000000003e+02, best bound -4.160129331202e+02, gap 0.0031%
 
-User-callback calls 2076, time in user-callback 0.00 sec
+User-callback calls 2066, time in user-callback 0.00 sec

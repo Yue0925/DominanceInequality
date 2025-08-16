@@ -1,5 +1,5 @@
 """
-  one inequality z_u + \sum z(V) ≥ 1    
+  one inequality z_u + sum z(V) ≥ 1    
 """
 # todo : verify negative coefficients
 function insertion_left(N, W, u)

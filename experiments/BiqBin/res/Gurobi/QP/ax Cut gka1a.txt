@@ -1,7 +1,7 @@
 root_relax = 2938.46
 opt = true
 obj_val = 1762.0
-solved_time = 0.1332
+solved_time = 0.1235
 explored_nodes = 10508
 arameter LogFile to value "./res/Gurobi/QP/ax Cut gka1a.txt"
 Set parameter Presolve to value 0
@@ -20,7 +20,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Wed Feb  5 18:24:20 2025
+Gurobi 12.0.0 (linux64) logging started Thu Aug 14 19:07:02 2025
 
 Set parameter LogFile to value "./res/Gurobi/QP/ax Cut gka1a.txt"
 Set parameter PreCrush to value 0
@@ -78,7 +78,7 @@ Root relaxation: objective 2.938455e+03, 52 iterations, 0.00 seconds (0.00 work 
 * 2863  1120              30    1758.0000000 2147.38659  22.1%   3.0    0s
 * 8039   588              31    1762.0000000 1923.86440  9.19%   3.1    0s
 
-Explored 10508 nodes (32102 simplex iterations) in 0.13 seconds (0.02 work units)
+Explored 10508 nodes (32102 simplex iterations) in 0.12 seconds (0.02 work units)
 Thread count was 20 (of 40 available processors)
 
 Solution count 5: 1762 1758 1720 ... 1620
@@ -86,4 +86,4 @@ Solution count 5: 1762 1758 1720 ... 1620
 Optimal solution found (tolerance 1.00e-04)
 Best objective 1.762000000000e+03, best bound 1.762000000000e+03, gap 0.0000%
 
-User-callback calls 21124, time in user-callback 0.00 sec
+User-callback calls 21112, time in user-callback 0.00 sec

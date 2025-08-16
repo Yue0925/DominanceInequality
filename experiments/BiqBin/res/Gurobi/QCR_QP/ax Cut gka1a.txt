@@ -1,10 +1,10 @@
 root_relax = 1890.36
-QCR_time = 8.8454
+QCR_time = 12.3426
 opt = true
 obj_val = 1762.0
-solved_time = 0.0473
-explored_nodes = 3031
-to value "./res/Gurobi/QCR_QP/ax Cut gka1a.txt"
+solved_time = 0.0442
+explored_nodes = 2511
+o value "./res/Gurobi/QCR_QP/ax Cut gka1a.txt"
 Set parameter Presolve to value 0
 Set parameter AggFill to value -1
 Set parameter Aggregate to value 0
@@ -21,7 +21,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Wed Feb  5 17:59:25 2025
+Gurobi 12.0.0 (linux64) logging started Thu Aug 14 18:42:36 2025
 
 Set parameter LogFile to value "./res/Gurobi/QCR_QP/ax Cut gka1a.txt"
 Set parameter PreCrush to value 0
@@ -54,7 +54,7 @@ PreQLinearize  0
 Presolve  0
 
 Optimize a model with 0 rows, 50 columns and 0 nonzeros
-Model fingerprint: 0x5a344e8a
+Model fingerprint: 0xaac983d8
 Model has 156 quadratic objective terms
 Variable types: 0 continuous, 50 integer (50 binary)
 Coefficient statistics:
@@ -73,18 +73,17 @@ Root relaxation: objective -1.890357e+03, 76 iterations, 0.00 seconds (0.00 work
      0     0 -1890.3569    0   50          - -1890.3569      -     -    0s
      0     0 -1890.3568    0   50          - -1890.3568      -     -    0s
      0     2 -1890.3568    0   50          - -1890.3568      -     -    0s
-*  704   792              37    -1642.000000 -1886.6992  14.9%   4.8    0s
-*  797   792              28    -1754.000000 -1886.6992  7.57%   4.5    0s
-* 1650   810              25    -1755.000000 -1863.9471  6.21%   4.6    0s
-* 1776   800              25    -1762.000000 -1863.9471  5.79%   4.5    0s
+*  555   664              30    -1650.000000 -1875.0023  13.6%   4.8    0s
+*  576   664              28    -1758.000000 -1875.0023  6.66%   4.7    0s
+* 1441   716              27    -1762.000000 -1831.3176  3.93%   4.5    0s
 
-Explored 3031 nodes (10915 simplex iterations) in 0.05 seconds (0.01 work units)
+Explored 2511 nodes (10558 simplex iterations) in 0.04 seconds (0.01 work units)
 Thread count was 20 (of 40 available processors)
 
-Solution count 4: -1762 -1755 -1754 -1642 
+Solution count 3: -1762 -1758 -1650 
 No other solutions better than -1762
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective -1.762000000000e+03, best bound -1.762000000000e+03, gap 0.0000%
 
-User-callback calls 6149, time in user-callback 0.00 sec
+User-callback calls 5104, time in user-callback 0.00 sec

@@ -1,9 +1,9 @@
 root_relax = 539.96
-QCR_time = 12.2596
+QCR_time = 17.2988
 opt = true
 obj_val = 538.0
-solved_time = 0.0489
-explored_nodes = 1191
+solved_time = 0.0465
+explored_nodes = 1330
 to value "./res/Gurobi/QCR_QP/bcc12174.txt"
 Set parameter Presolve to value 0
 Set parameter AggFill to value -1
@@ -21,7 +21,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Wed Feb  5 18:00:53 2025
+Gurobi 12.0.0 (linux64) logging started Thu Aug 14 18:44:06 2025
 
 Set parameter LogFile to value "./res/Gurobi/QCR_QP/bcc12174.txt"
 Set parameter PreCrush to value 0
@@ -54,7 +54,7 @@ PreQLinearize  0
 Presolve  0
 
 Optimize a model with 0 rows, 63 columns and 0 nonzeros
-Model fingerprint: 0x437c2406
+Model fingerprint: 0x838f7c62
 Model has 954 quadratic objective terms
 Variable types: 0 continuous, 63 integer (63 binary)
 Coefficient statistics:
@@ -73,16 +73,15 @@ Root relaxation: objective -5.399597e+02, 116 iterations, 0.00 seconds (0.00 wor
      0     0 -539.95974    0   63          - -539.95974      -     -    0s
      0     0 -539.95961    0   63          - -539.95961      -     -    0s
      0     2 -539.95961    0   63          - -539.95961      -     -    0s
-*  461   544              25    -537.0000000 -539.19839  0.41%   3.5    0s
-*  467   544              27    -538.0000000 -539.19839  0.22%   3.5    0s
+*  453   550              28    -538.0000000 -539.95758  0.36%   4.0    0s
 
-Explored 1191 nodes (2937 simplex iterations) in 0.05 seconds (0.02 work units)
+Explored 1330 nodes (3346 simplex iterations) in 0.04 seconds (0.02 work units)
 Thread count was 20 (of 40 available processors)
 
-Solution count 2: -538 -537 
+Solution count 1: -538 
 No other solutions better than -538
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective -5.380000000002e+02, best bound -5.380000000002e+02, gap 0.0000%
 
-User-callback calls 2470, time in user-callback 0.00 sec
+User-callback calls 2743, time in user-callback 0.00 sec

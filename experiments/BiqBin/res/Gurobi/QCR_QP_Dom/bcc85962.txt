@@ -1,10 +1,10 @@
 root_relax = 929.0
-QCR_time = 10.785
+QCR_time = 17.4196
 opt = true
 obj_val = 929.0
-solved_time = 1.3413
-explored_nodes = 2082
-nb_dom_cuts = 3714
+solved_time = 4.4294
+explored_nodes = 92
+nb_dom_cuts = 25726
 robi/QCR_QP_Dom/bcc85962.txt"
 Set parameter Presolve to value 0
 Set parameter AggFill to value -1
@@ -22,7 +22,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Wed Feb  5 19:14:57 2025
+Gurobi 12.0.0 (linux64) logging started Thu Aug 14 21:11:10 2025
 
 Set parameter LogFile to value "./res/Gurobi/QCR_QP_Dom/bcc85962.txt"
 Set parameter PreCrush to value 0
@@ -54,8 +54,8 @@ PreDepRow  0
 PreQLinearize  0
 Presolve  0
 
-Optimize a model with 3714 rows, 64 columns and 115210 nonzeros
-Model fingerprint: 0xb102e20e
+Optimize a model with 25726 rows, 64 columns and 537158 nonzeros
+Model fingerprint: 0x68a2d1bb
 Model has 1863 quadratic objective terms
 Variable types: 0 continuous, 64 integer (64 binary)
 Coefficient statistics:
@@ -66,22 +66,42 @@ Coefficient statistics:
   RHS range        [1e+00, 3e+01]
 Variable types: 0 continuous, 64 integer (64 binary)
 
-Root relaxation: objective -9.290002e+02, 94 iterations, 0.03 seconds (0.02 work units)
+Root relaxation: objective -9.290002e+02, 185 iterations, 0.20 seconds (0.17 work units)
 
     Nodes    |    Current Node    |     Objective Bounds      |     Work
  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
 
      0     0 -929.00016    0   64          - -929.00016      -     -    0s
-     0     0 -929.00013    0   64          - -929.00013      -     -    0s
-     0     2 -929.00013    0   64          - -929.00013      -     -    0s
-*  574  1863              52    -929.0000000 -929.00012  0.00%   2.0    1s
+H    0     0                    -445.0000000 -929.00016   109%     -    1s
+     0     0 -929.00016    0   64 -445.00000 -929.00016   109%     -    1s
+     0     2 -929.00016    0   64 -445.00000 -929.00016   109%     -    1s
+*    9     4               3    -488.0000000 -929.00012  90.4%  58.4    2s
+*   14     4               4    -529.0000000 -929.00012  75.6%  45.3    2s
+*   18     4               5    -568.0000000 -929.00012  63.6%  40.5    2s
+*   22     4               6    -605.0000000 -929.00011  53.6%  37.3    3s
+*   26     4               7    -640.0000000 -929.00011  45.2%  33.2    3s
+*   30     4               8    -673.0000000 -929.00011  38.0%  32.2    3s
+*   34     4               9    -704.0000000 -929.00010  32.0%  30.9    3s
+*   38     4              10    -733.0000000 -929.00010  26.7%  29.2    3s
+*   42     4              11    -760.0000000 -929.00010  22.2%  28.5    3s
+*   49     7              12    -785.0000000 -929.00009  18.3%  25.3    3s
+*   50     5              13    -808.0000000 -929.00009  15.0%  25.4    4s
+*   54     5              14    -829.0000000 -929.00009  12.1%  24.1    4s
+*   55     5              15    -848.0000000 -929.00009  9.55%  25.1    4s
+*   61     5              17    -880.0000000 -929.00008  5.57%  24.3    4s
+*   67     3              18    -893.0000000 -929.00006  4.03%  24.5    4s
+*   68     3              19    -904.0000000 -929.00006  2.77%  24.4    4s
+*   82     6              21    -913.0000000 -929.00004  1.75%  21.8    4s
+*   83     4              22    -920.0000000 -929.00004  0.98%  21.7    4s
+*   87     4              23    -925.0000000 -929.00003  0.43%  21.0    4s
+*   89     4              25    -929.0000000 -929.00003  0.00%  20.6    4s
 
-Explored 2082 nodes (4466 simplex iterations) in 1.34 seconds (1.03 work units)
+Explored 92 nodes (2044 simplex iterations) in 4.43 seconds (4.32 work units)
 Thread count was 20 (of 40 available processors)
 
-Solution count 1: -929 
+Solution count 10: -929 -925 -920 ... -808
 
 Optimal solution found (tolerance 1.00e-04)
-Best objective -9.290000000001e+02, best bound -9.290001161122e+02, gap 0.0000%
+Best objective -9.290000000000e+02, best bound -9.290000338292e+02, gap 0.0000%
 
-User-callback calls 4442, time in user-callback 0.00 sec
+User-callback calls 1297, time in user-callback 0.00 sec

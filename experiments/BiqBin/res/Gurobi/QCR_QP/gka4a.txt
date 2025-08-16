@@ -1,9 +1,9 @@
 root_relax = 8935.08
-QCR_time = 21.9968
+QCR_time = 32.7187
 opt = true
 obj_val = 8598.0
-solved_time = 0.1386
-explored_nodes = 6115
+solved_time = 0.1808
+explored_nodes = 6868
 o value "./res/Gurobi/QCR_QP/gka4a.txt"
 Set parameter Presolve to value 0
 Set parameter AggFill to value -1
@@ -21,7 +21,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Thu Feb  6 03:01:42 2025
+Gurobi 12.0.0 (linux64) logging started Fri Aug 15 03:45:48 2025
 
 Set parameter LogFile to value "./res/Gurobi/QCR_QP/gka4a.txt"
 Set parameter PreCrush to value 0
@@ -54,7 +54,7 @@ PreQLinearize  0
 Presolve  0
 
 Optimize a model with 0 rows, 81 columns and 0 nonzeros
-Model fingerprint: 0xd307e960
+Model fingerprint: 0xb58ee71a
 Model has 465 quadratic objective terms
 Variable types: 0 continuous, 81 integer (81 binary)
 Coefficient statistics:
@@ -73,18 +73,19 @@ Root relaxation: objective -8.935080e+03, 135 iterations, 0.00 seconds (0.00 wor
      0     0 -8935.0801    0   81          - -8935.0801      -     -    0s
      0     0 -8935.0800    0   81          - -8935.0800      -     -    0s
      0     2 -8935.0800    0   81          - -8935.0800      -     -    0s
-*  999  1162              56    -8484.000000 -8917.4013  5.11%   5.9    0s
-* 1005  1162              49    -8565.000000 -8917.4013  4.11%   5.9    0s
-* 1160  1162              50    -8574.000000 -8917.4013  4.01%   5.4    0s
-* 2564  1138              51    -8598.000000 -8798.4995  2.33%   6.0    0s
+*  998  1170              54    -8547.000000 -8914.5900  4.30%   5.5    0s
+* 1291  1112              51    -8566.000000 -8907.4625  3.99%   5.2    0s
+* 2515  1142              50    -8569.000000 -8791.8703  2.60%   5.7    0s
+* 2566  1142              50    -8577.000000 -8791.8703  2.51%   5.7    0s
+* 3396  1142              50    -8598.000000 -8766.0599  1.95%   5.9    0s
 
-Explored 6115 nodes (32793 simplex iterations) in 0.14 seconds (0.08 work units)
+Explored 6868 nodes (36657 simplex iterations) in 0.18 seconds (0.09 work units)
 Thread count was 20 (of 40 available processors)
 
-Solution count 4: -8598 -8574 -8565 -8484 
+Solution count 5: -8598 -8577 -8569 ... -8547
 No other solutions better than -8598
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective -8.598000000000e+03, best bound -8.598000000000e+03, gap 0.0000%
 
-User-callback calls 12335, time in user-callback 0.00 sec
+User-callback calls 13849, time in user-callback 0.00 sec

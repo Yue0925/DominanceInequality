@@ -1,7 +1,7 @@
 root_relax = 77.61
 opt = true
 obj_val = 70.0
-solved_time = 0.0495
+solved_time = 0.0393
 explored_nodes = 2321
 t parameter LogFile to value "./res/Gurobi/QP/21_2_2019_b.txt"
 Set parameter Presolve to value 0
@@ -20,7 +20,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Wed Feb  5 17:17:08 2025
+Gurobi 12.0.0 (linux64) logging started Thu Aug 14 18:00:24 2025
 
 Set parameter LogFile to value "./res/Gurobi/QP/21_2_2019_b.txt"
 Set parameter PreCrush to value 0
@@ -75,7 +75,7 @@ Root relaxation: objective 7.760614e+01, 67 iterations, 0.00 seconds (0.00 work 
 *  555   670              33      68.0000000   74.66851  9.81%   2.7    0s
 *  735   672              31      70.0000000   74.24431  6.06%   2.5    0s
 
-Explored 2321 nodes (5155 simplex iterations) in 0.05 seconds (0.00 work units)
+Explored 2321 nodes (5155 simplex iterations) in 0.04 seconds (0.00 work units)
 Thread count was 20 (of 40 available processors)
 
 Solution count 2: 70 68 
@@ -83,4 +83,4 @@ Solution count 2: 70 68
 Optimal solution found (tolerance 1.00e-04)
 Best objective 7.000000000000e+01, best bound 7.000000000000e+01, gap 0.0000%
 
-User-callback calls 4727, time in user-callback 0.00 sec
+User-callback calls 4720, time in user-callback 0.00 sec

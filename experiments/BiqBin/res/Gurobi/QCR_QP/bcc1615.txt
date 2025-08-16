@@ -1,10 +1,10 @@
 root_relax = 199.41
-QCR_time = 7.6024
+QCR_time = 10.2302
 opt = true
 obj_val = 199.0
-solved_time = 0.0367
-explored_nodes = 1191
- to value "./res/Gurobi/QCR_QP/bcc1615.txt"
+solved_time = 0.0583
+explored_nodes = 3651
+to value "./res/Gurobi/QCR_QP/bcc1615.txt"
 Set parameter Presolve to value 0
 Set parameter AggFill to value -1
 Set parameter Aggregate to value 0
@@ -21,7 +21,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Wed Feb  5 18:05:14 2025
+Gurobi 12.0.0 (linux64) logging started Thu Aug 14 18:48:11 2025
 
 Set parameter LogFile to value "./res/Gurobi/QCR_QP/bcc1615.txt"
 Set parameter PreCrush to value 0
@@ -54,7 +54,7 @@ PreQLinearize  0
 Presolve  0
 
 Optimize a model with 0 rows, 41 columns and 0 nonzeros
-Model fingerprint: 0x607512de
+Model fingerprint: 0x76953521
 Model has 393 quadratic objective terms
 Variable types: 0 continuous, 41 integer (41 binary)
 Coefficient statistics:
@@ -73,16 +73,15 @@ Root relaxation: objective -1.994080e+02, 93 iterations, 0.00 seconds (0.00 work
      0     0 -199.40802    0   41          - -199.40802      -     -    0s
      0     0 -199.40795    0   41          - -199.40795      -     -    0s
      0     2 -199.40795    0   41          - -199.40795      -     -    0s
-*  463   542              28    -197.0000000 -199.25388  1.14%   4.0    0s
-*  563   545              27    -198.0000000 -199.25388  0.63%   3.7    0s
-*  603   545              29    -199.0000000 -199.25387  0.13%   3.7    0s
+*  528   546              24    -198.0000000 -199.40795  0.71%   3.9    0s
+*  722   658              37    -199.0000000 -199.40795  0.20%   4.0    0s
 
-Explored 1191 nodes (3002 simplex iterations) in 0.04 seconds (0.01 work units)
+Explored 3651 nodes (14084 simplex iterations) in 0.06 seconds (0.02 work units)
 Thread count was 20 (of 40 available processors)
 
-Solution count 3: -199 -198 -197 
+Solution count 2: -199 -198 
 
 Optimal solution found (tolerance 1.00e-04)
-Best objective -1.990000000000e+02, best bound -1.990007865430e+02, gap 0.0004%
+Best objective -1.990000000000e+02, best bound -1.990024815321e+02, gap 0.0012%
 
-User-callback calls 2461, time in user-callback 0.00 sec
+User-callback calls 7385, time in user-callback 0.00 sec

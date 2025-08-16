@@ -1,9 +1,9 @@
 root_relax = 70.69
-QCR_time = 9.0053
+QCR_time = 11.1325
 opt = true
 obj_val = 70.0
-solved_time = 0.1248
-explored_nodes = 10275
+solved_time = 0.1047
+explored_nodes = 9361
  to value "./res/Gurobi/QCR_QP/21_2_2019.txt"
 Set parameter Presolve to value 0
 Set parameter AggFill to value -1
@@ -21,7 +21,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Wed Feb  5 17:16:20 2025
+Gurobi 12.0.0 (linux64) logging started Thu Aug 14 18:00:45 2025
 
 Set parameter LogFile to value "./res/Gurobi/QCR_QP/21_2_2019.txt"
 Set parameter PreCrush to value 0
@@ -54,7 +54,7 @@ PreQLinearize  0
 Presolve  0
 
 Optimize a model with 0 rows, 60 columns and 0 nonzeros
-Model fingerprint: 0xea0c011a
+Model fingerprint: 0xca7dc4c9
 Model has 135 quadratic objective terms
 Variable types: 0 continuous, 60 integer (60 binary)
 Coefficient statistics:
@@ -73,15 +73,17 @@ Root relaxation: objective -7.068760e+01, 103 iterations, 0.00 seconds (0.00 wor
      0     0  -70.68760    0   60          -  -70.68760      -     -    0s
      0     0  -70.68751    0   60          -  -70.68751      -     -    0s
      0     2  -70.68751    0   60          -  -70.68751      -     -    0s
-*  288  1192              51     -70.0000000  -70.68751  0.98%   2.8    0s
+*  953  1520              43     -67.0000000  -70.68751  5.50%   4.4    0s
+* 1275  1520              29     -68.0000000  -70.68751  3.95%   4.8    0s
+* 1751  1492              22     -70.0000000  -70.68751  0.98%   5.1    0s
 
-Explored 10275 nodes (64768 simplex iterations) in 0.12 seconds (0.02 work units)
+Explored 9361 nodes (60067 simplex iterations) in 0.10 seconds (0.02 work units)
 Thread count was 20 (of 40 available processors)
 
-Solution count 1: -70 
+Solution count 3: -70 -68 -67 
 No other solutions better than -70
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective -7.000000000021e+01, best bound -7.000000000021e+01, gap 0.0000%
 
-User-callback calls 20635, time in user-callback 0.00 sec
+User-callback calls 18810, time in user-callback 0.00 sec

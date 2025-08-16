@@ -1,8 +1,8 @@
 root_relax = 109.0
-QCR_time = 5.8367
+QCR_time = 6.6366
 opt = true
 obj_val = 109.0
-solved_time = 0.0233
+solved_time = 0.0209
 explored_nodes = 251
 e to value "./res/Gurobi/QCR_QP/bcc58142.txt"
 Set parameter Presolve to value 0
@@ -21,7 +21,7 @@ Set parameter Symmetry to value 0
 Set parameter PreQLinearize to value 0
 Set parameter NonConvex to value 0
 
-Gurobi 12.0.0 (linux64) logging started Wed Feb  5 18:25:23 2025
+Gurobi 12.0.0 (linux64) logging started Thu Aug 14 19:06:53 2025
 
 Set parameter LogFile to value "./res/Gurobi/QCR_QP/bcc58142.txt"
 Set parameter PreCrush to value 0
@@ -54,7 +54,7 @@ PreQLinearize  0
 Presolve  0
 
 Optimize a model with 0 rows, 21 columns and 0 nonzeros
-Model fingerprint: 0x1807e2cc
+Model fingerprint: 0xf3faf241
 Model has 220 quadratic objective terms
 Variable types: 0 continuous, 21 integer (21 binary)
 Coefficient statistics:
@@ -83,4 +83,4 @@ Solution count 1: -109
 Optimal solution found (tolerance 1.00e-04)
 Best objective -1.090000000000e+02, best bound -1.090000090951e+02, gap 0.0000%
 
-User-callback calls 576, time in user-callback 0.00 sec
+User-callback calls 575, time in user-callback 0.00 sec
