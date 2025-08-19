@@ -235,7 +235,9 @@ function read_QCR_time(fname, fout)
 
         if line[1] == "QCR_time"
             exist = true
-            print(fout, line[end], " & ")
+            t = round(parse(Float64, line[end]), digits = 2)
+            t > 1800 ? print(fout, "TO & ") :  print(fout, t, " & ")
+            # print(fout, line[end], " & ")
             break
         end
     end
@@ -290,25 +292,25 @@ function run(fname)
     print(fout, inst , " & ", N , " & ", round(100 * density/N^2, digits = 1), " & ")
 
 
-    # -----------------------------
-    # ----      QP
-    logFolder = "./res/Gurobi/QP"
-    if isfile(logFolder * "/" * inst)
-        writeLine(logFolder * "/" * inst, fout)
-    else
-        print(fout, " & & & & & ")
-    end
+    # # -----------------------------
+    # # ----      QP
+    # logFolder = "./res/Gurobi/QP"
+    # if isfile(logFolder * "/" * inst)
+    #     writeLine(logFolder * "/" * inst, fout)
+    # else
+    #     print(fout, " & & & & & ")
+    # end
 
-    # -----------------------------
-    # ---    QP + Dom cuts 
-    logFolder = "./res/Gurobi/QP_Dom"
-    if isfile(logFolder * "/" * inst)
-        writeLine(logFolder * "/" * inst, fout)
-        read_nb_dom_cuts(logFolder * "/" * inst, fout)
+    # # -----------------------------
+    # # ---    QP + Dom cuts 
+    # logFolder = "./res/Gurobi/QP_Dom"
+    # if isfile(logFolder * "/" * inst)
+    #     writeLine(logFolder * "/" * inst, fout)
+    #     read_nb_dom_cuts(logFolder * "/" * inst, fout)
 
-    else
-        print(fout, " & & & & & & ")
-    end
+    # else
+    #     print(fout, " & & & & & & ")
+    # end
 
     # -----------------------------
     # ---      QCR + QP 
@@ -334,17 +336,17 @@ function run(fname)
     # end
 
 
-    # # -----------------------------
-    # # ---    QCR + QP + Dom 
-    # logFolder = "./res/Gurobi/QCR_QP_Dom"
-    # if isfile(logFolder * "/" * inst)
-    #     read_QCR_time(logFolder * "/" * inst, fout)
-    #     writeLine(logFolder * "/" * inst, fout)
-    #     read_nb_dom_cuts(logFolder * "/" * inst, fout)
+    # -----------------------------
+    # ---    QCR + QP + Dom 
+    logFolder = "./res/Gurobi/QCR_QP_Dom"
+    if isfile(logFolder * "/" * inst)
+        read_QCR_time(logFolder * "/" * inst, fout)
+        writeLine(logFolder * "/" * inst, fout)
+        read_nb_dom_cuts(logFolder * "/" * inst, fout)
 
-    # else
-    #     print(fout, " & & & & & & & ")
-    # end
+    else
+        print(fout, " & & & & & & & ")
+    end
 
 
     # # -----------------------------
